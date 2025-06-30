@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/uygulamaEkraniFragment"
+    android:id="@+id/uygulama_graph">
+    <fragment
+        android:id="@+id/uygulamaEkraniFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.UygulamaEkraniFragment"
+        android:label="fragment_uygulama_ekrani"
+        tools:layout="@layout/fragment_uygulama_ekrani" >
+        <action
+            android:id="@+id/toCopkutusu"
+            app:destination="@id/copkutusu" />
+        <action
+            android:id="@+id/toTelefonFragment"
+            app:destination="@id/telefonFragment" />
+        <action
+            android:id="@+id/toTarayiciFragment"
+            app:destination="@id/tarayiciFragment" />
+        <action
+            android:id="@+id/toMuzikCalarFragment"
+            app:destination="@id/muzikCalarFragment" />
+        <action
+            android:id="@+id/toMesajlasmaFragment"
+            app:destination="@id/mesajlasmaAnasayfa" />
+        <action
+            android:id="@+id/toRehberFragment"
+            app:destination="@id/rehberFragment" />
+        <action
+            android:id="@+id/toHesapMakinesiFragment"
+            app:destination="@id/hesapMakinesiFragment" />
+        <action
+            android:id="@+id/toAlarmFragment"
+            app:destination="@id/alarmAnasayfaFragment" />
+        <action
+            android:id="@+id/toKameraFragment"
+            app:destination="@id/kameraFragment" />
+        <action
+            android:id="@+id/toGaleriFragment"
+            app:destination="@id/galeriFragment" />
+        <action
+            android:id="@+id/toTakvimFragment"
+            app:destination="@id/takvimFragment" />
+        <action
+            android:id="@+id/toQrKodOkuyucuFragment"
+            app:destination="@id/qrOkuyucuFragment" />
+        <action
+            android:id="@+id/toNotDefteriFragment"
+            app:destination="@id/notDefteriAnasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesajlasmaAnasayfa"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.mesajlasma.MesajlasmaAnasayfa"
+        android:label="fragment_mesajlasma_anasayfa"
+        tools:layout="@layout/fragment_mesajlasma_anasayfa" />
+    <fragment
+        android:id="@+id/copkutusu"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.copkutusu.copkutusu"
+        android:label="fragment_copkutusu"
+        tools:layout="@layout/fragment_copkutusu" >
+        <argument
+            android:name="consts"
+            app:argType="com.example.isletimsistemicalismasi.anaekran.entity.Const" />
+    </fragment>
+    <fragment
+        android:id="@+id/muzikCalarFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.muzikcalar.MuzikCalarFragment"
+        android:label="fragment_muzik_calar"
+        tools:layout="@layout/fragment_muzik_calar" />
+    <fragment
+        android:id="@+id/tarayiciFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.tarayici.TarayiciFragment"
+        android:label="fragment_tarayici"
+        tools:layout="@layout/fragment_tarayici" />
+    <fragment
+        android:id="@+id/telefonFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.telefon.TelefonFragment"
+        android:label="fragment_telefon"
+        tools:layout="@layout/fragment_telefon" />
+    <fragment
+        android:id="@+id/hesapMakinesiFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.hesapmakinesi.HesapMakinesiFragment"
+        android:label="fragment_hesap_makinesi"
+        tools:layout="@layout/fragment_hesap_makinesi" />
+    <fragment
+        android:id="@+id/rehberFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.rehber.view.RehberFragment"
+        android:label="fragment_rehber"
+        tools:layout="@layout/fragment_rehber" >
+        <action
+            android:id="@+id/toRehberDetayFragment"
+            app:destination="@id/rehberDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rehberEkleFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.rehber.view.RehberEkleFragment"
+        android:label="fragment_rehber_ekle"
+        tools:layout="@layout/fragment_rehber_ekle" />
+    <fragment
+        android:id="@+id/rehberDetayFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.rehber.view.RehberDetayFragment"
+        android:label="fragment_rehber_detay"
+        tools:layout="@layout/fragment_rehber_detay" />
+    <fragment
+        android:id="@+id/alarmAnasayfaFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.alarm.AlarmAnasayfaFragment"
+        android:label="fragment_alarm_anasayfa"
+        tools:layout="@layout/fragment_alarm_anasayfa" />
+    <fragment
+        android:id="@+id/kameraFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.kamera.KameraFragment"
+        android:label="fragment_kamera"
+        tools:layout="@layout/fragment_kamera" />
+    <fragment
+        android:id="@+id/galeriFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.galeri.GaleriFragment"
+        android:label="fragment_galeri"
+        tools:layout="@layout/fragment_galeri" />
+    <fragment
+        android:id="@+id/takvimFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.takvim.TakvimFragment"
+        android:label="fragment_takvim"
+        tools:layout="@layout/fragment_takvim" />
+    <fragment
+        android:id="@+id/qrOkuyucuFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.qrokuyucu.QrOkuyucuFragment"
+        android:label="fragment_qr_okuyucu"
+        tools:layout="@layout/fragment_qr_okuyucu" />
+    <fragment
+        android:id="@+id/notDefteriAnasayfaFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.notdefteri.NotDefteriAnasayfaFragment"
+        android:label="fragment_not_defteri_anasayfa"
+        tools:layout="@layout/fragment_not_defteri_anasayfa" >
+        <action
+            android:id="@+id/toNotDefteriDetaySayfa"
+            app:destination="@id/notDefteriDetaysayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notDefteriDetaysayfaFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.uygulamalar.notdefteri.NotDefteriDetaysayfaFragment"
+        android:label="fragment_not_defteri_detaysayfa"
+        tools:layout="@layout/fragment_not_defteri_detay_sayfa" >
+        <argument
+            android:name="not"
+            app:argType="com.example.isletimsistemicalismasi.uygulamalar.notdefteri.model.Not" />
+    </fragment>
+</navigation>

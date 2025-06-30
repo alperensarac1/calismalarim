@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B627CBEE2D9FEFA9000F1AD1 /* UrunDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627CBED2D9FEFA9000F1AD1 /* UrunDetayVC.swift */; };
+		B64284712D996BB700471C82 /* NumaraKayitDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64284702D996BB700471C82 /* NumaraKayitDao.swift */; };
+		B64284742D996CC500471C82 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B64284732D996CC500471C82 /* Alamofire */; };
+		B642847B2D996D8D00471C82 /* KahveHttpServiceDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642847A2D996D8D00471C82 /* KahveHttpServiceDao.swift */; };
+		B642847E2D996F1500471C82 /* QRKodVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642847D2D996F1500471C82 /* QRKodVM.swift */; };
+		B64284802D996FEA00471C82 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B642847F2D996FEA00471C82 /* MainVM.swift */; };
+		B64A0E962D9BEF1A005E252E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B64A0E952D9BEF1A005E252E /* AlamofireImage */; };
+		B65706582D9685800044A2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65706572D9685800044A2A5 /* AppDelegate.swift */; };
+		B657065A2D9685800044A2A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65706592D9685800044A2A5 /* SceneDelegate.swift */; };
+		B657065C2D9685800044A2A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657065B2D9685800044A2A5 /* MainVC.swift */; };
+		B657065F2D9685800044A2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B657065D2D9685800044A2A5 /* Main.storyboard */; };
+		B65706612D9685820044A2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65706602D9685810044A2A5 /* Assets.xcassets */; };
+		B65706642D9685820044A2A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65706622D9685820044A2A5 /* LaunchScreen.storyboard */; };
+		B657066F2D9685820044A2A5 /* KahveQROlusturucuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657066E2D9685820044A2A5 /* KahveQROlusturucuTests.swift */; };
+		B65706792D9685820044A2A5 /* KahveQROlusturucuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65706782D9685820044A2A5 /* KahveQROlusturucuUITests.swift */; };
+		B657067B2D9685820044A2A5 /* KahveQROlusturucuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657067A2D9685820044A2A5 /* KahveQROlusturucuUITestsLaunchTests.swift */; };
+		B65706892D968B850044A2A5 /* QRKodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65706882D968B850044A2A5 /* QRKodVC.swift */; };
+		B657068B2D968E8C0044A2A5 /* UrunlerimizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B657068A2D968E8C0044A2A5 /* UrunlerimizVC.swift */; };
+		B65A014D2D9D4CD80046854D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A014C2D9D4CD80046854D /* Service.swift */; };
+		B65A014F2D9D4D7D0046854D /* KahveDummyServiceDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A014E2D9D4D7D0046854D /* KahveDummyServiceDao.swift */; };
+		B65A01522D9D4F8E0046854D /* KahveDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A01512D9D4F8E0046854D /* KahveDummyData.swift */; };
+		B65A01542D9D50F80046854D /* ServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A01532D9D50F80046854D /* ServiceImpl.swift */; };
+		B65E6EAE2D97E808009A6F13 /* Urun.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EAD2D97E808009A6F13 /* Urun.swift */; };
+		B65E6EB02D97E862009A6F13 /* UrunCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EAF2D97E862009A6F13 /* UrunCevap.swift */; };
+		B65E6EB22D97E887009A6F13 /* UrunKategori.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EB12D97E887009A6F13 /* UrunKategori.swift */; };
+		B65E6EB42D97E8E3009A6F13 /* KodUretCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EB32D97E8E3009A6F13 /* KodUretCevap.swift */; };
+		B65E6EB62D97E938009A6F13 /* CRUDCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EB52D97E938009A6F13 /* CRUDCevap.swift */; };
+		B65E6EB92D97EA97009A6F13 /* DogrulamaKoduOlustur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EB82D97EA97009A6F13 /* DogrulamaKoduOlustur.swift */; };
+		B65E6EBB2D97EB15009A6F13 /* IndirimYuzdeHesapla.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EBA2D97EB15009A6F13 /* IndirimYuzdeHesapla.swift */; };
+		B65E6EBE2D97ED4C009A6F13 /* UrunCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65E6EBD2D97ED4C009A6F13 /* UrunCollectionViewCell.swift */; };
+		B67066EC2D9ABCE3006A571F /* UrunlerimizVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67066EB2D9ABCE3006A571F /* UrunlerimizVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B657066B2D9685820044A2A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B657064C2D9685800044A2A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65706532D9685800044A2A5;
+			remoteInfo = KahveQROlusturucu;
+		};
+		B65706752D9685820044A2A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B657064C2D9685800044A2A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B65706532D9685800044A2A5;
+			remoteInfo = KahveQROlusturucu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B627CBED2D9FEFA9000F1AD1 /* UrunDetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunDetayVC.swift; sourceTree = "<group>"; };
+		B64284702D996BB700471C82 /* NumaraKayitDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumaraKayitDao.swift; sourceTree = "<group>"; };
+		B642847A2D996D8D00471C82 /* KahveHttpServiceDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveHttpServiceDao.swift; sourceTree = "<group>"; };
+		B642847D2D996F1500471C82 /* QRKodVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRKodVM.swift; sourceTree = "<group>"; };
+		B642847F2D996FEA00471C82 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		B65706542D9685800044A2A5 /* KahveQROlusturucu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KahveQROlusturucu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65706572D9685800044A2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B65706592D9685800044A2A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B657065B2D9685800044A2A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B657065E2D9685800044A2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B65706602D9685810044A2A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B65706632D9685820044A2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B65706652D9685820044A2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B657066A2D9685820044A2A5 /* KahveQROlusturucuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KahveQROlusturucuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B657066E2D9685820044A2A5 /* KahveQROlusturucuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveQROlusturucuTests.swift; sourceTree = "<group>"; };
+		B65706742D9685820044A2A5 /* KahveQROlusturucuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KahveQROlusturucuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65706782D9685820044A2A5 /* KahveQROlusturucuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveQROlusturucuUITests.swift; sourceTree = "<group>"; };
+		B657067A2D9685820044A2A5 /* KahveQROlusturucuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveQROlusturucuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B65706882D968B850044A2A5 /* QRKodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRKodVC.swift; sourceTree = "<group>"; };
+		B657068A2D968E8C0044A2A5 /* UrunlerimizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunlerimizVC.swift; sourceTree = "<group>"; };
+		B65A014C2D9D4CD80046854D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B65A014E2D9D4D7D0046854D /* KahveDummyServiceDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveDummyServiceDao.swift; sourceTree = "<group>"; };
+		B65A01512D9D4F8E0046854D /* KahveDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KahveDummyData.swift; sourceTree = "<group>"; };
+		B65A01532D9D50F80046854D /* ServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImpl.swift; sourceTree = "<group>"; };
+		B65E6EAD2D97E808009A6F13 /* Urun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urun.swift; sourceTree = "<group>"; };
+		B65E6EAF2D97E862009A6F13 /* UrunCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunCevap.swift; sourceTree = "<group>"; };
+		B65E6EB12D97E887009A6F13 /* UrunKategori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunKategori.swift; sourceTree = "<group>"; };
+		B65E6EB32D97E8E3009A6F13 /* KodUretCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodUretCevap.swift; sourceTree = "<group>"; };
+		B65E6EB52D97E938009A6F13 /* CRUDCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDCevap.swift; sourceTree = "<group>"; };
+		B65E6EB82D97EA97009A6F13 /* DogrulamaKoduOlustur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogrulamaKoduOlustur.swift; sourceTree = "<group>"; };
+		B65E6EBA2D97EB15009A6F13 /* IndirimYuzdeHesapla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndirimYuzdeHesapla.swift; sourceTree = "<group>"; };
+		B65E6EBD2D97ED4C009A6F13 /* UrunCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunCollectionViewCell.swift; sourceTree = "<group>"; };
+		B67066EB2D9ABCE3006A571F /* UrunlerimizVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunlerimizVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B65706512D9685800044A2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64284742D996CC500471C82 /* Alamofire in Frameworks */,
+				B64A0E962D9BEF1A005E252E /* AlamofireImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706672D9685820044A2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706712D9685820044A2A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B642846D2D996B8E00471C82 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B64284702D996BB700471C82 /* NumaraKayitDao.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B64284772D996D3F00471C82 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				B65A01502D9D4F790046854D /* dummy_service */,
+				B64284792D996D6600471C82 /* http_service */,
+				B65A014C2D9D4CD80046854D /* Service.swift */,
+				B65A01532D9D50F80046854D /* ServiceImpl.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		B64284792D996D6600471C82 /* http_service */ = {
+			isa = PBXGroup;
+			children = (
+				B642847A2D996D8D00471C82 /* KahveHttpServiceDao.swift */,
+			);
+			path = http_service;
+			sourceTree = "<group>";
+		};
+		B642847C2D996EFA00471C82 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B642847D2D996F1500471C82 /* QRKodVM.swift */,
+				B642847F2D996FEA00471C82 /* MainVM.swift */,
+				B67066EB2D9ABCE3006A571F /* UrunlerimizVM.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B657064B2D9685800044A2A5 = {
+			isa = PBXGroup;
+			children = (
+				B65706562D9685800044A2A5 /* KahveQROlusturucu */,
+				B657066D2D9685820044A2A5 /* KahveQROlusturucuTests */,
+				B65706772D9685820044A2A5 /* KahveQROlusturucuUITests */,
+				B65706552D9685800044A2A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B65706552D9685800044A2A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65706542D9685800044A2A5 /* KahveQROlusturucu.app */,
+				B657066A2D9685820044A2A5 /* KahveQROlusturucuTests.xctest */,
+				B65706742D9685820044A2A5 /* KahveQROlusturucuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B65706562D9685800044A2A5 /* KahveQROlusturucu */ = {
+			isa = PBXGroup;
+			children = (
+				B642847C2D996EFA00471C82 /* viewmodel */,
+				B64284772D996D3F00471C82 /* services */,
+				B642846D2D996B8E00471C82 /* data */,
+				B65E6EBC2D97ED3B009A6F13 /* adapter */,
+				B65E6EB72D97EA85009A6F13 /* usecases */,
+				B65E6EAC2D97E7CE009A6F13 /* model */,
+				B65706872D968B680044A2A5 /* view */,
+				B65706572D9685800044A2A5 /* AppDelegate.swift */,
+				B65706592D9685800044A2A5 /* SceneDelegate.swift */,
+				B657065D2D9685800044A2A5 /* Main.storyboard */,
+				B65706602D9685810044A2A5 /* Assets.xcassets */,
+				B65706622D9685820044A2A5 /* LaunchScreen.storyboard */,
+				B65706652D9685820044A2A5 /* Info.plist */,
+			);
+			path = KahveQROlusturucu;
+			sourceTree = "<group>";
+		};
+		B657066D2D9685820044A2A5 /* KahveQROlusturucuTests */ = {
+			isa = PBXGroup;
+			children = (
+				B657066E2D9685820044A2A5 /* KahveQROlusturucuTests.swift */,
+			);
+			path = KahveQROlusturucuTests;
+			sourceTree = "<group>";
+		};
+		B65706772D9685820044A2A5 /* KahveQROlusturucuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B65706782D9685820044A2A5 /* KahveQROlusturucuUITests.swift */,
+				B657067A2D9685820044A2A5 /* KahveQROlusturucuUITestsLaunchTests.swift */,
+			);
+			path = KahveQROlusturucuUITests;
+			sourceTree = "<group>";
+		};
+		B65706872D968B680044A2A5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B657065B2D9685800044A2A5 /* MainVC.swift */,
+				B65706882D968B850044A2A5 /* QRKodVC.swift */,
+				B657068A2D968E8C0044A2A5 /* UrunlerimizVC.swift */,
+				B627CBED2D9FEFA9000F1AD1 /* UrunDetayVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B65A01502D9D4F790046854D /* dummy_service */ = {
+			isa = PBXGroup;
+			children = (
+				B65A014E2D9D4D7D0046854D /* KahveDummyServiceDao.swift */,
+				B65A01512D9D4F8E0046854D /* KahveDummyData.swift */,
+			);
+			path = dummy_service;
+			sourceTree = "<group>";
+		};
+		B65E6EAC2D97E7CE009A6F13 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B65E6EAD2D97E808009A6F13 /* Urun.swift */,
+				B65E6EAF2D97E862009A6F13 /* UrunCevap.swift */,
+				B65E6EB12D97E887009A6F13 /* UrunKategori.swift */,
+				B65E6EB32D97E8E3009A6F13 /* KodUretCevap.swift */,
+				B65E6EB52D97E938009A6F13 /* CRUDCevap.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B65E6EB72D97EA85009A6F13 /* usecases */ = {
+			isa = PBXGroup;
+			children = (
+				B65E6EB82D97EA97009A6F13 /* DogrulamaKoduOlustur.swift */,
+				B65E6EBA2D97EB15009A6F13 /* IndirimYuzdeHesapla.swift */,
+			);
+			path = usecases;
+			sourceTree = "<group>";
+		};
+		B65E6EBC2D97ED3B009A6F13 /* adapter */ = {
+			isa = PBXGroup;
+			children = (
+				B65E6EBD2D97ED4C009A6F13 /* UrunCollectionViewCell.swift */,
+			);
+			path = adapter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B65706532D9685800044A2A5 /* KahveQROlusturucu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B657067E2D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucu" */;
+			buildPhases = (
+				B65706502D9685800044A2A5 /* Sources */,
+				B65706512D9685800044A2A5 /* Frameworks */,
+				B65706522D9685800044A2A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KahveQROlusturucu;
+			packageProductDependencies = (
+				B64284732D996CC500471C82 /* Alamofire */,
+				B64A0E952D9BEF1A005E252E /* AlamofireImage */,
+			);
+			productName = KahveQROlusturucu;
+			productReference = B65706542D9685800044A2A5 /* KahveQROlusturucu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B65706692D9685820044A2A5 /* KahveQROlusturucuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65706812D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucuTests" */;
+			buildPhases = (
+				B65706662D9685820044A2A5 /* Sources */,
+				B65706672D9685820044A2A5 /* Frameworks */,
+				B65706682D9685820044A2A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B657066C2D9685820044A2A5 /* PBXTargetDependency */,
+			);
+			name = KahveQROlusturucuTests;
+			productName = KahveQROlusturucuTests;
+			productReference = B657066A2D9685820044A2A5 /* KahveQROlusturucuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B65706732D9685820044A2A5 /* KahveQROlusturucuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B65706842D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucuUITests" */;
+			buildPhases = (
+				B65706702D9685820044A2A5 /* Sources */,
+				B65706712D9685820044A2A5 /* Frameworks */,
+				B65706722D9685820044A2A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B65706762D9685820044A2A5 /* PBXTargetDependency */,
+			);
+			name = KahveQROlusturucuUITests;
+			productName = KahveQROlusturucuUITests;
+			productReference = B65706742D9685820044A2A5 /* KahveQROlusturucuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B657064C2D9685800044A2A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B65706532D9685800044A2A5 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B65706692D9685820044A2A5 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B65706532D9685800044A2A5;
+					};
+					B65706732D9685820044A2A5 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B65706532D9685800044A2A5;
+					};
+				};
+			};
+			buildConfigurationList = B657064F2D9685800044A2A5 /* Build configuration list for PBXProject "KahveQROlusturucu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B657064B2D9685800044A2A5;
+			packageReferences = (
+				B64284722D996CC500471C82 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B64A0E942D9BEF1A005E252E /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = B65706552D9685800044A2A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B65706532D9685800044A2A5 /* KahveQROlusturucu */,
+				B65706692D9685820044A2A5 /* KahveQROlusturucuTests */,
+				B65706732D9685820044A2A5 /* KahveQROlusturucuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B65706522D9685800044A2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65706642D9685820044A2A5 /* LaunchScreen.storyboard in Resources */,
+				B65706612D9685820044A2A5 /* Assets.xcassets in Resources */,
+				B657065F2D9685800044A2A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706682D9685820044A2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706722D9685820044A2A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B65706502D9685800044A2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B657065C2D9685800044A2A5 /* MainVC.swift in Sources */,
+				B65A01542D9D50F80046854D /* ServiceImpl.swift in Sources */,
+				B64284802D996FEA00471C82 /* MainVM.swift in Sources */,
+				B65E6EB92D97EA97009A6F13 /* DogrulamaKoduOlustur.swift in Sources */,
+				B65E6EB62D97E938009A6F13 /* CRUDCevap.swift in Sources */,
+				B657068B2D968E8C0044A2A5 /* UrunlerimizVC.swift in Sources */,
+				B65A014F2D9D4D7D0046854D /* KahveDummyServiceDao.swift in Sources */,
+				B65706582D9685800044A2A5 /* AppDelegate.swift in Sources */,
+				B65E6EB42D97E8E3009A6F13 /* KodUretCevap.swift in Sources */,
+				B65A01522D9D4F8E0046854D /* KahveDummyData.swift in Sources */,
+				B65E6EAE2D97E808009A6F13 /* Urun.swift in Sources */,
+				B642847B2D996D8D00471C82 /* KahveHttpServiceDao.swift in Sources */,
+				B67066EC2D9ABCE3006A571F /* UrunlerimizVM.swift in Sources */,
+				B65A014D2D9D4CD80046854D /* Service.swift in Sources */,
+				B64284712D996BB700471C82 /* NumaraKayitDao.swift in Sources */,
+				B65E6EBB2D97EB15009A6F13 /* IndirimYuzdeHesapla.swift in Sources */,
+				B65E6EBE2D97ED4C009A6F13 /* UrunCollectionViewCell.swift in Sources */,
+				B65E6EB02D97E862009A6F13 /* UrunCevap.swift in Sources */,
+				B642847E2D996F1500471C82 /* QRKodVM.swift in Sources */,
+				B65E6EB22D97E887009A6F13 /* UrunKategori.swift in Sources */,
+				B65706892D968B850044A2A5 /* QRKodVC.swift in Sources */,
+				B657065A2D9685800044A2A5 /* SceneDelegate.swift in Sources */,
+				B627CBEE2D9FEFA9000F1AD1 /* UrunDetayVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706662D9685820044A2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B657066F2D9685820044A2A5 /* KahveQROlusturucuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65706702D9685820044A2A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B657067B2D9685820044A2A5 /* KahveQROlusturucuUITestsLaunchTests.swift in Sources */,
+				B65706792D9685820044A2A5 /* KahveQROlusturucuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B657066C2D9685820044A2A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65706532D9685800044A2A5 /* KahveQROlusturucu */;
+			targetProxy = B657066B2D9685820044A2A5 /* PBXContainerItemProxy */;
+		};
+		B65706762D9685820044A2A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B65706532D9685800044A2A5 /* KahveQROlusturucu */;
+			targetProxy = B65706752D9685820044A2A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B657065D2D9685800044A2A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B657065E2D9685800044A2A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B65706622D9685820044A2A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65706632D9685820044A2A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B657067C2D9685820044A2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B657067D2D9685820044A2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B657067F2D9685820044A2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KahveQROlusturucu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B65706802D9685820044A2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KahveQROlusturucu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B65706822D9685820044A2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KahveQROlusturucu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KahveQROlusturucu";
+			};
+			name = Debug;
+		};
+		B65706832D9685820044A2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KahveQROlusturucu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KahveQROlusturucu";
+			};
+			name = Release;
+		};
+		B65706852D9685820044A2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KahveQROlusturucu;
+			};
+			name = Debug;
+		};
+		B65706862D9685820044A2A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KahveQROlusturucuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KahveQROlusturucu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B657064F2D9685800044A2A5 /* Build configuration list for PBXProject "KahveQROlusturucu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B657067C2D9685820044A2A5 /* Debug */,
+				B657067D2D9685820044A2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B657067E2D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B657067F2D9685820044A2A5 /* Debug */,
+				B65706802D9685820044A2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65706812D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65706822D9685820044A2A5 /* Debug */,
+				B65706832D9685820044A2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B65706842D9685820044A2A5 /* Build configuration list for PBXNativeTarget "KahveQROlusturucuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B65706852D9685820044A2A5 /* Debug */,
+				B65706862D9685820044A2A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B64284722D996CC500471C82 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B64A0E942D9BEF1A005E252E /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B64284732D996CC500471C82 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64284722D996CC500471C82 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B64A0E952D9BEF1A005E252E /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64A0E942D9BEF1A005E252E /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B657064C2D9685800044A2A5 /* Project object */;
+}

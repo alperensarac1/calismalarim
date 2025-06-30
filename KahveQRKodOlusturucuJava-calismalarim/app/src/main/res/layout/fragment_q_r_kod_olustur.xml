@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00BEDCFB"
+    tools:context=".view.QRKodOlusturFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#BEDCFB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="30dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/idIVQrcode"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="#BEDCFB"
+            android:contentDescription="QR Code" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvKalanSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yenileme için kalan süre: 0 sn"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintLeft_toLeftOf="@id/btnSubelerimiz"
+        app:layout_constraintRight_toRightOf="@id/btnBiziPuanlayin"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Her 5 adet kahve alımınızda 6. Kahveniz Bizden !!"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+
+    <Button
+        android:id="@+id/btnSubelerimiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:text="Şubelerimiz"
+        app:layout_constraintTop_toBottomOf="@id/tvAciklama"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/textColor"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnBiziPuanlayin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="30dp"
+        android:text="Bizi Puanlayın"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@id/tvAciklama"
+        app:strokeColor="@color/textColor"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnRastgeleUrunGetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:text="Rastgele Ürün Getir"
+        app:layout_constraintTop_toBottomOf="@id/btnSubelerimiz"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/textColor"
+        app:strokeWidth="2dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

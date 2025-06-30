@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/giris_ekrani"
+    app:startDestination="@id/uygulamaAcilisEkraniFragment">
+    <fragment
+        android:id="@+id/kayitOlusturFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.giris_ekrani.KayitOlusturFragment"
+        android:label="fragment_kayit_olustur"
+        tools:layout="@layout/fragment_kayit_olustur" >
+        <action
+            android:id="@+id/toGuvenlikSorusuSecFragment"
+            app:destination="@id/guvenlikSorusuSecFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.giris_ekrani.GirisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/toSifremiUnuttumFragment"
+            app:destination="@id/sifremiUnuttumFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/guvenlikSorusuSecFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.giris_ekrani.GuvenlikSorusuSecFragment"
+        android:label="fragment_guvenlik_sorusu_sec"
+        tools:layout="@layout/fragment_guvenlik_sorusu_sec" >
+        <action
+            android:id="@+id/guvenlikToGirisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uygulamaAcilisEkraniFragment"
+        android:name="com.example.isletimsistemlericalismasikotlin.giris_ekrani.UygulamaAcilisEkraniFragment"
+        android:label="fragment_uygulama_acilis_ekrani"
+        tools:layout="@layout/fragment_uygulama_acilis_ekrani" >
+        <action
+            android:id="@+id/toKayitOlusturFragment"
+            app:destination="@id/kayitOlusturFragment" />
+        <action
+            android:id="@+id/toGirisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sifremiUnuttumFragment2"
+        android:name="com.example.isletimsistemlericalismasikotlin.giris_ekrani.SifremiUnuttumFragment"
+        android:label="fragment_sifremi_unuttum"
+        tools:layout="@layout/fragment_sifremi_unuttum" />
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Kisi" representedClassName="Kisi" syncable="YES" codeGenerationType="class">
+        <attribute name="kisi_ad" optional="YES" attributeType="String"/>
+        <attribute name="kisi_tel" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Not" representedClassName="Not" syncable="YES" codeGenerationType="class">
+        <attribute name="not_baslik" optional="YES" attributeType="String"/>
+        <attribute name="not_icerik" optional="YES" attributeType="String" defaultValueString="Boş"/>
+    </entity>
+</model>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qrkodolustur_graph"
+    app:startDestination="@id/QRKodOlusturFragment">
+
+    <fragment
+        android:id="@+id/QRKodOlusturFragment"
+        android:name="com.example.qrkodolusturucujava.view.QRKodOlusturFragment"
+        android:label="fragment_q_r_kod_olustur"
+        tools:layout="@layout/fragment_q_r_kod_olustur" />
+    <fragment
+        android:id="@+id/urunlerimizFragment2"
+        android:name="com.example.qrkodolusturucujava.view.UrunlerimizFragment"
+        android:label="fragment_urunlerimiz"
+        tools:layout="@layout/fragment_urunlerimiz" >
+        <action
+            android:id="@+id/toUrunDetay"
+            app:destination="@id/urunDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunDetayFragment"
+        android:name="com.example.qrkodolusturucujava.view.UrunDetayFragment"
+        android:label="fragment_urun_detay"
+        tools:layout="@layout/fragment_urun_detay" >
+        <argument
+            android:name="urun"
+            app:argType="com.example.qrkodolusturucujava.model.Urun" />
+    </fragment>
+</navigation>

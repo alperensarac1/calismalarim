@@ -1,0 +1,23 @@
+# isletimsistemicalismasidart
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+![resim1](https://github.com/user-attachments/assets/121a4c41-3740-4d70-a6c0-0fbdcb9fb65d)
+![resim2](https://github.com/user-attachments/assets/549fccdb-b8e0-4942-81a1-9ca5154e1670)
+![resim3](https://github.com/user-attachments/assets/c6231a98-d5b5-4f84-9901-e2f6e2cfb331)
+![resim4](https://github.com/user-attachments/assets/f99d168c-2d00-4adb-a058-a9850ebf32e1)
+![resim5](https://github.com/user-attachments/assets/020d657f-0679-4c9a-92fd-0d7ca1afba85)
+![resim6](https://github.com/user-attachments/assets/6a5a5249-a4c0-4c52-9c6d-994022f7e5a7)
+![resim7](https://github.com/user-attachments/assets/9feaf289-bd91-4c49-a9ff-04861839e3db)
