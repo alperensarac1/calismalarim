@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mesajlarFragment">
+
+    <fragment
+        android:id="@+id/mesajlarFragment"
+        android:name="com.example.chatkotlin.view.MesajlarFragment"
+        android:label="fragment_mesajlar"
+        tools:layout="@layout/fragment_mesajlar" >
+        <action
+            android:id="@+id/action_mesajlarFragment_to_singleChatFragment"
+            app:destination="@id/singleChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleChatFragment"
+        android:name="com.example.chatkotlin.view.SingleChatFragment"
+        android:label="SingleChatFragment" >
+        <argument
+            android:name="alici_id"
+            app:argType="integer" />
+
+        <argument
+            android:name="alici_ad"
+            app:argType="string" />
+    </fragment>
+</navigation>
