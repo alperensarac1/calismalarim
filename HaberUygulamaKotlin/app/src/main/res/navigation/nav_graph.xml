@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.haberuygulama.view.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_kategoriFragment"
+            app:destination="@id/kategoriFragment" />
+        <action
+            android:id="@+id/anasayfaToHaberDetay"
+            app:destination="@id/haberDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kategoriFragment"
+        android:name="com.example.haberuygulama.view.KategoriFragment"
+        android:label="fragment_kategori"
+        tools:layout="@layout/fragment_kategori" >
+        <argument
+            android:name="kategoriId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/kategoriToHaberDetay"
+            app:destination="@id/haberDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/haberDetayFragment"
+        android:name="com.example.haberuygulama.view.HaberDetayFragment"
+        android:label="fragment_haber_detay"
+        tools:layout="@layout/fragment_haber_detay" >
+        <argument
+            android:name="haber"
+            app:argType="com.example.haberuygulama.model.HaberModel" />
+        <action
+            android:id="@+id/haberDetayToHaberDetay"
+            app:destination="@id/haberDetayFragment" />
+    </fragment>
+</navigation>
