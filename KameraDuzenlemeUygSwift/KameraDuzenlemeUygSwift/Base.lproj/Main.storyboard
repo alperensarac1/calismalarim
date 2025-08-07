@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KameraDuzenlemeUygSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-Ug-zJv">
+                                <rect key="frame" x="0.0" y="59" width="393" height="470"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="470" id="fZo-vB-M9w"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5YB-Fj-u47">
+                                <rect key="frame" x="0.0" y="8" width="393" height="572"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="572" id="GdN-CB-5bG"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5hY-Yq-cJ4">
+                                <rect key="frame" x="25" y="605" width="343" height="188"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Im-D1-vAO">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="53.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Fotoğraf Çek"/>
+                                        <connections>
+                                            <action selector="btnFotografCek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vus-Ku-JIF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-Yn-v2K">
+                                        <rect key="frame" x="0.0" y="67.333333333333371" width="343" height="53.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Yazı Ekle"/>
+                                        <connections>
+                                            <action selector="btnYaziEkle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fG7-6h-VRr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-6z-Pfa">
+                                        <rect key="frame" x="0.0" y="134.66666666666663" width="343" height="53.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Kaydet"/>
+                                        <connections>
+                                            <action selector="btnKaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuT-3i-1So"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O3a-Ug-zJv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E1E-9a-RdB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5hY-Yq-cJ4" secondAttribute="trailing" constant="25" id="JwX-Ml-YSO"/>
+                            <constraint firstItem="O3a-Ug-zJv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KWI-Wj-Fby"/>
+                            <constraint firstItem="5hY-Yq-cJ4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Kzb-Zm-m3M"/>
+                            <constraint firstItem="5YB-Fj-u47" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mtf-F6-ACT"/>
+                            <constraint firstItem="5YB-Fj-u47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PUY-is-1gR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5hY-Yq-cJ4" secondAttribute="bottom" constant="25" id="U23-ew-63p"/>
+                            <constraint firstItem="5hY-Yq-cJ4" firstAttribute="top" secondItem="5YB-Fj-u47" secondAttribute="bottom" constant="25" id="vl9-iP-bsQ"/>
+                            <constraint firstItem="5YB-Fj-u47" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="yV6-IK-s2b"/>
+                            <constraint firstItem="O3a-Ug-zJv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zMu-Zj-cNW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgFotograf" destination="5YB-Fj-u47" id="8eU-iN-28A"/>
+                        <outlet property="prevFotograf" destination="O3a-Ug-zJv" id="epD-1q-uPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
