@@ -1,0 +1,13 @@
+<img width="396" height="861" alt="Ekran Resmi 2025-08-11 17 03 08" src="https://github.com/user-attachments/assets/2b447ed9-991a-4e2d-b22f-9b7bf335d92d" />
+<img width="396" height="861" alt="Ekran Resmi 2025-08-11 17 02 30" src="https://github.com/user-attachments/assets/c8fbccaa-cba1-43f6-af80-7e4ed7e8df17" />
+<img width="396" height="861" alt="Ekran Resmi 2025-08-11 17 02 20" src="https://github.com/user-attachments/assets/20c07b0e-41da-4696-867c-e70eb1086228" />
+<img width="396" height="861" alt="Ekran Resmi 2025-08-11 17 02 08" src="https://github.com/user-attachments/assets/22be9f87-5bec-4b9c-92e2-68befc1b9332" />
+<img width="1491" height="861" alt="Ekran Resmi 2025-08-11 17 00 43" src="https://github.com/user-attachments/assets/b2320ab3-8e17-49de-9d06-41f05bd20add" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 57 19" src="https://github.com/user-attachments/assets/2c7e9780-135b-4739-9163-12c947441831" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 57 08" src="https://github.com/user-attachments/assets/a9f74234-18e7-40aa-a1f4-62abd1d14edf" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 57 01" src="https://github.com/user-attachments/assets/418e907c-a55a-4658-be80-c956d980f77a" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 56 53" src="https://github.com/user-attachments/assets/bd9f53a6-24be-41ce-9663-58a6ab4ea850" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 56 47" src="https://github.com/user-attachments/assets/98018989-7412-46a0-bfad-19302f97f464" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 56 38" src="https://github.com/user-attachments/assets/7b745171-f44c-4398-bc6a-dcec01824019" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 56 32" src="https://github.com/user-attachments/assets/4001c131-bf85-4474-bf44-7ac8905a21cc" />
+<img width="408" height="861" alt="Ekran Resmi 2025-08-11 16 56 23" src="https://github.com/user-attachments/assets/bcfd06df-0480-4522-9060-0b957a14045b" />
