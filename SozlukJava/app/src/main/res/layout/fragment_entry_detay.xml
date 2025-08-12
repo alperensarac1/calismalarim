@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entryDetayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- Entry Başlığı -->
+    <TextView
+        android:id="@+id/tvEntryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başlık"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <!-- Yazar ve Tarih Satırı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tvEntryAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yazar Adı"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvEntryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025-08-08"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Entry İçeriği -->
+    <TextView
+        android:id="@+id/tvEntryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entry içeriği burada"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Yorumlar -->
+    <ListView
+        android:id="@+id/commentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Yorum Yaz -->
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yorum yaz..."
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnYorumGonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yorumu Gönder"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

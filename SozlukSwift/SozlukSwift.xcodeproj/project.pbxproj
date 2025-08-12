@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B64308D42E45E75D009C8B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308D32E45E75D009C8B05 /* AppDelegate.swift */; };
+		B64308D62E45E75D009C8B05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308D52E45E75D009C8B05 /* SceneDelegate.swift */; };
+		B64308D82E45E75D009C8B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308D72E45E75D009C8B05 /* ViewController.swift */; };
+		B64308DB2E45E75D009C8B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64308D92E45E75D009C8B05 /* Main.storyboard */; };
+		B64308DD2E45E75E009C8B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64308DC2E45E75E009C8B05 /* Assets.xcassets */; };
+		B64308E02E45E75E009C8B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64308DE2E45E75E009C8B05 /* LaunchScreen.storyboard */; };
+		B64308EB2E45E75E009C8B05 /* SozlukSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308EA2E45E75E009C8B05 /* SozlukSwiftTests.swift */; };
+		B64308F52E45E75E009C8B05 /* SozlukSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308F42E45E75E009C8B05 /* SozlukSwiftUITests.swift */; };
+		B64308F72E45E75E009C8B05 /* SozlukSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64308F62E45E75E009C8B05 /* SozlukSwiftUITestsLaunchTests.swift */; };
+		B64987CA2E473AC700409C48 /* KayitOlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987C92E473AC700409C48 /* KayitOlVC.swift */; };
+		B64987CC2E473B1300409C48 /* GirisYapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987CB2E473B1300409C48 /* GirisYapVC.swift */; };
+		B64987CE2E473B6400409C48 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987CD2E473B6400409C48 /* EntryCell.swift */; };
+		B64987D02E473BAC00409C48 /* GundemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987CF2E473BAC00409C48 /* GundemVC.swift */; };
+		B64987D22E473C1300409C48 /* BugunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987D12E473C1300409C48 /* BugunVC.swift */; };
+		B64987D42E473CBC00409C48 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987D32E473CBC00409C48 /* ProfilVC.swift */; };
+		B64987D62E473D3400409C48 /* EntryDetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987D52E473D3400409C48 /* EntryDetayVC.swift */; };
+		B64987D82E473D8300409C48 /* YorumlarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987D72E473D8300409C48 /* YorumlarCell.swift */; };
+		B64987DB2E473E7300409C48 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987DA2E473E7300409C48 /* SessionManager.swift */; };
+		B64987DE2E473EEC00409C48 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987DD2E473EEC00409C48 /* Model.swift */; };
+		B64987E12E473F1B00409C48 /* SozlukApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987E02E473F1B00409C48 /* SozlukApiService.swift */; };
+		B64987E42E473F5500409C48 /* SozlukDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987E32E473F5500409C48 /* SozlukDao.swift */; };
+		B64987E72E473FB600409C48 /* GirisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987E62E473FB600409C48 /* GirisViewModel.swift */; };
+		B64987E92E473FCF00409C48 /* KayitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987E82E473FCF00409C48 /* KayitViewModel.swift */; };
+		B64987EB2E4740BB00409C48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987EA2E4740BB00409C48 /* Extensions.swift */; };
+		B64987ED2E47436900409C48 /* GundemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987EC2E47436900409C48 /* GundemViewModel.swift */; };
+		B64987EF2E47437E00409C48 /* BugunViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987EE2E47437E00409C48 /* BugunViewModel.swift */; };
+		B64987F12E47439800409C48 /* ProfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987F02E47439800409C48 /* ProfilViewModel.swift */; };
+		B64987F32E4743AE00409C48 /* EntryEkleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987F22E4743AE00409C48 /* EntryEkleViewModel.swift */; };
+		B64987F52E47458F00409C48 /* EntryDetayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64987F42E47458F00409C48 /* EntryDetayViewModel.swift */; };
+		B6874ECD2E48A2CA00DA40D0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6874ECC2E48A2CA00DA40D0 /* Test.swift */; };
+		B6874ECF2E48A45900DA40D0 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6874ECE2E48A45900DA40D0 /* LoginTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64308E72E45E75E009C8B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64308C82E45E75D009C8B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64308CF2E45E75D009C8B05;
+			remoteInfo = SozlukSwift;
+		};
+		B64308F12E45E75E009C8B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64308C82E45E75D009C8B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64308CF2E45E75D009C8B05;
+			remoteInfo = SozlukSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B64308D02E45E75D009C8B05 /* SozlukSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SozlukSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64308D32E45E75D009C8B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B64308D52E45E75D009C8B05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B64308D72E45E75D009C8B05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B64308DA2E45E75D009C8B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B64308DC2E45E75E009C8B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B64308DF2E45E75E009C8B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B64308E12E45E75E009C8B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64308E62E45E75E009C8B05 /* SozlukSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SozlukSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64308EA2E45E75E009C8B05 /* SozlukSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukSwiftTests.swift; sourceTree = "<group>"; };
+		B64308F02E45E75E009C8B05 /* SozlukSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SozlukSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64308F42E45E75E009C8B05 /* SozlukSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukSwiftUITests.swift; sourceTree = "<group>"; };
+		B64308F62E45E75E009C8B05 /* SozlukSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B64987C92E473AC700409C48 /* KayitOlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitOlVC.swift; sourceTree = "<group>"; };
+		B64987CB2E473B1300409C48 /* GirisYapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirisYapVC.swift; sourceTree = "<group>"; };
+		B64987CD2E473B6400409C48 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		B64987CF2E473BAC00409C48 /* GundemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundemVC.swift; sourceTree = "<group>"; };
+		B64987D12E473C1300409C48 /* BugunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugunVC.swift; sourceTree = "<group>"; };
+		B64987D32E473CBC00409C48 /* ProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
+		B64987D52E473D3400409C48 /* EntryDetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetayVC.swift; sourceTree = "<group>"; };
+		B64987D72E473D8300409C48 /* YorumlarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YorumlarCell.swift; sourceTree = "<group>"; };
+		B64987DA2E473E7300409C48 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		B64987DD2E473EEC00409C48 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B64987E02E473F1B00409C48 /* SozlukApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukApiService.swift; sourceTree = "<group>"; };
+		B64987E32E473F5500409C48 /* SozlukDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukDao.swift; sourceTree = "<group>"; };
+		B64987E62E473FB600409C48 /* GirisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirisViewModel.swift; sourceTree = "<group>"; };
+		B64987E82E473FCF00409C48 /* KayitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitViewModel.swift; sourceTree = "<group>"; };
+		B64987EA2E4740BB00409C48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B64987EC2E47436900409C48 /* GundemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundemViewModel.swift; sourceTree = "<group>"; };
+		B64987EE2E47437E00409C48 /* BugunViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugunViewModel.swift; sourceTree = "<group>"; };
+		B64987F02E47439800409C48 /* ProfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewModel.swift; sourceTree = "<group>"; };
+		B64987F22E4743AE00409C48 /* EntryEkleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEkleViewModel.swift; sourceTree = "<group>"; };
+		B64987F42E47458F00409C48 /* EntryDetayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetayViewModel.swift; sourceTree = "<group>"; };
+		B6874ECC2E48A2CA00DA40D0 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B6874ECE2E48A45900DA40D0 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64308CD2E45E75D009C8B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308E32E45E75E009C8B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308ED2E45E75E009C8B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64308C72E45E75D009C8B05 = {
+			isa = PBXGroup;
+			children = (
+				B64308D22E45E75D009C8B05 /* SozlukSwift */,
+				B64308E92E45E75E009C8B05 /* SozlukSwiftTests */,
+				B64308F32E45E75E009C8B05 /* SozlukSwiftUITests */,
+				B64308D12E45E75D009C8B05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64308D12E45E75D009C8B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64308D02E45E75D009C8B05 /* SozlukSwift.app */,
+				B64308E62E45E75E009C8B05 /* SozlukSwiftTests.xctest */,
+				B64308F02E45E75E009C8B05 /* SozlukSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64308D22E45E75D009C8B05 /* SozlukSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B64987E52E473FA400409C48 /* viewmodel */,
+				B64987E22E473F4C00409C48 /* dao */,
+				B64987DF2E473F0A00409C48 /* servis */,
+				B64987DC2E473EDA00409C48 /* model */,
+				B64987D92E473E2F00409C48 /* util */,
+				B64987C82E473AB200409C48 /* view */,
+				B64308D32E45E75D009C8B05 /* AppDelegate.swift */,
+				B64308D52E45E75D009C8B05 /* SceneDelegate.swift */,
+				B64308D72E45E75D009C8B05 /* ViewController.swift */,
+				B64308D92E45E75D009C8B05 /* Main.storyboard */,
+				B64308DC2E45E75E009C8B05 /* Assets.xcassets */,
+				B64308DE2E45E75E009C8B05 /* LaunchScreen.storyboard */,
+				B64308E12E45E75E009C8B05 /* Info.plist */,
+				B6874ECC2E48A2CA00DA40D0 /* Test.swift */,
+			);
+			path = SozlukSwift;
+			sourceTree = "<group>";
+		};
+		B64308E92E45E75E009C8B05 /* SozlukSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B64308EA2E45E75E009C8B05 /* SozlukSwiftTests.swift */,
+				B6874ECE2E48A45900DA40D0 /* LoginTest.swift */,
+			);
+			path = SozlukSwiftTests;
+			sourceTree = "<group>";
+		};
+		B64308F32E45E75E009C8B05 /* SozlukSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B64308F42E45E75E009C8B05 /* SozlukSwiftUITests.swift */,
+				B64308F62E45E75E009C8B05 /* SozlukSwiftUITestsLaunchTests.swift */,
+			);
+			path = SozlukSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B64987C82E473AB200409C48 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B64987C92E473AC700409C48 /* KayitOlVC.swift */,
+				B64987CB2E473B1300409C48 /* GirisYapVC.swift */,
+				B64987CD2E473B6400409C48 /* EntryCell.swift */,
+				B64987CF2E473BAC00409C48 /* GundemVC.swift */,
+				B64987D12E473C1300409C48 /* BugunVC.swift */,
+				B64987D32E473CBC00409C48 /* ProfilVC.swift */,
+				B64987D52E473D3400409C48 /* EntryDetayVC.swift */,
+				B64987D72E473D8300409C48 /* YorumlarCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B64987D92E473E2F00409C48 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B64987DA2E473E7300409C48 /* SessionManager.swift */,
+				B64987EA2E4740BB00409C48 /* Extensions.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B64987DC2E473EDA00409C48 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B64987DD2E473EEC00409C48 /* Model.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B64987DF2E473F0A00409C48 /* servis */ = {
+			isa = PBXGroup;
+			children = (
+				B64987E02E473F1B00409C48 /* SozlukApiService.swift */,
+			);
+			path = servis;
+			sourceTree = "<group>";
+		};
+		B64987E22E473F4C00409C48 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				B64987E32E473F5500409C48 /* SozlukDao.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		B64987E52E473FA400409C48 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B64987E62E473FB600409C48 /* GirisViewModel.swift */,
+				B64987E82E473FCF00409C48 /* KayitViewModel.swift */,
+				B64987EC2E47436900409C48 /* GundemViewModel.swift */,
+				B64987EE2E47437E00409C48 /* BugunViewModel.swift */,
+				B64987F02E47439800409C48 /* ProfilViewModel.swift */,
+				B64987F22E4743AE00409C48 /* EntryEkleViewModel.swift */,
+				B64987F42E47458F00409C48 /* EntryDetayViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64308CF2E45E75D009C8B05 /* SozlukSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64308FA2E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwift" */;
+			buildPhases = (
+				B64308CC2E45E75D009C8B05 /* Sources */,
+				B64308CD2E45E75D009C8B05 /* Frameworks */,
+				B64308CE2E45E75D009C8B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SozlukSwift;
+			productName = SozlukSwift;
+			productReference = B64308D02E45E75D009C8B05 /* SozlukSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B64308E52E45E75E009C8B05 /* SozlukSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64308FD2E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwiftTests" */;
+			buildPhases = (
+				B64308E22E45E75E009C8B05 /* Sources */,
+				B64308E32E45E75E009C8B05 /* Frameworks */,
+				B64308E42E45E75E009C8B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64308E82E45E75E009C8B05 /* PBXTargetDependency */,
+			);
+			name = SozlukSwiftTests;
+			productName = SozlukSwiftTests;
+			productReference = B64308E62E45E75E009C8B05 /* SozlukSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B64308EF2E45E75E009C8B05 /* SozlukSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64309002E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwiftUITests" */;
+			buildPhases = (
+				B64308EC2E45E75E009C8B05 /* Sources */,
+				B64308ED2E45E75E009C8B05 /* Frameworks */,
+				B64308EE2E45E75E009C8B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64308F22E45E75E009C8B05 /* PBXTargetDependency */,
+			);
+			name = SozlukSwiftUITests;
+			productName = SozlukSwiftUITests;
+			productReference = B64308F02E45E75E009C8B05 /* SozlukSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64308C82E45E75D009C8B05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B64308CF2E45E75D009C8B05 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B64308E52E45E75E009C8B05 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64308CF2E45E75D009C8B05;
+					};
+					B64308EF2E45E75E009C8B05 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64308CF2E45E75D009C8B05;
+					};
+				};
+			};
+			buildConfigurationList = B64308CB2E45E75D009C8B05 /* Build configuration list for PBXProject "SozlukSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B64308C72E45E75D009C8B05;
+			productRefGroup = B64308D12E45E75D009C8B05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64308CF2E45E75D009C8B05 /* SozlukSwift */,
+				B64308E52E45E75E009C8B05 /* SozlukSwiftTests */,
+				B64308EF2E45E75E009C8B05 /* SozlukSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64308CE2E45E75D009C8B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64308E02E45E75E009C8B05 /* LaunchScreen.storyboard in Resources */,
+				B64308DD2E45E75E009C8B05 /* Assets.xcassets in Resources */,
+				B64308DB2E45E75D009C8B05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308E42E45E75E009C8B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308EE2E45E75E009C8B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64308CC2E45E75D009C8B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64987F32E4743AE00409C48 /* EntryEkleViewModel.swift in Sources */,
+				B64987CA2E473AC700409C48 /* KayitOlVC.swift in Sources */,
+				B64987EB2E4740BB00409C48 /* Extensions.swift in Sources */,
+				B64987E42E473F5500409C48 /* SozlukDao.swift in Sources */,
+				B64987D42E473CBC00409C48 /* ProfilVC.swift in Sources */,
+				B6874ECD2E48A2CA00DA40D0 /* Test.swift in Sources */,
+				B64987DB2E473E7300409C48 /* SessionManager.swift in Sources */,
+				B64987E92E473FCF00409C48 /* KayitViewModel.swift in Sources */,
+				B64308D82E45E75D009C8B05 /* ViewController.swift in Sources */,
+				B64987D62E473D3400409C48 /* EntryDetayVC.swift in Sources */,
+				B64987ED2E47436900409C48 /* GundemViewModel.swift in Sources */,
+				B64987D22E473C1300409C48 /* BugunVC.swift in Sources */,
+				B64987F52E47458F00409C48 /* EntryDetayViewModel.swift in Sources */,
+				B64987DE2E473EEC00409C48 /* Model.swift in Sources */,
+				B64308D42E45E75D009C8B05 /* AppDelegate.swift in Sources */,
+				B64987EF2E47437E00409C48 /* BugunViewModel.swift in Sources */,
+				B64987E72E473FB600409C48 /* GirisViewModel.swift in Sources */,
+				B64987D82E473D8300409C48 /* YorumlarCell.swift in Sources */,
+				B64987D02E473BAC00409C48 /* GundemVC.swift in Sources */,
+				B64987F12E47439800409C48 /* ProfilViewModel.swift in Sources */,
+				B64987E12E473F1B00409C48 /* SozlukApiService.swift in Sources */,
+				B64308D62E45E75D009C8B05 /* SceneDelegate.swift in Sources */,
+				B64987CE2E473B6400409C48 /* EntryCell.swift in Sources */,
+				B64987CC2E473B1300409C48 /* GirisYapVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308E22E45E75E009C8B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64308EB2E45E75E009C8B05 /* SozlukSwiftTests.swift in Sources */,
+				B6874ECF2E48A45900DA40D0 /* LoginTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64308EC2E45E75E009C8B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64308F72E45E75E009C8B05 /* SozlukSwiftUITestsLaunchTests.swift in Sources */,
+				B64308F52E45E75E009C8B05 /* SozlukSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B64308E82E45E75E009C8B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64308CF2E45E75D009C8B05 /* SozlukSwift */;
+			targetProxy = B64308E72E45E75E009C8B05 /* PBXContainerItemProxy */;
+		};
+		B64308F22E45E75E009C8B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64308CF2E45E75D009C8B05 /* SozlukSwift */;
+			targetProxy = B64308F12E45E75E009C8B05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B64308D92E45E75D009C8B05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64308DA2E45E75D009C8B05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B64308DE2E45E75E009C8B05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64308DF2E45E75E009C8B05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B64308F82E45E75E009C8B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B64308F92E45E75E009C8B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64308FB2E45E75E009C8B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SozlukSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B64308FC2E45E75E009C8B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SozlukSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B64308FE2E45E75E009C8B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SozlukSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SozlukSwift";
+			};
+			name = Debug;
+		};
+		B64308FF2E45E75E009C8B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SozlukSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SozlukSwift";
+			};
+			name = Release;
+		};
+		B64309012E45E75E009C8B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SozlukSwift;
+			};
+			name = Debug;
+		};
+		B64309022E45E75E009C8B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.SozlukSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SozlukSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64308CB2E45E75D009C8B05 /* Build configuration list for PBXProject "SozlukSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64308F82E45E75E009C8B05 /* Debug */,
+				B64308F92E45E75E009C8B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64308FA2E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64308FB2E45E75E009C8B05 /* Debug */,
+				B64308FC2E45E75E009C8B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64308FD2E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64308FE2E45E75E009C8B05 /* Debug */,
+				B64308FF2E45E75E009C8B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64309002E45E75E009C8B05 /* Build configuration list for PBXNativeTarget "SozlukSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64309012E45E75E009C8B05 /* Debug */,
+				B64309022E45E75E009C8B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B64308C82E45E75D009C8B05 /* Project object */;
+}

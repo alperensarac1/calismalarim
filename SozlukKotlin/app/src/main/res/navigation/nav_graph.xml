@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/girisFragment">
+
+    <!-- GİRİŞ -->
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.example.sozlukkotlin.view.GirisFragment"
+        android:label="Giriş">
+        <action
+            android:id="@+id/action_girisFragment_to_kayitFragment"
+            app:destination="@id/kayitFragment" />
+        <action
+            android:id="@+id/action_girisFragment_to_anaSayfaFragment"
+            app:destination="@id/anaSayfaFragment"
+            app:popUpTo="@id/girisFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- KAYIT -->
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.example.sozlukkotlin.view.KayitFragment"
+        android:label="Kayıt">
+        <action
+            android:id="@+id/action_kayitFragment_to_girisFragment"
+            app:destination="@id/girisFragment"
+            app:popUpTo="@id/kayitFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ANA SAYFA -->
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.sozlukkotlin.view.AnasayfaFragment"
+        android:label="Ana Sayfa">
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_entryDetayFragment"
+            app:destination="@id/entryDetayFragment">
+            <argument
+                android:name="entryId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_bugunFragment"
+            app:destination="@id/bugunFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_entryEkleFragment"
+            app:destination="@id/entryEkleFragment" />
+    </fragment>
+
+    <!-- BUGÜN -->
+    <fragment
+        android:id="@+id/bugunFragment"
+        android:name="com.example.sozlukkotlin.view.BugunFragment"
+        android:label="Bugün">
+        <action
+            android:id="@+id/action_bugunFragment_to_entryDetayFragment"
+            app:destination="@id/entryDetayFragment">
+            <argument
+                android:name="entryId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <!-- PROFİL -->
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.sozlukkotlin.view.ProfilFragment"
+        android:label="Profil">
+        <action
+            android:id="@+id/action_profilFragment_to_entryDetayFragment"
+            app:destination="@id/entryDetayFragment">
+            <argument
+                android:name="entryId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_profilFragment_to_girisFragment"
+            app:destination="@id/girisFragment"
+            app:popUpTo="@id/girisFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ENTRY DETAY -->
+    <fragment
+        android:id="@+id/entryDetayFragment"
+        android:name="com.example.sozlukkotlin.view.EntryDetayFragment"
+        android:label="Entry Detay">
+        <argument
+            android:name="entryId"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- ENTRY EKLE -->
+    <fragment
+        android:id="@+id/entryEkleFragment"
+        android:name="com.example.sozlukkotlin.view.EntryEkleFragment"
+        android:label="Entry Ekle" />
+</navigation>
