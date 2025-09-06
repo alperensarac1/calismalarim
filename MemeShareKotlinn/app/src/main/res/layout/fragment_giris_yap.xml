@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.GirisYapFragment">
+
+    <TextView
+        android:id="@+id/tvKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="200dp"
+        android:text="Kullanıcı Adınızı Giriniz"/>
+    <EditText
+        android:id="@+id/etKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:layout_marginHorizontal="48dp"
+        app:layout_constraintTop_toBottomOf="@id/tvKullaniciAdi"
+        app:layout_constraintLeft_toLeftOf="@id/tvKullaniciAdi"
+        android:layout_marginTop="18dp"
+        android:hint="Kullanıcı Adınızı Giriniz"/>
+    <TextView
+        android:id="@+id/tvSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/tvKullaniciAdi"
+        app:layout_constraintTop_toBottomOf="@id/etKullaniciAdi"
+        android:layout_marginTop="18dp"
+        android:text="Şifrenizi Giriniz"/>
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/tvSifre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="18dp"
+        android:inputType="textPassword"
+        android:hint="Şifrenizi Giriniz"/>
+
+    <Button
+        android:id="@+id/btnGirisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="GİRİŞ YAP"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintLeft_toLeftOf="@id/etSifre"
+        app:layout_constraintRight_toRightOf="@id/etSifre"
+        app:layout_constraintTop_toBottomOf="@id/etSifre"
+        android:layout_marginTop="48dp"/>
+    <TextView
+        android:id="@+id/tvKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:text="Kayıt Ol"
+        app:layout_constraintLeft_toRightOf="@id/btnGirisYap"
+        app:layout_constraintTop_toTopOf="@id/btnGirisYap"
+        app:layout_constraintBottom_toBottomOf="@id/btnGirisYap"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

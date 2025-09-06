@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOda"
+        android:layout_width="match_parent"
+        android:elevation="20dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oda Kodu Gir"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"/>
+            <EditText
+                android:id="@+id/etOdaKodu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                android:hint="Oda Kodunu Giriniz"
+                android:background="@drawable/edittext_background"
+                android:inputType="number"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oda Oluştur"
+                    android:textColor="#E91E63"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="48dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btnOdaOlustur"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="144dp"
+                    android:text="Odaya Gir"
+                    android:backgroundTint="#00BCD4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
