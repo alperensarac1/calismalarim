@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DosyaPaylasimSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) Dosya Yükleme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVJ-1Q-afP">
+                                <rect key="frame" x="37" y="84" width="162" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="79r-hj-40n"/>
+                                    <constraint firstAttribute="height" constant="26" id="7dY-Az-LKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seçili Dosya Yok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUD-P0-ozb">
+                                <rect key="frame" x="37" y="120" width="106" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Rqb-gr-o8K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qz-I7-LlH">
+                                <rect key="frame" x="37" y="168" width="311" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dosya Seç"/>
+                                <connections>
+                                    <action selector="btnDosyaSec:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNs-4t-VQv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyh-3T-mQU">
+                                <rect key="frame" x="37" y="216" width="311" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Yükle"/>
+                                <connections>
+                                    <action selector="btnDosyaYukle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nr3-Gc-Gw8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yüklenen dosyalar 14 gün otomatik olarak sonra silinir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-ST-cUe">
+                                <rect key="frame" x="20" y="295" width="345" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Kodu Gir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLi-F5-xaN">
+                                <rect key="frame" x="37" y="344" width="103" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="XXXXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9E-dl-de5">
+                                <rect key="frame" x="28" y="398" width="328" height="31.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31.329999999999998" id="t1h-4g-y3j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4n-7x-dlV">
+                                <rect key="frame" x="37" y="470" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BFN-y3-pDm"/>
+                                    <constraint firstAttribute="width" constant="155" id="Epb-pM-XwF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Linki Kontrol Et"/>
+                                <connections>
+                                    <action selector="btnLinkiKontrolEt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YG1-6T-exV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-dL-QJr">
+                                <rect key="frame" x="201" y="470" width="155" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="kTB-Bb-4U7"/>
+                                    <constraint firstAttribute="height" constant="35" id="u8z-9w-972"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="İndir"/>
+                                <connections>
+                                    <action selector="btnIndir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ikS-qR-0tb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WxE-PP-Wrp">
+                                <rect key="frame" x="28" y="536" width="320" height="166"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WxE-PP-Wrp" secondAttribute="bottom" constant="116" id="2PO-jA-tk9"/>
+                            <constraint firstItem="f9E-dl-de5" firstAttribute="top" secondItem="WLi-F5-xaN" secondAttribute="bottom" constant="28" id="2VD-eJ-IMa"/>
+                            <constraint firstItem="WLi-F5-xaN" firstAttribute="top" secondItem="WNI-ST-cUe" secondAttribute="bottom" constant="32" id="37u-yN-Knt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Qz-I7-LlH" secondAttribute="trailing" constant="45" id="4SF-yw-Tdx"/>
+                            <constraint firstItem="WxE-PP-Wrp" firstAttribute="top" secondItem="Cz9-dL-QJr" secondAttribute="bottom" constant="31" id="7hE-7W-TKl"/>
+                            <constraint firstItem="WNI-ST-cUe" firstAttribute="top" secondItem="vyh-3T-mQU" secondAttribute="bottom" constant="44" id="7nl-V8-glx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WNI-ST-cUe" secondAttribute="trailing" constant="28" id="85a-na-WHk"/>
+                            <constraint firstItem="AVJ-1Q-afP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="8wx-78-6E1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cz9-dL-QJr" secondAttribute="trailing" constant="37" id="FRu-Vt-DLB"/>
+                            <constraint firstItem="VUD-P0-ozb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="GJp-VM-jVh"/>
+                            <constraint firstItem="WNI-ST-cUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Lhr-Vk-Nz2"/>
+                            <constraint firstItem="a4n-7x-dlV" firstAttribute="top" secondItem="f9E-dl-de5" secondAttribute="bottom" constant="40.666666666666686" id="PQa-7Z-Tp7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WLi-F5-xaN" secondAttribute="trailing" constant="253" id="PkM-Ye-AQT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WxE-PP-Wrp" secondAttribute="trailing" constant="45" id="Q71-Ly-jXz"/>
+                            <constraint firstItem="WLi-F5-xaN" firstAttribute="top" secondItem="WNI-ST-cUe" secondAttribute="bottom" constant="32" id="Swu-44-cr7"/>
+                            <constraint firstItem="vyh-3T-mQU" firstAttribute="top" secondItem="6Qz-I7-LlH" secondAttribute="bottom" constant="13" id="Y5d-gp-kr5"/>
+                            <constraint firstItem="Cz9-dL-QJr" firstAttribute="leading" secondItem="a4n-7x-dlV" secondAttribute="trailing" constant="10" id="b0T-jc-UXp"/>
+                            <constraint firstItem="vyh-3T-mQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="cJV-vz-3ID"/>
+                            <constraint firstItem="6Qz-I7-LlH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fOp-br-Uo2"/>
+                            <constraint firstItem="f9E-dl-de5" firstAttribute="top" secondItem="WLi-F5-xaN" secondAttribute="bottom" constant="28" id="h9L-hq-2a9"/>
+                            <constraint firstItem="f9E-dl-de5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="hlN-46-szs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9E-dl-de5" secondAttribute="trailing" constant="37" id="iiU-kh-bcU"/>
+                            <constraint firstItem="WxE-PP-Wrp" firstAttribute="top" secondItem="a4n-7x-dlV" secondAttribute="bottom" constant="31" id="jY2-RN-aAj"/>
+                            <constraint firstItem="WLi-F5-xaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="kkg-AH-XF5"/>
+                            <constraint firstItem="VUD-P0-ozb" firstAttribute="top" secondItem="AVJ-1Q-afP" secondAttribute="bottom" constant="10" id="kyf-Z0-FGL"/>
+                            <constraint firstItem="6Qz-I7-LlH" firstAttribute="top" secondItem="VUD-P0-ozb" secondAttribute="bottom" constant="31" id="lpi-zX-GPg"/>
+                            <constraint firstItem="AVJ-1Q-afP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="oJp-C6-xEG"/>
+                            <constraint firstItem="vyh-3T-mQU" firstAttribute="top" secondItem="6Qz-I7-LlH" secondAttribute="bottom" constant="13" id="rC3-dg-J4k"/>
+                            <constraint firstItem="WxE-PP-Wrp" firstAttribute="top" secondItem="a4n-7x-dlV" secondAttribute="bottom" constant="31" id="rU9-xC-QM2"/>
+                            <constraint firstItem="a4n-7x-dlV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="sKx-Zm-d0Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyh-3T-mQU" secondAttribute="trailing" constant="45" id="t0t-gp-HiM"/>
+                            <constraint firstItem="WNI-ST-cUe" firstAttribute="top" secondItem="vyh-3T-mQU" secondAttribute="bottom" constant="44" id="uqI-4x-7z6"/>
+                            <constraint firstItem="6Qz-I7-LlH" firstAttribute="top" secondItem="VUD-P0-ozb" secondAttribute="bottom" constant="31" id="xpL-CD-t5X"/>
+                            <constraint firstItem="WxE-PP-Wrp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="zdZ-jJ-Jdr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etKod" destination="f9E-dl-de5" id="sJa-Nt-Rrj"/>
+                        <outlet property="tvKontrolSonucu" destination="WxE-PP-Wrp" id="NCr-HX-c1J"/>
+                        <outlet property="tvSeciliDosya" destination="VUD-P0-ozb" id="qyU-n4-NnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B69EE1212E6DCB0200FAB088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1202E6DCB0200FAB088 /* AppDelegate.swift */; };
+		B69EE1232E6DCB0200FAB088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1222E6DCB0200FAB088 /* SceneDelegate.swift */; };
+		B69EE1252E6DCB0200FAB088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1242E6DCB0200FAB088 /* ViewController.swift */; };
+		B69EE1282E6DCB0200FAB088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69EE1262E6DCB0200FAB088 /* Main.storyboard */; };
+		B69EE12A2E6DCB0400FAB088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69EE1292E6DCB0400FAB088 /* Assets.xcassets */; };
+		B69EE12D2E6DCB0400FAB088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69EE12B2E6DCB0400FAB088 /* LaunchScreen.storyboard */; };
+		B69EE1382E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1372E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.swift */; };
+		B69EE1422E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1412E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.swift */; };
+		B69EE1442E6DCB0400FAB088 /* DosyaPaylasimSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1432E6DCB0400FAB088 /* DosyaPaylasimSwiftUITestsLaunchTests.swift */; };
+		B69EE1522E6DCE1000FAB088 /* UploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1512E6DCE1000FAB088 /* UploadResponse.swift */; };
+		B69EE1552E6DCE1F00FAB088 /* LinkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1542E6DCE1F00FAB088 /* LinkResponse.swift */; };
+		B69EE1582E6DCE5900FAB088 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EE1572E6DCE5900FAB088 /* ApiService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B69EE1342E6DCB0400FAB088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B69EE1152E6DCB0200FAB088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69EE11C2E6DCB0200FAB088;
+			remoteInfo = DosyaPaylasimSwift;
+		};
+		B69EE13E2E6DCB0400FAB088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B69EE1152E6DCB0200FAB088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69EE11C2E6DCB0200FAB088;
+			remoteInfo = DosyaPaylasimSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B69EE11D2E6DCB0200FAB088 /* DosyaPaylasimSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DosyaPaylasimSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69EE1202E6DCB0200FAB088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B69EE1222E6DCB0200FAB088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B69EE1242E6DCB0200FAB088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B69EE1272E6DCB0200FAB088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B69EE1292E6DCB0400FAB088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B69EE12C2E6DCB0400FAB088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B69EE12E2E6DCB0400FAB088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69EE1332E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DosyaPaylasimSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69EE1372E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosyaPaylasimSwiftTests.swift; sourceTree = "<group>"; };
+		B69EE13D2E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DosyaPaylasimSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69EE1412E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosyaPaylasimSwiftUITests.swift; sourceTree = "<group>"; };
+		B69EE1432E6DCB0400FAB088 /* DosyaPaylasimSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosyaPaylasimSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B69EE1512E6DCE1000FAB088 /* UploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResponse.swift; sourceTree = "<group>"; };
+		B69EE1542E6DCE1F00FAB088 /* LinkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkResponse.swift; sourceTree = "<group>"; };
+		B69EE1572E6DCE5900FAB088 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69EE11A2E6DCB0200FAB088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE1302E6DCB0400FAB088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE13A2E6DCB0400FAB088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B69EE1142E6DCB0200FAB088 = {
+			isa = PBXGroup;
+			children = (
+				B69EE11F2E6DCB0200FAB088 /* DosyaPaylasimSwift */,
+				B69EE1362E6DCB0400FAB088 /* DosyaPaylasimSwiftTests */,
+				B69EE1402E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests */,
+				B69EE11E2E6DCB0200FAB088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B69EE11E2E6DCB0200FAB088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE11D2E6DCB0200FAB088 /* DosyaPaylasimSwift.app */,
+				B69EE1332E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.xctest */,
+				B69EE13D2E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B69EE11F2E6DCB0200FAB088 /* DosyaPaylasimSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE1562E6DCE4400FAB088 /* service */,
+				B69EE1502E6DCDFB00FAB088 /* model */,
+				B69EE1202E6DCB0200FAB088 /* AppDelegate.swift */,
+				B69EE1222E6DCB0200FAB088 /* SceneDelegate.swift */,
+				B69EE1242E6DCB0200FAB088 /* ViewController.swift */,
+				B69EE1262E6DCB0200FAB088 /* Main.storyboard */,
+				B69EE1292E6DCB0400FAB088 /* Assets.xcassets */,
+				B69EE12B2E6DCB0400FAB088 /* LaunchScreen.storyboard */,
+				B69EE12E2E6DCB0400FAB088 /* Info.plist */,
+			);
+			path = DosyaPaylasimSwift;
+			sourceTree = "<group>";
+		};
+		B69EE1362E6DCB0400FAB088 /* DosyaPaylasimSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE1372E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.swift */,
+			);
+			path = DosyaPaylasimSwiftTests;
+			sourceTree = "<group>";
+		};
+		B69EE1402E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE1412E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.swift */,
+				B69EE1432E6DCB0400FAB088 /* DosyaPaylasimSwiftUITestsLaunchTests.swift */,
+			);
+			path = DosyaPaylasimSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B69EE1502E6DCDFB00FAB088 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE1512E6DCE1000FAB088 /* UploadResponse.swift */,
+				B69EE1542E6DCE1F00FAB088 /* LinkResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B69EE1562E6DCE4400FAB088 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B69EE1572E6DCE5900FAB088 /* ApiService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69EE11C2E6DCB0200FAB088 /* DosyaPaylasimSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69EE1472E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwift" */;
+			buildPhases = (
+				B69EE1192E6DCB0200FAB088 /* Sources */,
+				B69EE11A2E6DCB0200FAB088 /* Frameworks */,
+				B69EE11B2E6DCB0200FAB088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DosyaPaylasimSwift;
+			productName = DosyaPaylasimSwift;
+			productReference = B69EE11D2E6DCB0200FAB088 /* DosyaPaylasimSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B69EE1322E6DCB0400FAB088 /* DosyaPaylasimSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69EE14A2E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwiftTests" */;
+			buildPhases = (
+				B69EE12F2E6DCB0400FAB088 /* Sources */,
+				B69EE1302E6DCB0400FAB088 /* Frameworks */,
+				B69EE1312E6DCB0400FAB088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69EE1352E6DCB0400FAB088 /* PBXTargetDependency */,
+			);
+			name = DosyaPaylasimSwiftTests;
+			productName = DosyaPaylasimSwiftTests;
+			productReference = B69EE1332E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B69EE13C2E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69EE14D2E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwiftUITests" */;
+			buildPhases = (
+				B69EE1392E6DCB0400FAB088 /* Sources */,
+				B69EE13A2E6DCB0400FAB088 /* Frameworks */,
+				B69EE13B2E6DCB0400FAB088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69EE13F2E6DCB0400FAB088 /* PBXTargetDependency */,
+			);
+			name = DosyaPaylasimSwiftUITests;
+			productName = DosyaPaylasimSwiftUITests;
+			productReference = B69EE13D2E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B69EE1152E6DCB0200FAB088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B69EE11C2E6DCB0200FAB088 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B69EE1322E6DCB0400FAB088 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B69EE11C2E6DCB0200FAB088;
+					};
+					B69EE13C2E6DCB0400FAB088 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B69EE11C2E6DCB0200FAB088;
+					};
+				};
+			};
+			buildConfigurationList = B69EE1182E6DCB0200FAB088 /* Build configuration list for PBXProject "DosyaPaylasimSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B69EE1142E6DCB0200FAB088;
+			productRefGroup = B69EE11E2E6DCB0200FAB088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69EE11C2E6DCB0200FAB088 /* DosyaPaylasimSwift */,
+				B69EE1322E6DCB0400FAB088 /* DosyaPaylasimSwiftTests */,
+				B69EE13C2E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69EE11B2E6DCB0200FAB088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69EE12D2E6DCB0400FAB088 /* LaunchScreen.storyboard in Resources */,
+				B69EE12A2E6DCB0400FAB088 /* Assets.xcassets in Resources */,
+				B69EE1282E6DCB0200FAB088 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE1312E6DCB0400FAB088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE13B2E6DCB0400FAB088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B69EE1192E6DCB0200FAB088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69EE1252E6DCB0200FAB088 /* ViewController.swift in Sources */,
+				B69EE1552E6DCE1F00FAB088 /* LinkResponse.swift in Sources */,
+				B69EE1582E6DCE5900FAB088 /* ApiService.swift in Sources */,
+				B69EE1212E6DCB0200FAB088 /* AppDelegate.swift in Sources */,
+				B69EE1232E6DCB0200FAB088 /* SceneDelegate.swift in Sources */,
+				B69EE1522E6DCE1000FAB088 /* UploadResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE12F2E6DCB0400FAB088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69EE1382E6DCB0400FAB088 /* DosyaPaylasimSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69EE1392E6DCB0400FAB088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69EE1422E6DCB0400FAB088 /* DosyaPaylasimSwiftUITests.swift in Sources */,
+				B69EE1442E6DCB0400FAB088 /* DosyaPaylasimSwiftUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B69EE1352E6DCB0400FAB088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69EE11C2E6DCB0200FAB088 /* DosyaPaylasimSwift */;
+			targetProxy = B69EE1342E6DCB0400FAB088 /* PBXContainerItemProxy */;
+		};
+		B69EE13F2E6DCB0400FAB088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69EE11C2E6DCB0200FAB088 /* DosyaPaylasimSwift */;
+			targetProxy = B69EE13E2E6DCB0400FAB088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B69EE1262E6DCB0200FAB088 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69EE1272E6DCB0200FAB088 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B69EE12B2E6DCB0400FAB088 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69EE12C2E6DCB0400FAB088 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B69EE1452E6DCB0400FAB088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B69EE1462E6DCB0400FAB088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B69EE1482E6DCB0400FAB088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DosyaPaylasimSwift/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Galeri iznine ihtiyaç var";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B69EE1492E6DCB0400FAB088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DosyaPaylasimSwift/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Galeri iznine ihtiyaç var";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B69EE14B2E6DCB0400FAB088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DosyaPaylasimSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DosyaPaylasimSwift";
+			};
+			name = Debug;
+		};
+		B69EE14C2E6DCB0400FAB088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DosyaPaylasimSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DosyaPaylasimSwift";
+			};
+			name = Release;
+		};
+		B69EE14E2E6DCB0400FAB088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DosyaPaylasimSwift;
+			};
+			name = Debug;
+		};
+		B69EE14F2E6DCB0400FAB088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.DosyaPaylasimSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DosyaPaylasimSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B69EE1182E6DCB0200FAB088 /* Build configuration list for PBXProject "DosyaPaylasimSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69EE1452E6DCB0400FAB088 /* Debug */,
+				B69EE1462E6DCB0400FAB088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69EE1472E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69EE1482E6DCB0400FAB088 /* Debug */,
+				B69EE1492E6DCB0400FAB088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69EE14A2E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69EE14B2E6DCB0400FAB088 /* Debug */,
+				B69EE14C2E6DCB0400FAB088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69EE14D2E6DCB0400FAB088 /* Build configuration list for PBXNativeTarget "DosyaPaylasimSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69EE14E2E6DCB0400FAB088 /* Debug */,
+				B69EE14F2E6DCB0400FAB088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B69EE1152E6DCB0200FAB088 /* Project object */;
+}
