@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6876FDB2E797C3900FF5AC3 /* CookieClickerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6876FDA2E797C3900FF5AC3 /* CookieClickerSwiftUIApp.swift */; };
+		B6876FDD2E797C3900FF5AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6876FDC2E797C3900FF5AC3 /* ContentView.swift */; };
+		B6876FDF2E797C3A00FF5AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6876FDE2E797C3A00FF5AC3 /* Assets.xcassets */; };
+		B6876FE22E797C3A00FF5AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6876FE12E797C3A00FF5AC3 /* Preview Assets.xcassets */; };
+		B6876FEC2E797C3A00FF5AC3 /* CookieClickerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6876FEB2E797C3A00FF5AC3 /* CookieClickerSwiftUITests.swift */; };
+		B6876FF62E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6876FF52E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.swift */; };
+		B6876FF82E797C3A00FF5AC3 /* CookieClickerSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6876FF72E797C3A00FF5AC3 /* CookieClickerSwiftUIUITestsLaunchTests.swift */; };
+		B68770062E797C8A00FF5AC3 /* Upgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68770052E797C8A00FF5AC3 /* Upgrade.swift */; };
+		B68770082E797CA600FF5AC3 /* PrestigePerk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68770072E797CA600FF5AC3 /* PrestigePerk.swift */; };
+		B687700A2E797CC100FF5AC3 /* PerkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68770092E797CC100FF5AC3 /* PerkStore.swift */; };
+		B687700C2E797CD100FF5AC3 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687700B2E797CD100FF5AC3 /* GameState.swift */; };
+		B687700F2E797CF500FF5AC3 /* Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687700E2E797CF500FF5AC3 /* Persist.swift */; };
+		B68770122E797D1E00FF5AC3 /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68770112E797D1E00FF5AC3 /* GameStore.swift */; };
+		B68770142E797D5600FF5AC3 /* PrestigeShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68770132E797D5600FF5AC3 /* PrestigeShopView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6876FE82E797C3A00FF5AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6876FCF2E797C3800FF5AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6876FD62E797C3900FF5AC3;
+			remoteInfo = CookieClickerSwiftUI;
+		};
+		B6876FF22E797C3A00FF5AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6876FCF2E797C3800FF5AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6876FD62E797C3900FF5AC3;
+			remoteInfo = CookieClickerSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6876FD72E797C3900FF5AC3 /* CookieClickerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieClickerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6876FDA2E797C3900FF5AC3 /* CookieClickerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieClickerSwiftUIApp.swift; sourceTree = "<group>"; };
+		B6876FDC2E797C3900FF5AC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6876FDE2E797C3A00FF5AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6876FE12E797C3A00FF5AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6876FE72E797C3A00FF5AC3 /* CookieClickerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieClickerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6876FEB2E797C3A00FF5AC3 /* CookieClickerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieClickerSwiftUITests.swift; sourceTree = "<group>"; };
+		B6876FF12E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieClickerSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6876FF52E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieClickerSwiftUIUITests.swift; sourceTree = "<group>"; };
+		B6876FF72E797C3A00FF5AC3 /* CookieClickerSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieClickerSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B68770052E797C8A00FF5AC3 /* Upgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upgrade.swift; sourceTree = "<group>"; };
+		B68770072E797CA600FF5AC3 /* PrestigePerk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestigePerk.swift; sourceTree = "<group>"; };
+		B68770092E797CC100FF5AC3 /* PerkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkStore.swift; sourceTree = "<group>"; };
+		B687700B2E797CD100FF5AC3 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		B687700E2E797CF500FF5AC3 /* Persist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persist.swift; sourceTree = "<group>"; };
+		B68770112E797D1E00FF5AC3 /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		B68770132E797D5600FF5AC3 /* PrestigeShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestigeShopView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6876FD42E797C3900FF5AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FE42E797C3A00FF5AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FEE2E797C3A00FF5AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6876FCE2E797C3800FF5AC3 = {
+			isa = PBXGroup;
+			children = (
+				B6876FD92E797C3900FF5AC3 /* CookieClickerSwiftUI */,
+				B6876FEA2E797C3A00FF5AC3 /* CookieClickerSwiftUITests */,
+				B6876FF42E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests */,
+				B6876FD82E797C3900FF5AC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6876FD82E797C3900FF5AC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6876FD72E797C3900FF5AC3 /* CookieClickerSwiftUI.app */,
+				B6876FE72E797C3A00FF5AC3 /* CookieClickerSwiftUITests.xctest */,
+				B6876FF12E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6876FD92E797C3900FF5AC3 /* CookieClickerSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B68770102E797D1600FF5AC3 /* view */,
+				B687700D2E797CE700FF5AC3 /* entity */,
+				B68770042E797C7600FF5AC3 /* model */,
+				B6876FDA2E797C3900FF5AC3 /* CookieClickerSwiftUIApp.swift */,
+				B6876FDE2E797C3A00FF5AC3 /* Assets.xcassets */,
+				B6876FE02E797C3A00FF5AC3 /* Preview Content */,
+			);
+			path = CookieClickerSwiftUI;
+			sourceTree = "<group>";
+		};
+		B6876FE02E797C3A00FF5AC3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6876FE12E797C3A00FF5AC3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6876FEA2E797C3A00FF5AC3 /* CookieClickerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6876FEB2E797C3A00FF5AC3 /* CookieClickerSwiftUITests.swift */,
+			);
+			path = CookieClickerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B6876FF42E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6876FF52E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.swift */,
+				B6876FF72E797C3A00FF5AC3 /* CookieClickerSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = CookieClickerSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B68770042E797C7600FF5AC3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B68770052E797C8A00FF5AC3 /* Upgrade.swift */,
+				B68770072E797CA600FF5AC3 /* PrestigePerk.swift */,
+				B68770092E797CC100FF5AC3 /* PerkStore.swift */,
+				B687700B2E797CD100FF5AC3 /* GameState.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B687700D2E797CE700FF5AC3 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				B687700E2E797CF500FF5AC3 /* Persist.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B68770102E797D1600FF5AC3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B6876FDC2E797C3900FF5AC3 /* ContentView.swift */,
+				B68770112E797D1E00FF5AC3 /* GameStore.swift */,
+				B68770132E797D5600FF5AC3 /* PrestigeShopView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6876FD62E797C3900FF5AC3 /* CookieClickerSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6876FFB2E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUI" */;
+			buildPhases = (
+				B6876FD32E797C3900FF5AC3 /* Sources */,
+				B6876FD42E797C3900FF5AC3 /* Frameworks */,
+				B6876FD52E797C3900FF5AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookieClickerSwiftUI;
+			productName = CookieClickerSwiftUI;
+			productReference = B6876FD72E797C3900FF5AC3 /* CookieClickerSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6876FE62E797C3A00FF5AC3 /* CookieClickerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6876FFE2E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUITests" */;
+			buildPhases = (
+				B6876FE32E797C3A00FF5AC3 /* Sources */,
+				B6876FE42E797C3A00FF5AC3 /* Frameworks */,
+				B6876FE52E797C3A00FF5AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6876FE92E797C3A00FF5AC3 /* PBXTargetDependency */,
+			);
+			name = CookieClickerSwiftUITests;
+			productName = CookieClickerSwiftUITests;
+			productReference = B6876FE72E797C3A00FF5AC3 /* CookieClickerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6876FF02E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68770012E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUIUITests" */;
+			buildPhases = (
+				B6876FED2E797C3A00FF5AC3 /* Sources */,
+				B6876FEE2E797C3A00FF5AC3 /* Frameworks */,
+				B6876FEF2E797C3A00FF5AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6876FF32E797C3A00FF5AC3 /* PBXTargetDependency */,
+			);
+			name = CookieClickerSwiftUIUITests;
+			productName = CookieClickerSwiftUIUITests;
+			productReference = B6876FF12E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6876FCF2E797C3800FF5AC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B6876FD62E797C3900FF5AC3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B6876FE62E797C3A00FF5AC3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B6876FD62E797C3900FF5AC3;
+					};
+					B6876FF02E797C3A00FF5AC3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B6876FD62E797C3900FF5AC3;
+					};
+				};
+			};
+			buildConfigurationList = B6876FD22E797C3800FF5AC3 /* Build configuration list for PBXProject "CookieClickerSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6876FCE2E797C3800FF5AC3;
+			productRefGroup = B6876FD82E797C3900FF5AC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6876FD62E797C3900FF5AC3 /* CookieClickerSwiftUI */,
+				B6876FE62E797C3A00FF5AC3 /* CookieClickerSwiftUITests */,
+				B6876FF02E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6876FD52E797C3900FF5AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6876FE22E797C3A00FF5AC3 /* Preview Assets.xcassets in Resources */,
+				B6876FDF2E797C3A00FF5AC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FE52E797C3A00FF5AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FEF2E797C3A00FF5AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6876FD32E797C3900FF5AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6876FDD2E797C3900FF5AC3 /* ContentView.swift in Sources */,
+				B68770122E797D1E00FF5AC3 /* GameStore.swift in Sources */,
+				B6876FDB2E797C3900FF5AC3 /* CookieClickerSwiftUIApp.swift in Sources */,
+				B687700A2E797CC100FF5AC3 /* PerkStore.swift in Sources */,
+				B687700C2E797CD100FF5AC3 /* GameState.swift in Sources */,
+				B68770082E797CA600FF5AC3 /* PrestigePerk.swift in Sources */,
+				B687700F2E797CF500FF5AC3 /* Persist.swift in Sources */,
+				B68770062E797C8A00FF5AC3 /* Upgrade.swift in Sources */,
+				B68770142E797D5600FF5AC3 /* PrestigeShopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FE32E797C3A00FF5AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6876FEC2E797C3A00FF5AC3 /* CookieClickerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6876FED2E797C3A00FF5AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6876FF82E797C3A00FF5AC3 /* CookieClickerSwiftUIUITestsLaunchTests.swift in Sources */,
+				B6876FF62E797C3A00FF5AC3 /* CookieClickerSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6876FE92E797C3A00FF5AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6876FD62E797C3900FF5AC3 /* CookieClickerSwiftUI */;
+			targetProxy = B6876FE82E797C3A00FF5AC3 /* PBXContainerItemProxy */;
+		};
+		B6876FF32E797C3A00FF5AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6876FD62E797C3900FF5AC3 /* CookieClickerSwiftUI */;
+			targetProxy = B6876FF22E797C3A00FF5AC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6876FF92E797C3A00FF5AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6876FFA2E797C3A00FF5AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6876FFC2E797C3A00FF5AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CookieClickerSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6876FFD2E797C3A00FF5AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CookieClickerSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6876FFF2E797C3A00FF5AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieClickerSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CookieClickerSwiftUI";
+			};
+			name = Debug;
+		};
+		B68770002E797C3A00FF5AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieClickerSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CookieClickerSwiftUI";
+			};
+			name = Release;
+		};
+		B68770022E797C3A00FF5AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CookieClickerSwiftUI;
+			};
+			name = Debug;
+		};
+		B68770032E797C3A00FF5AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.CookieClickerSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CookieClickerSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6876FD22E797C3800FF5AC3 /* Build configuration list for PBXProject "CookieClickerSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6876FF92E797C3A00FF5AC3 /* Debug */,
+				B6876FFA2E797C3A00FF5AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6876FFB2E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6876FFC2E797C3A00FF5AC3 /* Debug */,
+				B6876FFD2E797C3A00FF5AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6876FFE2E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6876FFF2E797C3A00FF5AC3 /* Debug */,
+				B68770002E797C3A00FF5AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68770012E797C3A00FF5AC3 /* Build configuration list for PBXNativeTarget "CookieClickerSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68770022E797C3A00FF5AC3 /* Debug */,
+				B68770032E797C3A00FF5AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6876FCF2E797C3800FF5AC3 /* Project object */;
+}

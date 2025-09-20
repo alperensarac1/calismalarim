@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CookieClickerKotlin</string>
+    <string name="cookie_cd">Kurabiyeye tıkla</string>
+    <string name="shop">Mağaza</string>
+    <string name="prestige">Prestige</string>
+    <string name="buy">Satın Al</string>
+
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_vibrate">Tıklamada titreşim</string>
+    <string name="settings_sound">Tıklamada ses</string>
+    <string name="settings_autosave_time">Otomatik kaydetme süresi</string>
+    <string name="settings_autosave_value">%1$d sn</string>
+
+    <string name="crit">Crit</string>
+    <string name="reset">Reset</string>
+    <string name="prestige_confirm_title">Prestige</string>
+    <string name="prestige_confirm_msg">Bu prestij ile +%1$d çarpan kazanacaksın.\nOyun sıfırlanacak (çarpan kalır). Devam edilsin mi?</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">Vazgeç</string>
+    <string name="reset_confirm_title">Reset</string>
+    <string name="reset_confirm_msg">Skor, yükseltmeler ve ayarlar sıfırlansın mı? (Prestige çarpanı kalır)</string>
+    <string name="prestige_points">Prestige Puanı: %1$d</string>
+
+    <!-- Parametreli ve yüzde kaçışlı sürümler -->
+    <string name="perk_gprod">Altın Çırpıcı</string>
+    <!-- Seviyede %5 çarpan: %1$d%% -->
+    <string name="perk_gprod_desc">%1$d%% üretim çarpanı / seviye (CPS &amp; tap)</string>
+
+    <string name="perk_crit">Uğurlu Tılsım</string>
+    <!-- Seviyede %1 pasif crit şansı ve x3 çarpan -->
+    <string name="perk_crit_desc">%1$d%% pasif crit şansı / seviye (tap x%2$d)</string>
+
+    <string name="perk_discount">Toplu Alım</string>
+    <!-- Seviyede %2 indirim, tavan %50 -->
+    <string name="perk_discount_desc">%1$d%% indirim / seviye (maks %2$d%%)</string>
+
+    <string name="perk_taptop">Turbo Tap</string>
+    <string name="perk_taptop_desc">Kalıcı +1 tap gücü / seviye</string>
+    <string name="shop_title">Prestige Mağazası</string>
+
+</resources>

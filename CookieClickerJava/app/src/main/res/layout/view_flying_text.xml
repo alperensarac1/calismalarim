@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvFlying"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+1"
+    android:textStyle="bold"
+    android:textSize="22sp"
+    android:textColor="@android:color/white"
+    android:shadowColor="#66000000"
+    android:shadowDx="0"
+    android:shadowDy="2"
+    android:shadowRadius="4"
+    android:padding="2dp"/>
