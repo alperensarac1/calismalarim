@@ -1,4 +1,3 @@
-# qryoklama_flutter
 ![WhatsApp Image 2026-01-04 at 07 38 15](https://github.com/user-attachments/assets/aa9a22c5-23e0-4d1c-9375-9b38e7b43463)
 ![WhatsApp Image 2026-01-04 at 07 38 08](https://github.com/user-attachments/assets/b32863a3-0967-4143-a232-76e0f7c237d3)
 ![WhatsApp Image 2026-01-04 at 07 38 08 (1)](https://github.com/user-attachments/assets/1fc828ce-b1bf-43ce-a3b1-8e885c0fbcb1)
@@ -11,18 +10,3 @@
 <img width="2042" height="1144" alt="Ekran Resmi 2026-01-03 12 39 22" src="https://github.com/user-attachments/assets/6c862ae2-3269-4d43-ab52-2c7c5ab8b3ed" />
 <img width="2042" height="1144" alt="Ekran Resmi 2026-01-03 12 37 57" src="https://github.com/user-attachments/assets/46ded9bc-a360-4de9-b511-20c071ede051" />
 <img width="2042" height="1144" alt="Ekran Resmi 2026-01-03 12 37 44" src="https://github.com/user-attachments/assets/aa5496f8-5e3f-4ea3-a8b2-b1223d8619a5" />
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
