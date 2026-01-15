@@ -1,16 +1,3 @@
-# meme_share_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="417" height="849" alt="Ekran Resmi 2026-01-11 13 33 47" src="https://github.com/user-attachments/assets/8580c5ad-6dbe-4c3b-84af-ee16cf6d6366" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-11 13 33 31" src="https://github.com/user-attachments/assets/c049bfe8-9ba7-486c-a3d0-37007eb72549" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-11 13 33 17" src="https://github.com/user-attachments/assets/ec09de50-ac1c-4b77-9e6b-1bcbe4f8f7ec" />
