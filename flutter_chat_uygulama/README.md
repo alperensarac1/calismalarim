@@ -1,16 +1,3 @@
-# flutter_chat_uygulama
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="417" height="849" alt="Ekran Resmi 2026-01-10 11 46 09" src="https://github.com/user-attachments/assets/1fbd08e0-3625-4f07-bc88-d2c67150b649" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-10 11 45 15" src="https://github.com/user-attachments/assets/74e8d5fa-b4c2-4426-8423-92c4205ec583" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-10 11 44 48" src="https://github.com/user-attachments/assets/fa5b798f-2f01-4da7-9dbb-3a703e75d935" />
