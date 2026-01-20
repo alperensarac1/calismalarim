@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.eticaretkotlin.view.AnasayfaFragment"
+        android:label="Anasayfa"
+        tools:layout="@layout/fragment_anasayfa">
+
+        <action
+            android:id="@+id/toProductDetail"
+            app:destination="@id/productDetailFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.eticaretkotlin.view.CartFragment"
+        android:label="Sepet"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.eticaretkotlin.view.SiparislerFragment"
+        android:label="Siparişler"
+        tools:layout="@layout/fragment_siparisler">
+
+        <action
+            android:id="@+id/toSiparisDetay"
+            app:destination="@id/siparisDetayFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.eticaretkotlin.view.AyarlarFragment"
+        android:label="Ayarlar"
+        tools:layout="@layout/fragment_ayarlar" />
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.eticaretkotlin.view.UrunDetayFragment"
+        android:label="Ürün Detay"
+        tools:layout="@layout/fragment_urun_detay">
+
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+
+        <argument
+            android:name="orderId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/siparisDetayFragment"
+        android:name="com.example.eticaretkotlin.view.SiparisDetayFragment"
+        android:label="Sipariş Detay"
+        tools:layout="@layout/fragment_siparis_detay">
+
+        <argument
+            android:name="orderId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>

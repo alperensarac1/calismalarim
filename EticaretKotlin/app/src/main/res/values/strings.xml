@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EticaretKotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="loading">Yükleniyor…</string>
+    <string name="error">Bir hata oluştu</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="retry">Tekrar Dene</string>
+
+    <string name="login_title">Giriş Yap</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="btn_login">Giriş Yap</string>
+    <string name="go_register">Hesabın yok mu? Kayıt ol</string>
+    <string name="register_title">Kayıt Ol</string>
+    <string name="name">Ad Soyad</string>
+    <string name="btn_register">Kayıt Ol</string>
+    <string name="go_login">Zaten hesabın var mı? Giriş yap</string>
+    <string name="register_success">Kayıt başarılı!</string>
+    <string name="err_email_invalid">Geçerli bir e-posta girin</string>
+    <string name="err_password_short">Şifre en az 6 karakter olmalı</string>
+    <string name="err_name_short">Ad en az 2 karakter olmalı</string>
+    <string name="home_title">Anasayfa</string>
+    <string name="categories">Kategoriler</string>
+    <string name="products">Ürünler</string>
+    <string name="empty_products">Ürün bulunamadı</string>
+    <string name="product_detail_title">Ürün Detayı</string>
+    <string name="add_to_cart">Sepete Ekle</string>
+    <string name="quantity">Adet</string>
+    <string name="product_image">Ürün Görseli</string>
+    <string name="added_to_cart">Sepete eklendi</string>
+    <string name="cart_title">Sepet</string>
+    <string name="cart_empty">Sepetiniz boş</string>
+    <string name="cart_total">Toplam: ₺%1$s</string>
+    <string name="go_checkout">Ödeme Yap</string>
+    <string name="checkout_title">Siparişi Tamamla</string>
+    <string name="address">Adres</string>
+    <string name="place_order">Siparişi Ver</string>
+    <string name="order_success">Siparişiniz başarıyla oluşturuldu</string>
+    <string name="orders_title">Siparişlerim</string>
+    <string name="no_orders">Henüz siparişiniz yok</string>
+    <string name="order_detail_title">Sipariş Detayı</string>
+    <string name="order_number">Sipariş #%1$s</string>
+    <string name="order_total">Toplam: ₺%1$s</string>
+    <string name="order_items">Sipariş Kalemleri</string>
+    <string name="nav_home">Anasayfa</string>
+    <string name="nav_cart">Sepet</string>
+    <string name="nav_orders">Siparişler</string>
+    <string name="nav_profile">Profil</string>
+    <string name="search_products">Ürün ara</string>
+    <string name="sort">Sırala</string>
+    <string name="only_discounted">Sadece indirimli</string>
+
+</resources>

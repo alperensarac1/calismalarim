@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- LOGIN -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.eticaretjava.view.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <!-- Register ekranına -->
+        <action
+            android:id="@+id/toRegister"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <!-- REGISTER -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.eticaretjava.view.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+
+        <!-- Login ekranına geri -->
+        <action
+            android:id="@+id/toLogin"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="EticaretSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="DNb-mP-x6j" id="JHT-fC-D17"/>
+                <outlet property="goRegisterButton" destination="Ku0-wI-yLt" id="PQ5-bA-BUl"/>
+                <outlet property="loginButton" destination="E6h-IN-z6o" id="HYa-ry-z1W"/>
+                <outlet property="passwordField" destination="lZS-Ev-YSi" id="vHu-dL-oNh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="D1J-cj-CwT">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giriş Yap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaE-lf-Tvb">
+                            <rect key="frame" x="163" y="0.0" width="67" height="71.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E-posta / Kullanıcı adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-mP-x6j">
+                            <rect key="frame" x="96.666666666666686" y="171.66666666666666" width="200" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="LaS-38-0cG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZS-Ev-YSi">
+                            <rect key="frame" x="96.666666666666686" y="343.66666666666669" width="200" height="71.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="4pm-1U-GoQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6h-IN-z6o">
+                            <rect key="frame" x="151" y="515.33333333333337" width="91" height="72"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Giriş Yap"/>
+                            <connections>
+                                <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="TJD-20-4MD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-wI-yLt">
+                            <rect key="frame" x="88.333333333333329" y="687.33333333333337" width="216.66666666666669" height="71.666666666666629"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Hesabın yok mu? Kayıt Ol"/>
+                            <connections>
+                                <action selector="goRegisterTapped:" destination="-1" eventType="touchUpInside" id="BGU-cE-wu2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="D1J-cj-CwT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5y7-fk-xp8"/>
+                <constraint firstItem="D1J-cj-CwT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TAc-PP-Xe8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1J-cj-CwT" secondAttribute="trailing" id="eOy-J9-b1L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D1J-cj-CwT" secondAttribute="bottom" id="iYL-Km-NQI"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

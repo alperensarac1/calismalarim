@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AnasayfaFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <!-- HEADER: Başlık + Sepet -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Anasayfa"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sepetim"
+                android:insetLeft="10dp"
+                android:insetRight="10dp"
+                android:minHeight="40dp"
+                app:icon="@android:drawable/ic_menu_view"
+                app:iconPadding="6dp"/>
+        </LinearLayout>
+
+        <!-- Arama kutusu + sıralama -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_products"
+                    android:imeOptions="actionSearch"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/spSort"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/sort"
+                android:inputType="none"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- İndirim çipi -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDiscount"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/only_discounted"
+            android:checkable="true"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Kategoriler: yatay -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCats"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_category"
+            android:clipToPadding="false"/>
+
+        <!-- Ürünler: grid -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_product"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
