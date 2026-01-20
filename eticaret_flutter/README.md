@@ -1,16 +1,12 @@
-# eticaret_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="1810" height="1000" alt="Ekran Resmi 2026-01-19 14 28 25" src="https://github.com/user-attachments/assets/79a90cf1-c2c9-4b33-b0d3-4ca6ebeadc8f" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 57 03" src="https://github.com/user-attachments/assets/0cb39387-36de-4843-b90d-27f549a940a6" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 56 54" src="https://github.com/user-attachments/assets/8f0cbe83-7797-452f-83f7-d502125209af" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 56 47" src="https://github.com/user-attachments/assets/31516e99-f815-4eaf-b8c7-a61befa2e448" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 54 41" src="https://github.com/user-attachments/assets/7ba518c4-5db0-4f50-888f-55e79c03ea4d" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 54 34" src="https://github.com/user-attachments/assets/32073e9f-729e-48af-97a0-cc7a6fed9b62" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 54 24" src="https://github.com/user-attachments/assets/ff66e64d-8282-40af-bef5-d102010da6cb" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 54 18" src="https://github.com/user-attachments/assets/14e23adf-2c4d-4484-85a2-a889b0e30e31" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 52 26" src="https://github.com/user-attachments/assets/d054085a-4101-4982-9918-39a6429b0007" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 52 18" src="https://github.com/user-attachments/assets/70558658-4eef-4904-9e60-9af459922f04" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 52 11" src="https://github.com/user-attachments/assets/d7be9d69-64a8-447a-b574-cad0f779e07c" />
+<img width="417" height="849" alt="Ekran Resmi 2026-01-19 12 45 08" src="https://github.com/user-attachments/assets/6d69c947-184e-4e2c-9465-62b235c09709" />
