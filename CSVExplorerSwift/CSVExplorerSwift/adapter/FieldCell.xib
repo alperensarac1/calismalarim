@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="FieldCell" customModule="CSVExplorerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0er-m4-U2Z">
+                        <rect key="frame" x="66" y="26" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCJ-89-n24">
+                        <rect key="frame" x="238" y="26" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0er-m4-U2Z" firstAttribute="firstBaseline" secondItem="oCJ-89-n24" secondAttribute="firstBaseline" id="4Sn-aB-B3R"/>
+                    <constraint firstItem="0er-m4-U2Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="46" id="XZ6-hJ-xc4"/>
+                    <constraint firstItem="0er-m4-U2Z" firstAttribute="baseline" secondItem="oCJ-89-n24" secondAttribute="baseline" id="hDB-jD-cXb"/>
+                    <constraint firstItem="0er-m4-U2Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-44" id="nIp-Yk-V4Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oCJ-89-n24" secondAttribute="trailing" constant="62" id="ny4-pc-ltA"/>
+                    <constraint firstItem="0er-m4-U2Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uNl-Yb-t74"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblKey" destination="0er-m4-U2Z" id="F7h-q0-9El"/>
+                <outlet property="lblValue" destination="oCJ-89-n24" id="P5N-Sk-aCA"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="30.281690140845072"/>
+        </tableViewCell>
+    </objects>
+</document>
