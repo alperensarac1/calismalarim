@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4F46E5</color>
+    <color name="primaryDark">#3730A3</color>
+    <color name="secondary">#06B6D4</color>
+    <color name="tertiary">#22C55E</color>
+
+    <!-- Surfaces -->
+    <color name="bg">#F6F7FB</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text">#0B1220</color>
+    <color name="muted">#64748B</color>
+
+    <!-- Stroke -->
+    <color name="stroke">#E5E7EB</color>
+</resources>

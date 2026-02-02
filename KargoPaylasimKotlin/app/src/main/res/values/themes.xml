@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KargoPaylasimKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Renkler -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorTertiary">@color/tertiary</item>
+
+        <!-- Arka plan / yüzey -->
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <!-- Varsayılan bileşen görünümleri -->
+        <item name="materialButtonStyle">@style/AppButton</item>
+        <item name="textInputStyle">@style/AppTextInputLayout</item>
+        <item name="materialCardViewStyle">@style/AppCard</item>
+
+        <!-- İsteğe bağlı -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.KargoPaylasimKotlin" parent="Base.Theme.KargoPaylasimKotlin" />
+</resources>

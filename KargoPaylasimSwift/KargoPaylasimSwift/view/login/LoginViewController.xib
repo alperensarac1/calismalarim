@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KargoPaylasimSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Ear-fM-eSs" id="IgG-W5-bB8"/>
+                <outlet property="loginButton" destination="ce2-iz-ycY" id="LCY-TM-wGR"/>
+                <outlet property="passwordTextField" destination="b7d-vy-O7z" id="xsg-qR-dmY"/>
+                <outlet property="phoneTextField" destination="eDo-hj-drF" id="luE-Vw-qjz"/>
+                <outlet property="registerButton" destination="hzJ-4k-q0c" id="Whv-QF-fQ6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qEp-Kd-18u">
+                    <rect key="frame" x="24" y="277" width="345" height="298"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oH-nh-QnR">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="0xxx xxx xx xx" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-hj-drF">
+                            <rect key="frame" x="0.0" y="62" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MPS-gd-1ru"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Parola" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-vy-O7z">
+                            <rect key="frame" x="0.0" y="124" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="eKo-Ln-7xW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce2-iz-ycY">
+                            <rect key="frame" x="0.0" y="186" width="345" height="50"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Giriş Yap"/>
+                            <connections>
+                                <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="Vpt-QZ-zLQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-4k-q0c">
+                            <rect key="frame" x="0.0" y="248" width="345" height="50"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol"/>
+                            <connections>
+                                <action selector="registerTapped:" destination="-1" eventType="touchUpInside" id="1yp-BX-amb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ear-fM-eSs">
+                    <rect key="frame" x="166.66666666666666" y="396" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="A8q-oj-4k4"/>
+                        <constraint firstAttribute="height" constant="60" id="CBg-6b-sgs"/>
+                    </constraints>
+                    <color key="color" name="AccentColor"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ear-fM-eSs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fuT-6d-Zsc"/>
+                <constraint firstItem="Ear-fM-eSs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hKM-fr-v2V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qEp-Kd-18u" secondAttribute="trailing" constant="24" id="oFr-bj-Zj1"/>
+                <constraint firstItem="qEp-Kd-18u" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="x8u-be-f2X"/>
+                <constraint firstItem="qEp-Kd-18u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="yn8-jY-UV4"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

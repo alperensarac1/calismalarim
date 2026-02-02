@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B63F4AB42F2CBBC100506903 /* CreateShipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4AB22F2CBBC100506903 /* CreateShipmentViewController.swift */; };
+		B63F4AB52F2CBBC100506903 /* CreateShipmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63F4AB32F2CBBC100506903 /* CreateShipmentViewController.xib */; };
+		B63F4AB72F2CBE1800506903 /* Lookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4AB62F2CBE1800506903 /* Lookup.swift */; };
+		B63F4AB92F2CBE3800506903 /* CreateShipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4AB82F2CBE3700506903 /* CreateShipmentViewModel.swift */; };
+		B63F4ABC2F2CBE5900506903 /* PhoneUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4ABB2F2CBE5900506903 /* PhoneUtil.swift */; };
+		B63F4AC02F2CBF7E00506903 /* ShipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4ABE2F2CBF7E00506903 /* ShipmentDetailViewController.swift */; };
+		B63F4AC12F2CBF7E00506903 /* ShipmentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63F4ABF2F2CBF7E00506903 /* ShipmentDetailViewController.xib */; };
+		B63F4AC52F2CC58100506903 /* AddressCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4AC32F2CC58100506903 /* AddressCreateViewController.swift */; };
+		B63F4AC62F2CC58100506903 /* AddressCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63F4AC42F2CC58100506903 /* AddressCreateViewController.xib */; };
+		B64940092F2A081C00CDF6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940082F2A081C00CDF6CB /* AppDelegate.swift */; };
+		B649400B2F2A081C00CDF6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649400A2F2A081C00CDF6CB /* SceneDelegate.swift */; };
+		B649400D2F2A081C00CDF6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649400C2F2A081C00CDF6CB /* ViewController.swift */; };
+		B64940102F2A081C00CDF6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B649400E2F2A081C00CDF6CB /* Main.storyboard */; };
+		B64940122F2A081D00CDF6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64940112F2A081D00CDF6CB /* Assets.xcassets */; };
+		B64940152F2A081D00CDF6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64940132F2A081D00CDF6CB /* LaunchScreen.storyboard */; };
+		B64940202F2A081D00CDF6CB /* KargoPaylasimSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649401F2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.swift */; };
+		B649402A2F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940292F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.swift */; };
+		B649402C2F2A081D00CDF6CB /* KargoPaylasimSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649402B2F2A081D00CDF6CB /* KargoPaylasimSwiftUITestsLaunchTests.swift */; };
+		B649403A2F2A088500CDF6CB /* ApiResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940392F2A088500CDF6CB /* ApiResp.swift */; };
+		B649403E2F2A08EF00CDF6CB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649403D2F2A08EF00CDF6CB /* Endpoint.swift */; };
+		B64940412F2A093200CDF6CB /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940402F2A093200CDF6CB /* TokenStore.swift */; };
+		B64940432F2A094400CDF6CB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940422F2A094400CDF6CB /* ApiClient.swift */; };
+		B64940462F2A098B00CDF6CB /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940452F2A098B00CDF6CB /* AuthModel.swift */; };
+		B64940492F2A09B400CDF6CB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940482F2A09B400CDF6CB /* AuthViewModel.swift */; };
+		B64940502F2A0A4100CDF6CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649404E2F2A0A4100CDF6CB /* LoginViewController.swift */; };
+		B64940512F2A0A4100CDF6CB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B649404F2F2A0A4100CDF6CB /* LoginViewController.xib */; };
+		B64940552F2A0E7A00CDF6CB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940532F2A0E7A00CDF6CB /* RegisterViewController.swift */; };
+		B64940562F2A0E7A00CDF6CB /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64940542F2A0E7A00CDF6CB /* RegisterViewController.xib */; };
+		B64940582F2A11A700CDF6CB /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64940572F2A11A700CDF6CB /* RegisterViewModel.swift */; };
+		B66B17FF2F2B723C008D39A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B17FD2F2B723C008D39A3 /* HomeViewController.swift */; };
+		B66B18002F2B723C008D39A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66B17FE2F2B723C008D39A3 /* HomeViewController.xib */; };
+		B66B18032F2B824A008D39A3 /* ShipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B18012F2B824A008D39A3 /* ShipmentCell.swift */; };
+		B66B18042F2B824A008D39A3 /* ShipmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66B18022F2B824A008D39A3 /* ShipmentCell.xib */; };
+		B66B18092F2B83B3008D39A3 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B18072F2B83B3008D39A3 /* AddressCell.swift */; };
+		B66B180A2F2B83B3008D39A3 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66B18082F2B83B3008D39A3 /* AddressCell.xib */; };
+		B66B180C2F2B84E0008D39A3 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B180B2F2B84E0008D39A3 /* Shipment.swift */; };
+		B66B180E2F2B84F2008D39A3 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B180D2F2B84F2008D39A3 /* Address.swift */; };
+		B66B18102F2B8523008D39A3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B180F2F2B8523008D39A3 /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B649401C2F2A081D00CDF6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6493FFD2F2A081C00CDF6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64940042F2A081C00CDF6CB;
+			remoteInfo = KargoPaylasimSwift;
+		};
+		B64940262F2A081D00CDF6CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6493FFD2F2A081C00CDF6CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64940042F2A081C00CDF6CB;
+			remoteInfo = KargoPaylasimSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B63F4AB22F2CBBC100506903 /* CreateShipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShipmentViewController.swift; sourceTree = "<group>"; };
+		B63F4AB32F2CBBC100506903 /* CreateShipmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateShipmentViewController.xib; sourceTree = "<group>"; };
+		B63F4AB62F2CBE1800506903 /* Lookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lookup.swift; sourceTree = "<group>"; };
+		B63F4AB82F2CBE3700506903 /* CreateShipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShipmentViewModel.swift; sourceTree = "<group>"; };
+		B63F4ABB2F2CBE5900506903 /* PhoneUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUtil.swift; sourceTree = "<group>"; };
+		B63F4ABE2F2CBF7E00506903 /* ShipmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentDetailViewController.swift; sourceTree = "<group>"; };
+		B63F4ABF2F2CBF7E00506903 /* ShipmentDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipmentDetailViewController.xib; sourceTree = "<group>"; };
+		B63F4AC32F2CC58100506903 /* AddressCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCreateViewController.swift; sourceTree = "<group>"; };
+		B63F4AC42F2CC58100506903 /* AddressCreateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCreateViewController.xib; sourceTree = "<group>"; };
+		B64940052F2A081C00CDF6CB /* KargoPaylasimSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KargoPaylasimSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64940082F2A081C00CDF6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B649400A2F2A081C00CDF6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B649400C2F2A081C00CDF6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B649400F2F2A081C00CDF6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B64940112F2A081D00CDF6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B64940142F2A081D00CDF6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B64940162F2A081D00CDF6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B649401B2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KargoPaylasimSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B649401F2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KargoPaylasimSwiftTests.swift; sourceTree = "<group>"; };
+		B64940252F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KargoPaylasimSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64940292F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KargoPaylasimSwiftUITests.swift; sourceTree = "<group>"; };
+		B649402B2F2A081D00CDF6CB /* KargoPaylasimSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KargoPaylasimSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B64940392F2A088500CDF6CB /* ApiResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResp.swift; sourceTree = "<group>"; };
+		B649403D2F2A08EF00CDF6CB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B64940402F2A093200CDF6CB /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		B64940422F2A094400CDF6CB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B64940452F2A098B00CDF6CB /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		B64940482F2A09B400CDF6CB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B649404E2F2A0A4100CDF6CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B649404F2F2A0A4100CDF6CB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B64940532F2A0E7A00CDF6CB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B64940542F2A0E7A00CDF6CB /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B64940572F2A11A700CDF6CB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		B66B17FD2F2B723C008D39A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B66B17FE2F2B723C008D39A3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B66B18012F2B824A008D39A3 /* ShipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentCell.swift; sourceTree = "<group>"; };
+		B66B18022F2B824A008D39A3 /* ShipmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipmentCell.xib; sourceTree = "<group>"; };
+		B66B18072F2B83B3008D39A3 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		B66B18082F2B83B3008D39A3 /* AddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
+		B66B180B2F2B84E0008D39A3 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
+		B66B180D2F2B84F2008D39A3 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		B66B180F2F2B8523008D39A3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64940022F2A081C00CDF6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940182F2A081D00CDF6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940222F2A081D00CDF6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B63F4AB12F2CBBA600506903 /* create_shipment */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4AB22F2CBBC100506903 /* CreateShipmentViewController.swift */,
+				B63F4AB32F2CBBC100506903 /* CreateShipmentViewController.xib */,
+			);
+			path = create_shipment;
+			sourceTree = "<group>";
+		};
+		B63F4ABA2F2CBE5200506903 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4ABB2F2CBE5900506903 /* PhoneUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B63F4ABD2F2CBF6200506903 /* shipment_detail */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4ABE2F2CBF7E00506903 /* ShipmentDetailViewController.swift */,
+				B63F4ABF2F2CBF7E00506903 /* ShipmentDetailViewController.xib */,
+			);
+			path = shipment_detail;
+			sourceTree = "<group>";
+		};
+		B63F4AC22F2CC56D00506903 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4AC32F2CC58100506903 /* AddressCreateViewController.swift */,
+				B63F4AC42F2CC58100506903 /* AddressCreateViewController.xib */,
+			);
+			path = address;
+			sourceTree = "<group>";
+		};
+		B6493FFC2F2A081C00CDF6CB = {
+			isa = PBXGroup;
+			children = (
+				B64940072F2A081C00CDF6CB /* KargoPaylasimSwift */,
+				B649401E2F2A081D00CDF6CB /* KargoPaylasimSwiftTests */,
+				B64940282F2A081D00CDF6CB /* KargoPaylasimSwiftUITests */,
+				B64940062F2A081C00CDF6CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64940062F2A081C00CDF6CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64940052F2A081C00CDF6CB /* KargoPaylasimSwift.app */,
+				B649401B2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.xctest */,
+				B64940252F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64940072F2A081C00CDF6CB /* KargoPaylasimSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4ABA2F2CBE5200506903 /* util */,
+				B649404A2F2A09D000CDF6CB /* view */,
+				B64940472F2A09A800CDF6CB /* viewmodel */,
+				B64940442F2A097A00CDF6CB /* model */,
+				B649403F2F2A092000CDF6CB /* storage */,
+				B64940382F2A085C00CDF6CB /* service */,
+				B64940082F2A081C00CDF6CB /* AppDelegate.swift */,
+				B649400A2F2A081C00CDF6CB /* SceneDelegate.swift */,
+				B649400C2F2A081C00CDF6CB /* ViewController.swift */,
+				B649400E2F2A081C00CDF6CB /* Main.storyboard */,
+				B64940112F2A081D00CDF6CB /* Assets.xcassets */,
+				B64940132F2A081D00CDF6CB /* LaunchScreen.storyboard */,
+				B64940162F2A081D00CDF6CB /* Info.plist */,
+			);
+			path = KargoPaylasimSwift;
+			sourceTree = "<group>";
+		};
+		B649401E2F2A081D00CDF6CB /* KargoPaylasimSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B649401F2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.swift */,
+			);
+			path = KargoPaylasimSwiftTests;
+			sourceTree = "<group>";
+		};
+		B64940282F2A081D00CDF6CB /* KargoPaylasimSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B64940292F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.swift */,
+				B649402B2F2A081D00CDF6CB /* KargoPaylasimSwiftUITestsLaunchTests.swift */,
+			);
+			path = KargoPaylasimSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B64940382F2A085C00CDF6CB /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B649403D2F2A08EF00CDF6CB /* Endpoint.swift */,
+				B64940422F2A094400CDF6CB /* ApiClient.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B649403F2F2A092000CDF6CB /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				B64940402F2A093200CDF6CB /* TokenStore.swift */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		B64940442F2A097A00CDF6CB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B64940392F2A088500CDF6CB /* ApiResp.swift */,
+				B64940452F2A098B00CDF6CB /* AuthModel.swift */,
+				B66B180B2F2B84E0008D39A3 /* Shipment.swift */,
+				B66B180D2F2B84F2008D39A3 /* Address.swift */,
+				B63F4AB62F2CBE1800506903 /* Lookup.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B64940472F2A09A800CDF6CB /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B64940482F2A09B400CDF6CB /* AuthViewModel.swift */,
+				B64940572F2A11A700CDF6CB /* RegisterViewModel.swift */,
+				B66B180F2F2B8523008D39A3 /* HomeViewModel.swift */,
+				B63F4AB82F2CBE3700506903 /* CreateShipmentViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B649404A2F2A09D000CDF6CB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4AC22F2CC56D00506903 /* address */,
+				B63F4ABD2F2CBF6200506903 /* shipment_detail */,
+				B63F4AB12F2CBBA600506903 /* create_shipment */,
+				B66B17FC2F2B722A008D39A3 /* home */,
+				B64940522F2A0E6F00CDF6CB /* register */,
+				B649404B2F2A09D500CDF6CB /* login */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B649404B2F2A09D500CDF6CB /* login */ = {
+			isa = PBXGroup;
+			children = (
+				B649404E2F2A0A4100CDF6CB /* LoginViewController.swift */,
+				B649404F2F2A0A4100CDF6CB /* LoginViewController.xib */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		B64940522F2A0E6F00CDF6CB /* register */ = {
+			isa = PBXGroup;
+			children = (
+				B64940532F2A0E7A00CDF6CB /* RegisterViewController.swift */,
+				B64940542F2A0E7A00CDF6CB /* RegisterViewController.xib */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		B66B17FC2F2B722A008D39A3 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B66B17FD2F2B723C008D39A3 /* HomeViewController.swift */,
+				B66B17FE2F2B723C008D39A3 /* HomeViewController.xib */,
+				B66B18012F2B824A008D39A3 /* ShipmentCell.swift */,
+				B66B18022F2B824A008D39A3 /* ShipmentCell.xib */,
+				B66B18072F2B83B3008D39A3 /* AddressCell.swift */,
+				B66B18082F2B83B3008D39A3 /* AddressCell.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64940042F2A081C00CDF6CB /* KargoPaylasimSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B649402F2F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwift" */;
+			buildPhases = (
+				B64940012F2A081C00CDF6CB /* Sources */,
+				B64940022F2A081C00CDF6CB /* Frameworks */,
+				B64940032F2A081C00CDF6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KargoPaylasimSwift;
+			productName = KargoPaylasimSwift;
+			productReference = B64940052F2A081C00CDF6CB /* KargoPaylasimSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B649401A2F2A081D00CDF6CB /* KargoPaylasimSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64940322F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwiftTests" */;
+			buildPhases = (
+				B64940172F2A081D00CDF6CB /* Sources */,
+				B64940182F2A081D00CDF6CB /* Frameworks */,
+				B64940192F2A081D00CDF6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B649401D2F2A081D00CDF6CB /* PBXTargetDependency */,
+			);
+			name = KargoPaylasimSwiftTests;
+			productName = KargoPaylasimSwiftTests;
+			productReference = B649401B2F2A081D00CDF6CB /* KargoPaylasimSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B64940242F2A081D00CDF6CB /* KargoPaylasimSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64940352F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwiftUITests" */;
+			buildPhases = (
+				B64940212F2A081D00CDF6CB /* Sources */,
+				B64940222F2A081D00CDF6CB /* Frameworks */,
+				B64940232F2A081D00CDF6CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64940272F2A081D00CDF6CB /* PBXTargetDependency */,
+			);
+			name = KargoPaylasimSwiftUITests;
+			productName = KargoPaylasimSwiftUITests;
+			productReference = B64940252F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6493FFD2F2A081C00CDF6CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B64940042F2A081C00CDF6CB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B649401A2F2A081D00CDF6CB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64940042F2A081C00CDF6CB;
+					};
+					B64940242F2A081D00CDF6CB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64940042F2A081C00CDF6CB;
+					};
+				};
+			};
+			buildConfigurationList = B64940002F2A081C00CDF6CB /* Build configuration list for PBXProject "KargoPaylasimSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6493FFC2F2A081C00CDF6CB;
+			productRefGroup = B64940062F2A081C00CDF6CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64940042F2A081C00CDF6CB /* KargoPaylasimSwift */,
+				B649401A2F2A081D00CDF6CB /* KargoPaylasimSwiftTests */,
+				B64940242F2A081D00CDF6CB /* KargoPaylasimSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64940032F2A081C00CDF6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64940512F2A0A4100CDF6CB /* LoginViewController.xib in Resources */,
+				B63F4AC62F2CC58100506903 /* AddressCreateViewController.xib in Resources */,
+				B64940562F2A0E7A00CDF6CB /* RegisterViewController.xib in Resources */,
+				B64940152F2A081D00CDF6CB /* LaunchScreen.storyboard in Resources */,
+				B64940122F2A081D00CDF6CB /* Assets.xcassets in Resources */,
+				B63F4AC12F2CBF7E00506903 /* ShipmentDetailViewController.xib in Resources */,
+				B64940102F2A081C00CDF6CB /* Main.storyboard in Resources */,
+				B63F4AB52F2CBBC100506903 /* CreateShipmentViewController.xib in Resources */,
+				B66B18002F2B723C008D39A3 /* HomeViewController.xib in Resources */,
+				B66B180A2F2B83B3008D39A3 /* AddressCell.xib in Resources */,
+				B66B18042F2B824A008D39A3 /* ShipmentCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940192F2A081D00CDF6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940232F2A081D00CDF6CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64940012F2A081C00CDF6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64940432F2A094400CDF6CB /* ApiClient.swift in Sources */,
+				B63F4AB72F2CBE1800506903 /* Lookup.swift in Sources */,
+				B66B18102F2B8523008D39A3 /* HomeViewModel.swift in Sources */,
+				B66B180C2F2B84E0008D39A3 /* Shipment.swift in Sources */,
+				B66B18092F2B83B3008D39A3 /* AddressCell.swift in Sources */,
+				B63F4AC02F2CBF7E00506903 /* ShipmentDetailViewController.swift in Sources */,
+				B64940552F2A0E7A00CDF6CB /* RegisterViewController.swift in Sources */,
+				B649403A2F2A088500CDF6CB /* ApiResp.swift in Sources */,
+				B649400D2F2A081C00CDF6CB /* ViewController.swift in Sources */,
+				B64940092F2A081C00CDF6CB /* AppDelegate.swift in Sources */,
+				B649400B2F2A081C00CDF6CB /* SceneDelegate.swift in Sources */,
+				B64940462F2A098B00CDF6CB /* AuthModel.swift in Sources */,
+				B63F4AB92F2CBE3800506903 /* CreateShipmentViewModel.swift in Sources */,
+				B64940582F2A11A700CDF6CB /* RegisterViewModel.swift in Sources */,
+				B63F4AB42F2CBBC100506903 /* CreateShipmentViewController.swift in Sources */,
+				B649403E2F2A08EF00CDF6CB /* Endpoint.swift in Sources */,
+				B66B18032F2B824A008D39A3 /* ShipmentCell.swift in Sources */,
+				B66B180E2F2B84F2008D39A3 /* Address.swift in Sources */,
+				B64940412F2A093200CDF6CB /* TokenStore.swift in Sources */,
+				B63F4ABC2F2CBE5900506903 /* PhoneUtil.swift in Sources */,
+				B64940502F2A0A4100CDF6CB /* LoginViewController.swift in Sources */,
+				B66B17FF2F2B723C008D39A3 /* HomeViewController.swift in Sources */,
+				B64940492F2A09B400CDF6CB /* AuthViewModel.swift in Sources */,
+				B63F4AC52F2CC58100506903 /* AddressCreateViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940172F2A081D00CDF6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64940202F2A081D00CDF6CB /* KargoPaylasimSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64940212F2A081D00CDF6CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B649402A2F2A081D00CDF6CB /* KargoPaylasimSwiftUITests.swift in Sources */,
+				B649402C2F2A081D00CDF6CB /* KargoPaylasimSwiftUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B649401D2F2A081D00CDF6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64940042F2A081C00CDF6CB /* KargoPaylasimSwift */;
+			targetProxy = B649401C2F2A081D00CDF6CB /* PBXContainerItemProxy */;
+		};
+		B64940272F2A081D00CDF6CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64940042F2A081C00CDF6CB /* KargoPaylasimSwift */;
+			targetProxy = B64940262F2A081D00CDF6CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B649400E2F2A081C00CDF6CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B649400F2F2A081C00CDF6CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B64940132F2A081D00CDF6CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64940142F2A081D00CDF6CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B649402D2F2A081D00CDF6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B649402E2F2A081D00CDF6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64940302F2A081D00CDF6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KargoPaylasimSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B64940312F2A081D00CDF6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KargoPaylasimSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B64940332F2A081D00CDF6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KargoPaylasimSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KargoPaylasimSwift";
+			};
+			name = Debug;
+		};
+		B64940342F2A081D00CDF6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KargoPaylasimSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KargoPaylasimSwift";
+			};
+			name = Release;
+		};
+		B64940362F2A081D00CDF6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KargoPaylasimSwift;
+			};
+			name = Debug;
+		};
+		B64940372F2A081D00CDF6CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.KargoPaylasimSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KargoPaylasimSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64940002F2A081C00CDF6CB /* Build configuration list for PBXProject "KargoPaylasimSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B649402D2F2A081D00CDF6CB /* Debug */,
+				B649402E2F2A081D00CDF6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B649402F2F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64940302F2A081D00CDF6CB /* Debug */,
+				B64940312F2A081D00CDF6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64940322F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64940332F2A081D00CDF6CB /* Debug */,
+				B64940342F2A081D00CDF6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64940352F2A081D00CDF6CB /* Build configuration list for PBXNativeTarget "KargoPaylasimSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64940362F2A081D00CDF6CB /* Debug */,
+				B64940372F2A081D00CDF6CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6493FFD2F2A081C00CDF6CB /* Project object */;
+}

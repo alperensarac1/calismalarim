@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressCreateViewController" customModule="KargoPaylasimSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSave" destination="h6A-1q-pc5" id="KZJ-9u-4NJ"/>
+                <outlet property="etCity" destination="CIl-hX-rl0" id="Iqv-kQ-5rD"/>
+                <outlet property="etDistrict" destination="NEt-TP-EsL" id="dbx-r1-tRJ"/>
+                <outlet property="etNeighborhood" destination="tBD-mU-597" id="EC4-6y-cre"/>
+                <outlet property="etPostal" destination="6Zg-Fr-Adh" id="yMQ-NB-9nB"/>
+                <outlet property="etTitle" destination="jfD-AY-PUn" id="2iD-ej-ITg"/>
+                <outlet property="progress" destination="yXv-Af-u8D" id="RXa-eW-JoT"/>
+                <outlet property="tvAddressLine" destination="VqE-85-hJg" id="F3L-hx-15W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-7C-Hbf">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Di-2M-5pj">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="43j-0s-r48">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adres Ekle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-Xo-FjK">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="117"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4e-IS-h1m">
+                                            <rect key="frame" x="0.0" y="129" width="393" height="630"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H72-rH-gFr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="630"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Adres başlığı (Ev/İş)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfD-AY-PUn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Şehir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-hX-rl0">
+                                                            <rect key="frame" x="0.0" y="90" width="393" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="İlçe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NEt-TP-EsL">
+                                                            <rect key="frame" x="0.0" y="180" width="393" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Mahalle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tBD-mU-597">
+                                                            <rect key="frame" x="0.0" y="270" width="393" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sokak Cadde ...." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VqE-85-hJg">
+                                                            <rect key="frame" x="0.0" y="360" width="393" height="90"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="90" id="JCc-wc-YJd"/>
+                                                            </constraints>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Posta Kodu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Zg-Fr-Adh">
+                                                            <rect key="frame" x="0.0" y="450" width="393" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-1q-pc5">
+                                                            <rect key="frame" x="0.0" y="540" width="393" height="90"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="H72-rH-gFr" secondAttribute="bottom" id="1SK-o4-wda"/>
+                                                <constraint firstItem="H72-rH-gFr" firstAttribute="leading" secondItem="g4e-IS-h1m" secondAttribute="leading" id="CFn-eG-dhq"/>
+                                                <constraint firstAttribute="trailing" secondItem="H72-rH-gFr" secondAttribute="trailing" id="DAR-6O-qHj"/>
+                                                <constraint firstItem="H72-rH-gFr" firstAttribute="top" secondItem="g4e-IS-h1m" secondAttribute="top" id="Hks-Hk-6OT"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="43j-0s-r48" firstAttribute="leading" secondItem="URI-nU-W0p" secondAttribute="leading" id="KgA-yR-Zrh"/>
+                                <constraint firstItem="URI-nU-W0p" firstAttribute="bottom" secondItem="43j-0s-r48" secondAttribute="bottom" id="QYF-F1-xg3"/>
+                                <constraint firstAttribute="bottom" secondItem="43j-0s-r48" secondAttribute="bottom" id="SyF-7K-Zru"/>
+                                <constraint firstAttribute="trailing" secondItem="43j-0s-r48" secondAttribute="trailing" id="j76-5c-xLg"/>
+                                <constraint firstItem="URI-nU-W0p" firstAttribute="trailing" secondItem="43j-0s-r48" secondAttribute="trailing" id="tUY-H3-Nlo"/>
+                                <constraint firstItem="43j-0s-r48" firstAttribute="top" secondItem="URI-nU-W0p" secondAttribute="top" id="zNr-Ji-1cW"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="7QN-K6-T9F"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="URI-nU-W0p"/>
+                        </scrollView>
+                    </subviews>
+                </stackView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Af-u8D">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" name="AccentColor"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yXv-Af-u8D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="57Y-SN-Nyv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M6w-7C-Hbf" secondAttribute="bottom" id="6jX-ef-pSJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M6w-7C-Hbf" secondAttribute="trailing" id="B8j-7U-6Mt"/>
+                <constraint firstItem="M6w-7C-Hbf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Mkr-BE-aFE"/>
+                <constraint firstItem="yXv-Af-u8D" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qtc-JG-XDI"/>
+                <constraint firstItem="M6w-7C-Hbf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gqj-iF-Oqg"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
