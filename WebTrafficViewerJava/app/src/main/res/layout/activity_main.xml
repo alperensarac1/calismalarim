@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- Üst kontrol alanı -->
+    <LinearLayout
+        android:id="@+id/topControlsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- URL ve butonlar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="https://example.com"
+                android:inputType="textUri"
+                android:imeOptions="actionGo"
+                android:singleLine="true"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aç" />
+
+            <Button
+                android:id="@+id/btnCopyAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kopyala" />
+
+        </LinearLayout>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:padding="8dp">
+           <!-- Filtre alanı -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:paddingTop="8dp">
+
+               <CheckBox
+                   android:id="@+id/cbEnableFilter"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Filtre aktif" />
+
+               <CheckBox
+                   android:id="@+id/cbOnlyApi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sadece API benzeri istekler" />
+
+               <CheckBox
+                   android:id="@+id/cbEnableJsHook"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="JS Hook aktif (fetch/xhr body yakala)" />
+               <CheckBox
+                   android:id="@+id/cbOnlyGet"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sadece GET" />
+
+               <CheckBox
+                   android:id="@+id/cbOnlyPost"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Sadece POST" />
+               <EditText
+                   android:id="@+id/etSearchUrl"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:hint="URL içinde ara (ör: deneme, api, user)"
+                   android:inputType="text"
+                   android:padding="12dp" />
+           </LinearLayout>
+       </ScrollView>
+    </LinearLayout>
+
+    <!-- WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/topControlsLayout"
+        app:layout_constraintBottom_toTopOf="@id/tvLogsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Liste başlığı -->
+    <TextView
+        android:id="@+id/tvLogsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yakalanan İstekler"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerLogs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Log listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerLogs"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

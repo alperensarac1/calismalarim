@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDetailMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Method"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDetailSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Host"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailMainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MainFrame"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailUrlTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvDetailUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="url burada"
+            android:textIsSelectable="true"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvDetailHeadersTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Headers"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvDetailHeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="headerlar burada"
+            android:textIsSelectable="true"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvDetailBodyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvDetailBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="body burada"
+            android:textIsSelectable="true"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+</ScrollView>
