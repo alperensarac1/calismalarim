@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B68F2E9F2F75530200AE8089 /* PdfConverterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2E9E2F75530200AE8089 /* PdfConverterSwiftUIApp.swift */; };
+		B68F2EA12F75530200AE8089 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EA02F75530200AE8089 /* ContentView.swift */; };
+		B68F2EA32F75530300AE8089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68F2EA22F75530300AE8089 /* Assets.xcassets */; };
+		B68F2EA62F75530300AE8089 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68F2EA52F75530300AE8089 /* Preview Assets.xcassets */; };
+		B68F2EB02F75530400AE8089 /* PdfConverterSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EAF2F75530400AE8089 /* PdfConverterSwiftUITests.swift */; };
+		B68F2EBA2F75530400AE8089 /* PdfConverterSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EB92F75530400AE8089 /* PdfConverterSwiftUIUITests.swift */; };
+		B68F2EBC2F75530400AE8089 /* PdfConverterSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EBB2F75530400AE8089 /* PdfConverterSwiftUIUITestsLaunchTests.swift */; };
+		B68F2ECF2F7553BD00AE8089 /* CreateJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ECE2F7553BD00AE8089 /* CreateJobResponse.swift */; };
+		B68F2ED12F7553D500AE8089 /* JobStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ED02F7553D500AE8089 /* JobStatusResponse.swift */; };
+		B68F2ED32F7553E400AE8089 /* JobItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ED22F7553E400AE8089 /* JobItem.swift */; };
+		B68F2ED52F7553F300AE8089 /* ListJobsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ED42F7553F300AE8089 /* ListJobsResponse.swift */; };
+		B68F2ED72F75541100AE8089 /* MultipartFormDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ED62F75541100AE8089 /* MultipartFormDataBuilder.swift */; };
+		B68F2ED92F75544100AE8089 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2ED82F75544100AE8089 /* ApiClient.swift */; };
+		B68F2EDB2F75545600AE8089 /* PdfRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EDA2F75545600AE8089 /* PdfRepository.swift */; };
+		B68F2EDD2F75546800AE8089 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EDC2F75546800AE8089 /* MainViewModel.swift */; };
+		B68F2EDF2F75547F00AE8089 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EDE2F75547F00AE8089 /* MainScreen.swift */; };
+		B68F2EE12F75549000AE8089 /* FilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EE02F75549000AE8089 /* FilePicker.swift */; };
+		B68F2EE32F75557000AE8089 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EE22F75557000AE8089 /* HistoryViewModel.swift */; };
+		B68F2EE52F75559100AE8089 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EE42F75559100AE8089 /* DownloadHelper.swift */; };
+		B68F2EE72F7555D700AE8089 /* JobsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EE62F7555D700AE8089 /* JobsRowView.swift */; };
+		B68F2EE92F7555EC00AE8089 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F2EE82F7555EB00AE8089 /* HistoryScreen.swift */; };
+		B69066D32F77D41900865E5D /* MultipartFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69066D22F77D41900865E5D /* MultipartFileWriter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B68F2EAC2F75530400AE8089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68F2E932F75530200AE8089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B68F2E9A2F75530200AE8089;
+			remoteInfo = PdfConverterSwiftUI;
+		};
+		B68F2EB62F75530400AE8089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68F2E932F75530200AE8089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B68F2E9A2F75530200AE8089;
+			remoteInfo = PdfConverterSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B68F2E9B2F75530200AE8089 /* PdfConverterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfConverterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68F2E9E2F75530200AE8089 /* PdfConverterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfConverterSwiftUIApp.swift; sourceTree = "<group>"; };
+		B68F2EA02F75530200AE8089 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B68F2EA22F75530300AE8089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B68F2EA52F75530300AE8089 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B68F2EAB2F75530400AE8089 /* PdfConverterSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PdfConverterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68F2EAF2F75530400AE8089 /* PdfConverterSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfConverterSwiftUITests.swift; sourceTree = "<group>"; };
+		B68F2EB52F75530400AE8089 /* PdfConverterSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PdfConverterSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68F2EB92F75530400AE8089 /* PdfConverterSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfConverterSwiftUIUITests.swift; sourceTree = "<group>"; };
+		B68F2EBB2F75530400AE8089 /* PdfConverterSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfConverterSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B68F2ECE2F7553BD00AE8089 /* CreateJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJobResponse.swift; sourceTree = "<group>"; };
+		B68F2ED02F7553D500AE8089 /* JobStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatusResponse.swift; sourceTree = "<group>"; };
+		B68F2ED22F7553E400AE8089 /* JobItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItem.swift; sourceTree = "<group>"; };
+		B68F2ED42F7553F300AE8089 /* ListJobsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJobsResponse.swift; sourceTree = "<group>"; };
+		B68F2ED62F75541100AE8089 /* MultipartFormDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBuilder.swift; sourceTree = "<group>"; };
+		B68F2ED82F75544100AE8089 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B68F2EDA2F75545600AE8089 /* PdfRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfRepository.swift; sourceTree = "<group>"; };
+		B68F2EDC2F75546800AE8089 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B68F2EDE2F75547F00AE8089 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		B68F2EE02F75549000AE8089 /* FilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePicker.swift; sourceTree = "<group>"; };
+		B68F2EE22F75557000AE8089 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		B68F2EE42F75559100AE8089 /* DownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
+		B68F2EE62F7555D700AE8089 /* JobsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRowView.swift; sourceTree = "<group>"; };
+		B68F2EE82F7555EB00AE8089 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		B69066D22F77D41900865E5D /* MultipartFileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFileWriter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B68F2E982F75530200AE8089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EA82F75530400AE8089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EB22F75530400AE8089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B68F2E922F75530200AE8089 = {
+			isa = PBXGroup;
+			children = (
+				B68F2E9D2F75530200AE8089 /* PdfConverterSwiftUI */,
+				B68F2EAE2F75530400AE8089 /* PdfConverterSwiftUITests */,
+				B68F2EB82F75530400AE8089 /* PdfConverterSwiftUIUITests */,
+				B68F2E9C2F75530200AE8089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B68F2E9C2F75530200AE8089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2E9B2F75530200AE8089 /* PdfConverterSwiftUI.app */,
+				B68F2EAB2F75530400AE8089 /* PdfConverterSwiftUITests.xctest */,
+				B68F2EB52F75530400AE8089 /* PdfConverterSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B68F2E9D2F75530200AE8089 /* PdfConverterSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2ECD2F75537000AE8089 /* views */,
+				B68F2ECC2F75535800AE8089 /* utils */,
+				B68F2ECB2F75534F00AE8089 /* viewmodels */,
+				B68F2ECA2F75534500AE8089 /* repository */,
+				B68F2EC92F75533600AE8089 /* network */,
+				B68F2EC82F75532D00AE8089 /* models */,
+				B68F2E9E2F75530200AE8089 /* PdfConverterSwiftUIApp.swift */,
+				B68F2EA02F75530200AE8089 /* ContentView.swift */,
+				B68F2EA22F75530300AE8089 /* Assets.xcassets */,
+				B68F2EA42F75530300AE8089 /* Preview Content */,
+			);
+			path = PdfConverterSwiftUI;
+			sourceTree = "<group>";
+		};
+		B68F2EA42F75530300AE8089 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EA52F75530300AE8089 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B68F2EAE2F75530400AE8089 /* PdfConverterSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EAF2F75530400AE8089 /* PdfConverterSwiftUITests.swift */,
+			);
+			path = PdfConverterSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B68F2EB82F75530400AE8089 /* PdfConverterSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EB92F75530400AE8089 /* PdfConverterSwiftUIUITests.swift */,
+				B68F2EBB2F75530400AE8089 /* PdfConverterSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = PdfConverterSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B68F2EC82F75532D00AE8089 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2ECE2F7553BD00AE8089 /* CreateJobResponse.swift */,
+				B68F2ED02F7553D500AE8089 /* JobStatusResponse.swift */,
+				B68F2ED22F7553E400AE8089 /* JobItem.swift */,
+				B68F2ED42F7553F300AE8089 /* ListJobsResponse.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B68F2EC92F75533600AE8089 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2ED82F75544100AE8089 /* ApiClient.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		B68F2ECA2F75534500AE8089 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EDA2F75545600AE8089 /* PdfRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		B68F2ECB2F75534F00AE8089 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EDC2F75546800AE8089 /* MainViewModel.swift */,
+				B68F2EE22F75557000AE8089 /* HistoryViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		B68F2ECC2F75535800AE8089 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2ED62F75541100AE8089 /* MultipartFormDataBuilder.swift */,
+				B68F2EE02F75549000AE8089 /* FilePicker.swift */,
+				B68F2EE42F75559100AE8089 /* DownloadHelper.swift */,
+				B69066D22F77D41900865E5D /* MultipartFileWriter.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		B68F2ECD2F75537000AE8089 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B68F2EDE2F75547F00AE8089 /* MainScreen.swift */,
+				B68F2EE62F7555D700AE8089 /* JobsRowView.swift */,
+				B68F2EE82F7555EB00AE8089 /* HistoryScreen.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B68F2E9A2F75530200AE8089 /* PdfConverterSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68F2EBF2F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUI" */;
+			buildPhases = (
+				B68F2E972F75530200AE8089 /* Sources */,
+				B68F2E982F75530200AE8089 /* Frameworks */,
+				B68F2E992F75530200AE8089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PdfConverterSwiftUI;
+			productName = PdfConverterSwiftUI;
+			productReference = B68F2E9B2F75530200AE8089 /* PdfConverterSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B68F2EAA2F75530400AE8089 /* PdfConverterSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68F2EC22F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUITests" */;
+			buildPhases = (
+				B68F2EA72F75530400AE8089 /* Sources */,
+				B68F2EA82F75530400AE8089 /* Frameworks */,
+				B68F2EA92F75530400AE8089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B68F2EAD2F75530400AE8089 /* PBXTargetDependency */,
+			);
+			name = PdfConverterSwiftUITests;
+			productName = PdfConverterSwiftUITests;
+			productReference = B68F2EAB2F75530400AE8089 /* PdfConverterSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B68F2EB42F75530400AE8089 /* PdfConverterSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68F2EC52F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUIUITests" */;
+			buildPhases = (
+				B68F2EB12F75530400AE8089 /* Sources */,
+				B68F2EB22F75530400AE8089 /* Frameworks */,
+				B68F2EB32F75530400AE8089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B68F2EB72F75530400AE8089 /* PBXTargetDependency */,
+			);
+			name = PdfConverterSwiftUIUITests;
+			productName = PdfConverterSwiftUIUITests;
+			productReference = B68F2EB52F75530400AE8089 /* PdfConverterSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B68F2E932F75530200AE8089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B68F2E9A2F75530200AE8089 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B68F2EAA2F75530400AE8089 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B68F2E9A2F75530200AE8089;
+					};
+					B68F2EB42F75530400AE8089 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B68F2E9A2F75530200AE8089;
+					};
+				};
+			};
+			buildConfigurationList = B68F2E962F75530200AE8089 /* Build configuration list for PBXProject "PdfConverterSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B68F2E922F75530200AE8089;
+			productRefGroup = B68F2E9C2F75530200AE8089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B68F2E9A2F75530200AE8089 /* PdfConverterSwiftUI */,
+				B68F2EAA2F75530400AE8089 /* PdfConverterSwiftUITests */,
+				B68F2EB42F75530400AE8089 /* PdfConverterSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B68F2E992F75530200AE8089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68F2EA62F75530300AE8089 /* Preview Assets.xcassets in Resources */,
+				B68F2EA32F75530300AE8089 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EA92F75530400AE8089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EB32F75530400AE8089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B68F2E972F75530200AE8089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68F2EE92F7555EC00AE8089 /* HistoryScreen.swift in Sources */,
+				B68F2ED72F75541100AE8089 /* MultipartFormDataBuilder.swift in Sources */,
+				B68F2ED12F7553D500AE8089 /* JobStatusResponse.swift in Sources */,
+				B69066D32F77D41900865E5D /* MultipartFileWriter.swift in Sources */,
+				B68F2EA12F75530200AE8089 /* ContentView.swift in Sources */,
+				B68F2EDF2F75547F00AE8089 /* MainScreen.swift in Sources */,
+				B68F2ED92F75544100AE8089 /* ApiClient.swift in Sources */,
+				B68F2ED32F7553E400AE8089 /* JobItem.swift in Sources */,
+				B68F2EDD2F75546800AE8089 /* MainViewModel.swift in Sources */,
+				B68F2E9F2F75530200AE8089 /* PdfConverterSwiftUIApp.swift in Sources */,
+				B68F2EDB2F75545600AE8089 /* PdfRepository.swift in Sources */,
+				B68F2EE72F7555D700AE8089 /* JobsRowView.swift in Sources */,
+				B68F2EE12F75549000AE8089 /* FilePicker.swift in Sources */,
+				B68F2ED52F7553F300AE8089 /* ListJobsResponse.swift in Sources */,
+				B68F2EE32F75557000AE8089 /* HistoryViewModel.swift in Sources */,
+				B68F2ECF2F7553BD00AE8089 /* CreateJobResponse.swift in Sources */,
+				B68F2EE52F75559100AE8089 /* DownloadHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EA72F75530400AE8089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68F2EB02F75530400AE8089 /* PdfConverterSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68F2EB12F75530400AE8089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68F2EBC2F75530400AE8089 /* PdfConverterSwiftUIUITestsLaunchTests.swift in Sources */,
+				B68F2EBA2F75530400AE8089 /* PdfConverterSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B68F2EAD2F75530400AE8089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B68F2E9A2F75530200AE8089 /* PdfConverterSwiftUI */;
+			targetProxy = B68F2EAC2F75530400AE8089 /* PBXContainerItemProxy */;
+		};
+		B68F2EB72F75530400AE8089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B68F2E9A2F75530200AE8089 /* PdfConverterSwiftUI */;
+			targetProxy = B68F2EB62F75530400AE8089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B68F2EBD2F75530400AE8089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B68F2EBE2F75530400AE8089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B68F2EC02F75530400AE8089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PdfConverterSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B68F2EC12F75530400AE8089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PdfConverterSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B68F2EC32F75530400AE8089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PdfConverterSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PdfConverterSwiftUI";
+			};
+			name = Debug;
+		};
+		B68F2EC42F75530400AE8089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PdfConverterSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PdfConverterSwiftUI";
+			};
+			name = Release;
+		};
+		B68F2EC62F75530400AE8089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PdfConverterSwiftUI;
+			};
+			name = Debug;
+		};
+		B68F2EC72F75530400AE8089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.PdfConverterSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PdfConverterSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B68F2E962F75530200AE8089 /* Build configuration list for PBXProject "PdfConverterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68F2EBD2F75530400AE8089 /* Debug */,
+				B68F2EBE2F75530400AE8089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68F2EBF2F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68F2EC02F75530400AE8089 /* Debug */,
+				B68F2EC12F75530400AE8089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68F2EC22F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68F2EC32F75530400AE8089 /* Debug */,
+				B68F2EC42F75530400AE8089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68F2EC52F75530400AE8089 /* Build configuration list for PBXNativeTarget "PdfConverterSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68F2EC62F75530400AE8089 /* Debug */,
+				B68F2EC72F75530400AE8089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B68F2E932F75530200AE8089 /* Project object */;
+}
