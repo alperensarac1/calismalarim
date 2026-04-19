@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B690C6002F7D387A0006A928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C5FF2F7D387A0006A928 /* AppDelegate.swift */; };
+		B690C6022F7D387A0006A928 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6012F7D387A0006A928 /* SceneDelegate.swift */; };
+		B690C6042F7D387A0006A928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6032F7D387A0006A928 /* ViewController.swift */; };
+		B690C6072F7D387A0006A928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B690C6052F7D387A0006A928 /* Main.storyboard */; };
+		B690C6092F7D387B0006A928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B690C6082F7D387B0006A928 /* Assets.xcassets */; };
+		B690C60C2F7D387B0006A928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B690C60A2F7D387B0006A928 /* LaunchScreen.storyboard */; };
+		B690C6172F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6162F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.swift */; };
+		B690C6212F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6202F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.swift */; };
+		B690C6232F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6222F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift */; };
+		B690C6302F7D3B0E0006A928 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C62F2F7D3B0E0006A928 /* ZoomableImageView.swift */; };
+		B690C6322F7D3C9A0006A928 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6312F7D3C9A0006A928 /* EditorViewModel.swift */; };
+		B690C6342F7D3CAB0006A928 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6332F7D3CAB0006A928 /* ImageProcessor.swift */; };
+		B690C6362F7D3CBF0006A928 /* ShareSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C6352F7D3CBF0006A928 /* ShareSheetHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B690C6132F7D387C0006A928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B690C5F42F7D387A0006A928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B690C5FB2F7D387A0006A928;
+			remoteInfo = ResimArkaplanKaldirmaSwift;
+		};
+		B690C61D2F7D387C0006A928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B690C5F42F7D387A0006A928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B690C5FB2F7D387A0006A928;
+			remoteInfo = ResimArkaplanKaldirmaSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B690C5FC2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResimArkaplanKaldirmaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B690C5FF2F7D387A0006A928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B690C6012F7D387A0006A928 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B690C6032F7D387A0006A928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B690C6062F7D387A0006A928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B690C6082F7D387B0006A928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B690C60B2F7D387B0006A928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B690C60D2F7D387B0006A928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B690C6122F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResimArkaplanKaldirmaSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B690C6162F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResimArkaplanKaldirmaSwiftTests.swift; sourceTree = "<group>"; };
+		B690C61C2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResimArkaplanKaldirmaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B690C6202F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResimArkaplanKaldirmaSwiftUITests.swift; sourceTree = "<group>"; };
+		B690C6222F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B690C62F2F7D3B0E0006A928 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
+		B690C6312F7D3C9A0006A928 /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
+		B690C6332F7D3CAB0006A928 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		B690C6352F7D3CBF0006A928 /* ShareSheetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B690C5F92F7D387A0006A928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C60F2F7D387C0006A928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C6192F7D387C0006A928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B690C5F32F7D387A0006A928 = {
+			isa = PBXGroup;
+			children = (
+				B690C5FE2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */,
+				B690C6152F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests */,
+				B690C61F2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests */,
+				B690C5FD2F7D387A0006A928 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B690C5FD2F7D387A0006A928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B690C5FC2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift.app */,
+				B690C6122F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.xctest */,
+				B690C61C2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B690C5FE2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B690C5FF2F7D387A0006A928 /* AppDelegate.swift */,
+				B690C6012F7D387A0006A928 /* SceneDelegate.swift */,
+				B690C6032F7D387A0006A928 /* ViewController.swift */,
+				B690C6052F7D387A0006A928 /* Main.storyboard */,
+				B690C6082F7D387B0006A928 /* Assets.xcassets */,
+				B690C60A2F7D387B0006A928 /* LaunchScreen.storyboard */,
+				B690C60D2F7D387B0006A928 /* Info.plist */,
+				B690C62F2F7D3B0E0006A928 /* ZoomableImageView.swift */,
+				B690C6312F7D3C9A0006A928 /* EditorViewModel.swift */,
+				B690C6332F7D3CAB0006A928 /* ImageProcessor.swift */,
+				B690C6352F7D3CBF0006A928 /* ShareSheetHelper.swift */,
+			);
+			path = ResimArkaplanKaldirmaSwift;
+			sourceTree = "<group>";
+		};
+		B690C6152F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B690C6162F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.swift */,
+			);
+			path = ResimArkaplanKaldirmaSwiftTests;
+			sourceTree = "<group>";
+		};
+		B690C61F2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B690C6202F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.swift */,
+				B690C6222F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift */,
+			);
+			path = ResimArkaplanKaldirmaSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B690C5FB2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B690C6262F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwift" */;
+			buildPhases = (
+				B690C5F82F7D387A0006A928 /* Sources */,
+				B690C5F92F7D387A0006A928 /* Frameworks */,
+				B690C5FA2F7D387A0006A928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResimArkaplanKaldirmaSwift;
+			productName = ResimArkaplanKaldirmaSwift;
+			productReference = B690C5FC2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B690C6112F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B690C6292F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwiftTests" */;
+			buildPhases = (
+				B690C60E2F7D387C0006A928 /* Sources */,
+				B690C60F2F7D387C0006A928 /* Frameworks */,
+				B690C6102F7D387C0006A928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B690C6142F7D387C0006A928 /* PBXTargetDependency */,
+			);
+			name = ResimArkaplanKaldirmaSwiftTests;
+			productName = ResimArkaplanKaldirmaSwiftTests;
+			productReference = B690C6122F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B690C61B2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B690C62C2F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwiftUITests" */;
+			buildPhases = (
+				B690C6182F7D387C0006A928 /* Sources */,
+				B690C6192F7D387C0006A928 /* Frameworks */,
+				B690C61A2F7D387C0006A928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B690C61E2F7D387C0006A928 /* PBXTargetDependency */,
+			);
+			name = ResimArkaplanKaldirmaSwiftUITests;
+			productName = ResimArkaplanKaldirmaSwiftUITests;
+			productReference = B690C61C2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B690C5F42F7D387A0006A928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B690C5FB2F7D387A0006A928 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B690C6112F7D387C0006A928 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B690C5FB2F7D387A0006A928;
+					};
+					B690C61B2F7D387C0006A928 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B690C5FB2F7D387A0006A928;
+					};
+				};
+			};
+			buildConfigurationList = B690C5F72F7D387A0006A928 /* Build configuration list for PBXProject "ResimArkaplanKaldirmaSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B690C5F32F7D387A0006A928;
+			productRefGroup = B690C5FD2F7D387A0006A928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B690C5FB2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */,
+				B690C6112F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests */,
+				B690C61B2F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B690C5FA2F7D387A0006A928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B690C60C2F7D387B0006A928 /* LaunchScreen.storyboard in Resources */,
+				B690C6092F7D387B0006A928 /* Assets.xcassets in Resources */,
+				B690C6072F7D387A0006A928 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C6102F7D387C0006A928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C61A2F7D387C0006A928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B690C5F82F7D387A0006A928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B690C6042F7D387A0006A928 /* ViewController.swift in Sources */,
+				B690C6302F7D3B0E0006A928 /* ZoomableImageView.swift in Sources */,
+				B690C6322F7D3C9A0006A928 /* EditorViewModel.swift in Sources */,
+				B690C6002F7D387A0006A928 /* AppDelegate.swift in Sources */,
+				B690C6342F7D3CAB0006A928 /* ImageProcessor.swift in Sources */,
+				B690C6022F7D387A0006A928 /* SceneDelegate.swift in Sources */,
+				B690C6362F7D3CBF0006A928 /* ShareSheetHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C60E2F7D387C0006A928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B690C6172F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B690C6182F7D387C0006A928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B690C6232F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITestsLaunchTests.swift in Sources */,
+				B690C6212F7D387C0006A928 /* ResimArkaplanKaldirmaSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B690C6142F7D387C0006A928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B690C5FB2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */;
+			targetProxy = B690C6132F7D387C0006A928 /* PBXContainerItemProxy */;
+		};
+		B690C61E2F7D387C0006A928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B690C5FB2F7D387A0006A928 /* ResimArkaplanKaldirmaSwift */;
+			targetProxy = B690C61D2F7D387C0006A928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B690C6052F7D387A0006A928 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B690C6062F7D387A0006A928 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B690C60A2F7D387B0006A928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B690C60B2F7D387B0006A928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B690C6242F7D387C0006A928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B690C6252F7D387C0006A928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B690C6272F7D387C0006A928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ResimArkaplanKaldirmaSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B690C6282F7D387C0006A928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ResimArkaplanKaldirmaSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B690C62A2F7D387C0006A928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResimArkaplanKaldirmaSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ResimArkaplanKaldirmaSwift";
+			};
+			name = Debug;
+		};
+		B690C62B2F7D387C0006A928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResimArkaplanKaldirmaSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ResimArkaplanKaldirmaSwift";
+			};
+			name = Release;
+		};
+		B690C62D2F7D387C0006A928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResimArkaplanKaldirmaSwift;
+			};
+			name = Debug;
+		};
+		B690C62E2F7D387C0006A928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.ResimArkaplanKaldirmaSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResimArkaplanKaldirmaSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B690C5F72F7D387A0006A928 /* Build configuration list for PBXProject "ResimArkaplanKaldirmaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B690C6242F7D387C0006A928 /* Debug */,
+				B690C6252F7D387C0006A928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B690C6262F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B690C6272F7D387C0006A928 /* Debug */,
+				B690C6282F7D387C0006A928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B690C6292F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B690C62A2F7D387C0006A928 /* Debug */,
+				B690C62B2F7D387C0006A928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B690C62C2F7D387C0006A928 /* Build configuration list for PBXNativeTarget "ResimArkaplanKaldirmaSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B690C62D2F7D387C0006A928 /* Debug */,
+				B690C62E2F7D387C0006A928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B690C5F42F7D387A0006A928 /* Project object */;
+}
