@@ -1,16 +1,6 @@
-# online_taksi_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 18 07" src="https://github.com/user-attachments/assets/b851b4a3-646b-400d-a1c4-d4a7a1490dd8" />
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 17 43" src="https://github.com/user-attachments/assets/1953ef80-963b-450e-9edb-86983bd9637e" />
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 12 38" src="https://github.com/user-attachments/assets/7c54ba9b-8788-40da-bab0-3167849f3d40" />
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 12 31" src="https://github.com/user-attachments/assets/021c503e-c970-4172-b0f0-91f9b02b425d" />
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 10 34" src="https://github.com/user-attachments/assets/20b624b6-fe17-4f06-a313-7122481ea8d6" />
+<img width="931" height="880" alt="Ekran Resmi 2026-04-30 12 09 39" src="https://github.com/user-attachments/assets/0ca3241e-dbca-4b06-8962-afdf7ba51ae6" />
