@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoomListViewController" customModule="CanliYayinSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="statusLabel" destination="aIT-2W-2ij" id="wXt-Cg-UYa"/>
+                <outlet property="tableView" destination="63a-Eg-Lur" id="thG-4y-akz"/>
+                <outlet property="titleLabel" destination="fnv-AU-cnn" id="iOf-95-4vZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="tno-AI-XMV">
+            <view key="view" contentMode="scaleToFill" id="PBQ-Fb-r4e">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-AU-cnn">
+                        <rect key="frame" x="16" y="69" width="361" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIT-2W-2ij">
+                        <rect key="frame" x="16" y="105" width="361" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="63a-Eg-Lur">
+                        <rect key="frame" x="16" y="146" width="361" height="682"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="eeo-S2-CKv"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="aIT-2W-2ij" firstAttribute="top" secondItem="fnv-AU-cnn" secondAttribute="bottom" constant="15" id="A30-T3-Qju"/>
+                    <constraint firstItem="fnv-AU-cnn" firstAttribute="leading" secondItem="eeo-S2-CKv" secondAttribute="leading" constant="16" id="AF1-wH-8sq"/>
+                    <constraint firstItem="63a-Eg-Lur" firstAttribute="top" secondItem="aIT-2W-2ij" secondAttribute="bottom" constant="20" id="KXt-wQ-1MU"/>
+                    <constraint firstItem="eeo-S2-CKv" firstAttribute="trailing" secondItem="fnv-AU-cnn" secondAttribute="trailing" constant="16" id="P17-pq-Ksa"/>
+                    <constraint firstItem="fnv-AU-cnn" firstAttribute="top" secondItem="eeo-S2-CKv" secondAttribute="top" constant="10" id="V8Y-xB-Sth"/>
+                    <constraint firstItem="63a-Eg-Lur" firstAttribute="leading" secondItem="eeo-S2-CKv" secondAttribute="leading" constant="16" id="aGx-lg-AdN"/>
+                    <constraint firstItem="63a-Eg-Lur" firstAttribute="bottom" secondItem="eeo-S2-CKv" secondAttribute="bottom" constant="10" id="kJr-t0-HAe"/>
+                    <constraint firstItem="eeo-S2-CKv" firstAttribute="trailing" secondItem="63a-Eg-Lur" secondAttribute="trailing" constant="16" id="n05-VY-PhX"/>
+                    <constraint firstItem="aIT-2W-2ij" firstAttribute="leading" secondItem="eeo-S2-CKv" secondAttribute="leading" constant="16" id="pGX-gy-KOq"/>
+                    <constraint firstItem="eeo-S2-CKv" firstAttribute="trailing" secondItem="aIT-2W-2ij" secondAttribute="trailing" constant="16" id="u57-Sx-6IC"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="267.93893129770993" y="16.901408450704228"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

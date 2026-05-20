@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/tvBroadcastStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayın hazırlanıyor..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/edtBroadcastTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yayın başlığı yaz..."
+        android:textColor="#FFFFFF"
+        android:hintTextColor="#AAAAAA"
+        android:background="#222222"
+        android:padding="12dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnStartBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayını Başlat" />
+
+    <TextView
+        android:id="@+id/tvViewerCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İzleyici: 0"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:scaleType="fillCenter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canlı Sohbet"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#111111">
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mesaj yaz..."
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#AAAAAA"
+            android:singleLine="true"
+            android:background="#222222"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gönder" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStopBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayını Bitir" />
+
+</LinearLayout>

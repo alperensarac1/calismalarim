@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="#F1F5F9"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvRoomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayın Başlığı"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvBroadcasterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayıncı"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/tvViewerCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 izleyici"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

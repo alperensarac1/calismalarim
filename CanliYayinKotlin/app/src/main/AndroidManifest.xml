@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- İnternet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Kamera -->
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+    android:theme="@style/Theme.CanliYayinKotlin"
+    tools:targetApi="31">
+
+    <!-- Ana ekran -->
+    <activity
+        android:name=".MainActivity"
+        android:exported="true">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- Yayın açan kullanıcı -->
+    <activity
+        android:name=".BroadcasterActivity"
+        android:exported="false" />
+
+    <!-- Oda listesi -->
+    <activity
+        android:name=".RoomListActivity"
+        android:exported="false" />
+
+    <!-- Yayın izleme ekranı -->
+    <activity
+        android:name=".ViewerActivity"
+        android:exported="false" />
+
+</application>
+
+    </manifest>

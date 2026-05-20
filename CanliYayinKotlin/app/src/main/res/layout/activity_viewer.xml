@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/tvViewerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yayın İzleniyor"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tvViewerCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İzleyici: 0"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imgLiveFrame"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitCenter"
+        android:background="#111111" />
+
+    <TextView
+        android:id="@+id/tvViewerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bağlanıyor..."
+        android:textColor="#FFFFFF"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvChatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canlı Sohbet"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#111111">
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mesaj yaz..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:singleLine="true"
+            android:background="#222222"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gönder" />
+
+    </LinearLayout>
+
+</LinearLayout>
