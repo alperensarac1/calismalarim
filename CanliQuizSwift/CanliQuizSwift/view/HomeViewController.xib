@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CanliQuizSwift">
+            <connections>
+                <outlet property="createRoomButton" destination="dnc-B7-dsR" id="a0v-i8-6l8"/>
+                <outlet property="joinRoomButton" destination="GCu-2F-rEV" id="Wtz-q8-cL2"/>
+                <outlet property="subtitleLabel" destination="slZ-2w-1vM" id="I90-bc-Rky"/>
+                <outlet property="titleLabel" destination="TZT-IB-s5T" id="cjv-dy-WqW"/>
+                <outlet property="view" destination="LSu-Wi-Jk5" id="xla-dk-fUB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController restorationIdentifier="HomeViewController" id="195-oF-FZD">
+            <view key="view" contentMode="scaleToFill" id="LSu-Wi-Jk5">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slZ-2w-1vM">
+                        <rect key="frame" x="58" y="204" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-B7-dsR">
+                        <rect key="frame" x="58" y="347" width="277" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                        <connections>
+                            <action selector="createRoomButtonTapped:" destination="-1" eventType="touchUpInside" id="hM7-Ky-jT8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="HomeViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCu-2F-rEV">
+                        <rect key="frame" x="58" y="417" width="277" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                        <connections>
+                            <action selector="joinRoomButtonTapped:" destination="-1" eventType="touchUpInside" id="NOF-MA-ilx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZT-IB-s5T">
+                        <rect key="frame" x="58" y="141" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="0ic-4X-DwB"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="slZ-2w-1vM" firstAttribute="top" secondItem="TZT-IB-s5T" secondAttribute="bottom" constant="42" id="6u3-Y5-JA7"/>
+                    <constraint firstItem="dnc-B7-dsR" firstAttribute="top" secondItem="slZ-2w-1vM" secondAttribute="bottom" constant="122" id="Cvb-BJ-9PH"/>
+                    <constraint firstItem="slZ-2w-1vM" firstAttribute="leading" secondItem="0ic-4X-DwB" secondAttribute="leading" constant="58" id="KHW-X5-Kir"/>
+                    <constraint firstItem="dnc-B7-dsR" firstAttribute="leading" secondItem="0ic-4X-DwB" secondAttribute="leading" constant="58" id="OLd-uO-TZI"/>
+                    <constraint firstItem="TZT-IB-s5T" firstAttribute="leading" secondItem="0ic-4X-DwB" secondAttribute="leading" constant="58" id="PJg-D5-uNZ"/>
+                    <constraint firstItem="GCu-2F-rEV" firstAttribute="leading" secondItem="0ic-4X-DwB" secondAttribute="leading" constant="58" id="RL9-Qh-A3y"/>
+                    <constraint firstItem="0ic-4X-DwB" firstAttribute="trailing" secondItem="dnc-B7-dsR" secondAttribute="trailing" constant="58" id="Sie-hP-lWI"/>
+                    <constraint firstItem="GCu-2F-rEV" firstAttribute="top" secondItem="dnc-B7-dsR" secondAttribute="bottom" constant="35" id="Ub7-ET-QIZ"/>
+                    <constraint firstItem="TZT-IB-s5T" firstAttribute="top" secondItem="0ic-4X-DwB" secondAttribute="top" constant="82" id="WYP-6q-9un"/>
+                    <constraint firstItem="0ic-4X-DwB" firstAttribute="bottom" secondItem="GCu-2F-rEV" secondAttribute="bottom" constant="366" id="jgW-zQ-une"/>
+                    <constraint firstItem="0ic-4X-DwB" firstAttribute="trailing" secondItem="GCu-2F-rEV" secondAttribute="trailing" constant="58" id="qy5-Yi-5iR"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="342.74809160305341" y="45.774647887323944"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canlı Quiz"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oda oluştur veya oda kodu ile quize katıl."
+        android:textSize="16sp"
+        android:textColor="#6B7280"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        android:id="@+id/btnCreateRoom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Oda Oluştur"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnJoinRoom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Odaya Giriş Yap"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginTop="14dp" />
+
+</LinearLayout>
