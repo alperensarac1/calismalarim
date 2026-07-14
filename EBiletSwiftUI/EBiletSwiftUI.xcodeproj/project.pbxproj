@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B64CC3AE2FF6592C00E5D866 /* EBiletSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3AD2FF6592C00E5D866 /* EBiletSwiftUIApp.swift */; };
+		B64CC3B02FF6592C00E5D866 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3AF2FF6592C00E5D866 /* ContentView.swift */; };
+		B64CC3B22FF6592D00E5D866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64CC3B12FF6592D00E5D866 /* Assets.xcassets */; };
+		B64CC3B52FF6592D00E5D866 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64CC3B42FF6592D00E5D866 /* Preview Assets.xcassets */; };
+		B64CC3BF2FF6592E00E5D866 /* EBiletSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3BE2FF6592E00E5D866 /* EBiletSwiftUITests.swift */; };
+		B64CC3C92FF6592E00E5D866 /* EBiletSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3C82FF6592E00E5D866 /* EBiletSwiftUIUITests.swift */; };
+		B64CC3CB2FF6592E00E5D866 /* EBiletSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3CA2FF6592E00E5D866 /* EBiletSwiftUIUITestsLaunchTests.swift */; };
+		B64CC3D92FF6596D00E5D866 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3D82FF6596D00E5D866 /* ApiResponse.swift */; };
+		B64CC3DB2FF6598100E5D866 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3DA2FF6598100E5D866 /* User.swift */; };
+		B64CC3DD2FF6599000E5D866 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3DC2FF6599000E5D866 /* City.swift */; };
+		B64CC3DF2FF6599F00E5D866 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3DE2FF6599F00E5D866 /* District.swift */; };
+		B64CC3E12FF659AD00E5D866 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3E02FF659AD00E5D866 /* Venue.swift */; };
+		B64CC3E32FF659BB00E5D866 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3E22FF659BB00E5D866 /* Event.swift */; };
+		B64CC3E52FF659C900E5D866 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3E42FF659C900E5D866 /* Ticket.swift */; };
+		B64CC3E82FF659F400E5D866 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3E72FF659F400E5D866 /* SessionManager.swift */; };
+		B64CC3EA2FF65A0500E5D866 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3E92FF65A0500E5D866 /* AppState.swift */; };
+		B64CC3EC2FF65A1700E5D866 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3EB2FF65A1700E5D866 /* APIClient.swift */; };
+		B64CC3EE2FF65A4000E5D866 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3ED2FF65A4000E5D866 /* APIService.swift */; };
+		B64CC3F12FF65A6300E5D866 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3F02FF65A6300E5D866 /* String+Validation.swift */; };
+		B64CC3F42FF6610F00E5D866 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3F32FF6610F00E5D866 /* RootView.swift */; };
+		B64CC3F72FF6618C00E5D866 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3F62FF6618C00E5D866 /* AppButton.swift */; };
+		B64CC3F92FF661A600E5D866 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3F82FF661A600E5D866 /* AppTextField.swift */; };
+		B64CC3FB2FF662A700E5D866 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3FA2FF662A700E5D866 /* LoadingView.swift */; };
+		B64CC3FE2FF662B900E5D866 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3FD2FF662B900E5D866 /* LoginView.swift */; };
+		B64CC4002FF662C900E5D866 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC3FF2FF662C900E5D866 /* RegisterView.swift */; };
+		B64CC4032FF6631900E5D866 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4022FF6631900E5D866 /* EventCardView.swift */; };
+		B64CC4052FF6632700E5D866 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4042FF6632700E5D866 /* HomeView.swift */; };
+		B64CC4082FF664D300E5D866 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4072FF664D300E5D866 /* EventDetailView.swift */; };
+		B64CC40A2FF6654700E5D866 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4092FF6654700E5D866 /* QRCodeGenerator.swift */; };
+		B64CC40D2FF6657700E5D866 /* TicketCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC40C2FF6657700E5D866 /* TicketCardView.swift */; };
+		B64CC40F2FF6659600E5D866 /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC40E2FF6659600E5D866 /* MyTicketsView.swift */; };
+		B64CC4112FF665A700E5D866 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4102FF665A700E5D866 /* TicketDetailView.swift */; };
+		B64CC4142FF6665E00E5D866 /* QRScannerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4132FF6665E00E5D866 /* QRScannerRepresentable.swift */; };
+		B64CC4162FF6669F00E5D866 /* TicketScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CC4152FF6669F00E5D866 /* TicketScannerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64CC3BB2FF6592E00E5D866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64CC3A22FF6592C00E5D866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64CC3A92FF6592C00E5D866;
+			remoteInfo = EBiletSwiftUI;
+		};
+		B64CC3C52FF6592E00E5D866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64CC3A22FF6592C00E5D866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64CC3A92FF6592C00E5D866;
+			remoteInfo = EBiletSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B64CC3AA2FF6592C00E5D866 /* EBiletSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EBiletSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64CC3AD2FF6592C00E5D866 /* EBiletSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBiletSwiftUIApp.swift; sourceTree = "<group>"; };
+		B64CC3AF2FF6592C00E5D866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B64CC3B12FF6592D00E5D866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B64CC3B42FF6592D00E5D866 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B64CC3BA2FF6592E00E5D866 /* EBiletSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EBiletSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64CC3BE2FF6592E00E5D866 /* EBiletSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBiletSwiftUITests.swift; sourceTree = "<group>"; };
+		B64CC3C42FF6592E00E5D866 /* EBiletSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EBiletSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64CC3C82FF6592E00E5D866 /* EBiletSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBiletSwiftUIUITests.swift; sourceTree = "<group>"; };
+		B64CC3CA2FF6592E00E5D866 /* EBiletSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBiletSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B64CC3D82FF6596D00E5D866 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		B64CC3DA2FF6598100E5D866 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B64CC3DC2FF6599000E5D866 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B64CC3DE2FF6599F00E5D866 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		B64CC3E02FF659AD00E5D866 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		B64CC3E22FF659BB00E5D866 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B64CC3E42FF659C900E5D866 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		B64CC3E72FF659F400E5D866 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		B64CC3E92FF65A0500E5D866 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B64CC3EB2FF65A1700E5D866 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B64CC3ED2FF65A4000E5D866 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B64CC3F02FF65A6300E5D866 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		B64CC3F32FF6610F00E5D866 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B64CC3F62FF6618C00E5D866 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		B64CC3F82FF661A600E5D866 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		B64CC3FA2FF662A700E5D866 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B64CC3FD2FF662B900E5D866 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B64CC3FF2FF662C900E5D866 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B64CC4022FF6631900E5D866 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		B64CC4042FF6632700E5D866 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B64CC4072FF664D300E5D866 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		B64CC4092FF6654700E5D866 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		B64CC40C2FF6657700E5D866 /* TicketCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCardView.swift; sourceTree = "<group>"; };
+		B64CC40E2FF6659600E5D866 /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
+		B64CC4102FF665A700E5D866 /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
+		B64CC4132FF6665E00E5D866 /* QRScannerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerRepresentable.swift; sourceTree = "<group>"; };
+		B64CC4152FF6669F00E5D866 /* TicketScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketScannerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64CC3A72FF6592C00E5D866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3B72FF6592E00E5D866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3C12FF6592E00E5D866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64CC3A12FF6592C00E5D866 = {
+			isa = PBXGroup;
+			children = (
+				B64CC3AC2FF6592C00E5D866 /* EBiletSwiftUI */,
+				B64CC3BD2FF6592E00E5D866 /* EBiletSwiftUITests */,
+				B64CC3C72FF6592E00E5D866 /* EBiletSwiftUIUITests */,
+				B64CC3AB2FF6592C00E5D866 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64CC3AB2FF6592C00E5D866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3AA2FF6592C00E5D866 /* EBiletSwiftUI.app */,
+				B64CC3BA2FF6592E00E5D866 /* EBiletSwiftUITests.xctest */,
+				B64CC3C42FF6592E00E5D866 /* EBiletSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64CC3AC2FF6592C00E5D866 /* EBiletSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3F22FF6610700E5D866 /* views */,
+				B64CC3EF2FF65A5E00E5D866 /* util */,
+				B64CC3E62FF659ED00E5D866 /* core */,
+				B64CC3D72FF6596500E5D866 /* models */,
+				B64CC3AD2FF6592C00E5D866 /* EBiletSwiftUIApp.swift */,
+				B64CC3AF2FF6592C00E5D866 /* ContentView.swift */,
+				B64CC3B12FF6592D00E5D866 /* Assets.xcassets */,
+				B64CC3B32FF6592D00E5D866 /* Preview Content */,
+			);
+			path = EBiletSwiftUI;
+			sourceTree = "<group>";
+		};
+		B64CC3B32FF6592D00E5D866 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3B42FF6592D00E5D866 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B64CC3BD2FF6592E00E5D866 /* EBiletSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3BE2FF6592E00E5D866 /* EBiletSwiftUITests.swift */,
+			);
+			path = EBiletSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B64CC3C72FF6592E00E5D866 /* EBiletSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3C82FF6592E00E5D866 /* EBiletSwiftUIUITests.swift */,
+				B64CC3CA2FF6592E00E5D866 /* EBiletSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = EBiletSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B64CC3D72FF6596500E5D866 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3D82FF6596D00E5D866 /* ApiResponse.swift */,
+				B64CC3DA2FF6598100E5D866 /* User.swift */,
+				B64CC3DC2FF6599000E5D866 /* City.swift */,
+				B64CC3DE2FF6599F00E5D866 /* District.swift */,
+				B64CC3E02FF659AD00E5D866 /* Venue.swift */,
+				B64CC3E22FF659BB00E5D866 /* Event.swift */,
+				B64CC3E42FF659C900E5D866 /* Ticket.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B64CC3E62FF659ED00E5D866 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3E72FF659F400E5D866 /* SessionManager.swift */,
+				B64CC3E92FF65A0500E5D866 /* AppState.swift */,
+				B64CC3EB2FF65A1700E5D866 /* APIClient.swift */,
+				B64CC3ED2FF65A4000E5D866 /* APIService.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		B64CC3EF2FF65A5E00E5D866 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3F02FF65A6300E5D866 /* String+Validation.swift */,
+				B64CC4092FF6654700E5D866 /* QRCodeGenerator.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B64CC3F22FF6610700E5D866 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC4122FF6664900E5D866 /* scanner */,
+				B64CC40B2FF6656900E5D866 /* tickets */,
+				B64CC4062FF6636D00E5D866 /* eventdetail */,
+				B64CC4012FF6631000E5D866 /* home */,
+				B64CC3FC2FF662B300E5D866 /* auth */,
+				B64CC3F52FF6617900E5D866 /* components */,
+				B64CC3F32FF6610F00E5D866 /* RootView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B64CC3F52FF6617900E5D866 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3F62FF6618C00E5D866 /* AppButton.swift */,
+				B64CC3F82FF661A600E5D866 /* AppTextField.swift */,
+				B64CC3FA2FF662A700E5D866 /* LoadingView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		B64CC3FC2FF662B300E5D866 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC3FD2FF662B900E5D866 /* LoginView.swift */,
+				B64CC3FF2FF662C900E5D866 /* RegisterView.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		B64CC4012FF6631000E5D866 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC4022FF6631900E5D866 /* EventCardView.swift */,
+				B64CC4042FF6632700E5D866 /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		B64CC4062FF6636D00E5D866 /* eventdetail */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC4072FF664D300E5D866 /* EventDetailView.swift */,
+			);
+			path = eventdetail;
+			sourceTree = "<group>";
+		};
+		B64CC40B2FF6656900E5D866 /* tickets */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC40C2FF6657700E5D866 /* TicketCardView.swift */,
+				B64CC40E2FF6659600E5D866 /* MyTicketsView.swift */,
+				B64CC4102FF665A700E5D866 /* TicketDetailView.swift */,
+			);
+			path = tickets;
+			sourceTree = "<group>";
+		};
+		B64CC4122FF6664900E5D866 /* scanner */ = {
+			isa = PBXGroup;
+			children = (
+				B64CC4132FF6665E00E5D866 /* QRScannerRepresentable.swift */,
+				B64CC4152FF6669F00E5D866 /* TicketScannerView.swift */,
+			);
+			path = scanner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64CC3A92FF6592C00E5D866 /* EBiletSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64CC3CE2FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUI" */;
+			buildPhases = (
+				B64CC3A62FF6592C00E5D866 /* Sources */,
+				B64CC3A72FF6592C00E5D866 /* Frameworks */,
+				B64CC3A82FF6592C00E5D866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EBiletSwiftUI;
+			productName = EBiletSwiftUI;
+			productReference = B64CC3AA2FF6592C00E5D866 /* EBiletSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B64CC3B92FF6592E00E5D866 /* EBiletSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64CC3D12FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUITests" */;
+			buildPhases = (
+				B64CC3B62FF6592E00E5D866 /* Sources */,
+				B64CC3B72FF6592E00E5D866 /* Frameworks */,
+				B64CC3B82FF6592E00E5D866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64CC3BC2FF6592E00E5D866 /* PBXTargetDependency */,
+			);
+			name = EBiletSwiftUITests;
+			productName = EBiletSwiftUITests;
+			productReference = B64CC3BA2FF6592E00E5D866 /* EBiletSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B64CC3C32FF6592E00E5D866 /* EBiletSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64CC3D42FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUIUITests" */;
+			buildPhases = (
+				B64CC3C02FF6592E00E5D866 /* Sources */,
+				B64CC3C12FF6592E00E5D866 /* Frameworks */,
+				B64CC3C22FF6592E00E5D866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64CC3C62FF6592E00E5D866 /* PBXTargetDependency */,
+			);
+			name = EBiletSwiftUIUITests;
+			productName = EBiletSwiftUIUITests;
+			productReference = B64CC3C42FF6592E00E5D866 /* EBiletSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64CC3A22FF6592C00E5D866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B64CC3A92FF6592C00E5D866 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B64CC3B92FF6592E00E5D866 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64CC3A92FF6592C00E5D866;
+					};
+					B64CC3C32FF6592E00E5D866 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B64CC3A92FF6592C00E5D866;
+					};
+				};
+			};
+			buildConfigurationList = B64CC3A52FF6592C00E5D866 /* Build configuration list for PBXProject "EBiletSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B64CC3A12FF6592C00E5D866;
+			productRefGroup = B64CC3AB2FF6592C00E5D866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64CC3A92FF6592C00E5D866 /* EBiletSwiftUI */,
+				B64CC3B92FF6592E00E5D866 /* EBiletSwiftUITests */,
+				B64CC3C32FF6592E00E5D866 /* EBiletSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64CC3A82FF6592C00E5D866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CC3B52FF6592D00E5D866 /* Preview Assets.xcassets in Resources */,
+				B64CC3B22FF6592D00E5D866 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3B82FF6592E00E5D866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3C22FF6592E00E5D866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64CC3A62FF6592C00E5D866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CC4032FF6631900E5D866 /* EventCardView.swift in Sources */,
+				B64CC3E32FF659BB00E5D866 /* Event.swift in Sources */,
+				B64CC4002FF662C900E5D866 /* RegisterView.swift in Sources */,
+				B64CC3F92FF661A600E5D866 /* AppTextField.swift in Sources */,
+				B64CC4142FF6665E00E5D866 /* QRScannerRepresentable.swift in Sources */,
+				B64CC3DB2FF6598100E5D866 /* User.swift in Sources */,
+				B64CC4052FF6632700E5D866 /* HomeView.swift in Sources */,
+				B64CC3DF2FF6599F00E5D866 /* District.swift in Sources */,
+				B64CC3DD2FF6599000E5D866 /* City.swift in Sources */,
+				B64CC3E52FF659C900E5D866 /* Ticket.swift in Sources */,
+				B64CC3E12FF659AD00E5D866 /* Venue.swift in Sources */,
+				B64CC3EA2FF65A0500E5D866 /* AppState.swift in Sources */,
+				B64CC4162FF6669F00E5D866 /* TicketScannerView.swift in Sources */,
+				B64CC4112FF665A700E5D866 /* TicketDetailView.swift in Sources */,
+				B64CC3F72FF6618C00E5D866 /* AppButton.swift in Sources */,
+				B64CC3D92FF6596D00E5D866 /* ApiResponse.swift in Sources */,
+				B64CC40A2FF6654700E5D866 /* QRCodeGenerator.swift in Sources */,
+				B64CC3B02FF6592C00E5D866 /* ContentView.swift in Sources */,
+				B64CC40D2FF6657700E5D866 /* TicketCardView.swift in Sources */,
+				B64CC3EE2FF65A4000E5D866 /* APIService.swift in Sources */,
+				B64CC3E82FF659F400E5D866 /* SessionManager.swift in Sources */,
+				B64CC3AE2FF6592C00E5D866 /* EBiletSwiftUIApp.swift in Sources */,
+				B64CC3EC2FF65A1700E5D866 /* APIClient.swift in Sources */,
+				B64CC4082FF664D300E5D866 /* EventDetailView.swift in Sources */,
+				B64CC3F12FF65A6300E5D866 /* String+Validation.swift in Sources */,
+				B64CC40F2FF6659600E5D866 /* MyTicketsView.swift in Sources */,
+				B64CC3FE2FF662B900E5D866 /* LoginView.swift in Sources */,
+				B64CC3F42FF6610F00E5D866 /* RootView.swift in Sources */,
+				B64CC3FB2FF662A700E5D866 /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3B62FF6592E00E5D866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CC3BF2FF6592E00E5D866 /* EBiletSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64CC3C02FF6592E00E5D866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64CC3C92FF6592E00E5D866 /* EBiletSwiftUIUITests.swift in Sources */,
+				B64CC3CB2FF6592E00E5D866 /* EBiletSwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B64CC3BC2FF6592E00E5D866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64CC3A92FF6592C00E5D866 /* EBiletSwiftUI */;
+			targetProxy = B64CC3BB2FF6592E00E5D866 /* PBXContainerItemProxy */;
+		};
+		B64CC3C62FF6592E00E5D866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64CC3A92FF6592C00E5D866 /* EBiletSwiftUI */;
+			targetProxy = B64CC3C52FF6592E00E5D866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B64CC3CC2FF6592E00E5D866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B64CC3CD2FF6592E00E5D866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64CC3CF2FF6592E00E5D866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EBiletSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera İznine İhtiyacımız var";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B64CC3D02FF6592E00E5D866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EBiletSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera İznine İhtiyacımız var";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B64CC3D22FF6592E00E5D866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EBiletSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EBiletSwiftUI";
+			};
+			name = Debug;
+		};
+		B64CC3D32FF6592E00E5D866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EBiletSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EBiletSwiftUI";
+			};
+			name = Release;
+		};
+		B64CC3D52FF6592E00E5D866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EBiletSwiftUI;
+			};
+			name = Debug;
+		};
+		B64CC3D62FF6592E00E5D866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sxa.EBiletSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EBiletSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64CC3A52FF6592C00E5D866 /* Build configuration list for PBXProject "EBiletSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CC3CC2FF6592E00E5D866 /* Debug */,
+				B64CC3CD2FF6592E00E5D866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64CC3CE2FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CC3CF2FF6592E00E5D866 /* Debug */,
+				B64CC3D02FF6592E00E5D866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64CC3D12FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CC3D22FF6592E00E5D866 /* Debug */,
+				B64CC3D32FF6592E00E5D866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64CC3D42FF6592E00E5D866 /* Build configuration list for PBXNativeTarget "EBiletSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64CC3D52FF6592E00E5D866 /* Debug */,
+				B64CC3D62FF6592E00E5D866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B64CC3A22FF6592C00E5D866 /* Project object */;
+}

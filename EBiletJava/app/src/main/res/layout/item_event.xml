@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_event.xml
+
+    RecyclerView içinde tek etkinlik kartı.
+
+    Kartta:
+    - Poster
+    - Etkinlik adı
+    - Tarih
+    - Sahne
+    - Konum
+    - Fiyat
+    - Kalan kontenjan
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemEventRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="#FFFFFF"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#E2E8F0"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Etkinlik Başlığı"
+        android:textColor="#0F172A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tarih"
+        android:textColor="#475569"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sahne"
+        android:textColor="#475569"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Şehir / İlçe"
+        android:textColor="#64748B"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="350 TL"
+            android:textColor="#16A34A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EFF6FF"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="6dp"
+            android:text="Kalan: 500"
+            android:textColor="#2563EB"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

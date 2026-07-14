@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_login.xml
+
+    Java + XML giriş ekranı.
+
+    Bu versiyonda TextInputLayout / TextInputEditText kullanmıyoruz.
+    Tamamen normal EditText kullanıyoruz.
+
+    Kullanılacak alanlar:
+    - EditText: E-posta
+    - EditText: Şifre
+    - Button: Giriş Yap
+    - TextView: Kayıt ekranına geçiş
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Uygulama başlığı -->
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Etkinlik Bileti"
+            android:textColor="#1E293B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Küçük açıklama -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Etkinlikleri keşfet, biletini QR kodla kullan."
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- Form kutusu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giriş Yap"
+                android:textColor="#0F172A"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!--
+                Normal EditText e-posta alanı.
+
+                android:hint -> alan boşken görünen açıklama.
+                android:inputType="textEmailAddress" -> klavyede e-posta düzeni açılır.
+            -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="#EEF2FF"
+                android:hint="E-posta"
+                android:inputType="textEmailAddress"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:singleLine="true"
+                android:textColor="#0F172A"
+                android:textColorHint="#64748B"
+                android:textSize="15sp" />
+
+            <!--
+                Normal EditText şifre alanı.
+
+                android:inputType="textPassword"
+                yazılan şifreyi gizli gösterir.
+            -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:background="#EEF2FF"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:singleLine="true"
+                android:textColor="#0F172A"
+                android:textColorHint="#64748B"
+                android:textSize="15sp" />
+
+            <!-- Giriş butonu -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="#2563EB"
+                android:text="Giriş Yap"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Kayıt ekranına geçiş -->
+            <TextView
+                android:id="@+id/tvGoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Hesabın yok mu? Kayıt ol"
+                android:textColor="#2563EB"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- API isteği sırasında gösterilecek bilgi -->
+        <TextView
+            android:id="@+id/tvLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="İşlem yapılıyor..."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

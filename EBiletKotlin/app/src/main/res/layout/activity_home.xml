@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_home.xml
+
+    Ana ekran.
+
+    Bu ekranda:
+    - Kullanıcı adı
+    - Çıkış butonu
+    - Şehir seçimi Spinner
+    - İlçe seçimi Spinner
+    - Etkinlikleri listele butonu
+    - RecyclerView ile etkinlik listesi
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA"
+    android:orientation="vertical">
+
+    <!--
+        Üst başlık alanı
+    -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2563EB"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hoş geldin"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRoleInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Etkinlikleri keşfet"
+                android:textColor="#DBEAFE"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Çıkış"
+            android:textAllCaps="false"
+            android:textColor="#2563EB"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="QR Kontrol"
+            android:textAllCaps="false"
+            android:textColor="#2563EB"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/btnMyTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Biletlerim"
+            android:textAllCaps="false"
+            android:textColor="#2563EB"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--
+        Filtre alanı
+    -->
+    <LinearLayout
+        android:id="@+id/filterBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konum Seç"
+            android:textColor="#0F172A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Önce şehir, sonra ilçe seçerek etkinlikleri listeleyebilirsin."
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <!--
+            Şehir Spinner
+        -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Şehir"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerCities"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="#EEF2FF"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!--
+            İlçe Spinner
+        -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="İlçe"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerDistricts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="#EEF2FF"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnListEvents"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#16A34A"
+            android:text="Etkinlikleri Listele"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--
+        Durum / yükleniyor yazısı
+    -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Şehirler yükleniyor..."
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <!--
+        Etkinlik listesi
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="14dp" />
+
+</LinearLayout>
