@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="5dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <!-- ========================================================== -->
+        <!-- AVATAR                                                     -->
+        <!-- ========================================================== -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxAvatar"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_project_member_avatar"
+            android:gravity="center"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textColor="?attr/colorOnSecondaryContainer"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ========================================================== -->
+        <!-- PERSON                                                     -->
+        <!-- ========================================================== -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxPerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            app:layout_constraintEnd_toStartOf="@id/textViewMailboxDate"
+            app:layout_constraintStart_toEndOf="@id/textViewMailboxAvatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ========================================================== -->
+        <!-- DATE                                                       -->
+        <!-- ========================================================== -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ========================================================== -->
+        <!-- UNREAD DOT                                                 -->
+        <!-- ========================================================== -->
+
+        <View
+            android:id="@+id/viewMailboxUnreadDot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_mailbox_unread_dot"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/textViewMailboxPerson"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxPerson" />
+
+        <!-- ========================================================== -->
+        <!-- SUBJECT                                                    -->
+        <!-- ========================================================== -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewMailboxUnreadDot"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxPerson" />
+
+        <!-- ========================================================== -->
+        <!-- PREVIEW                                                    -->
+        <!-- ========================================================== -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxPreview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewMailboxAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxSubject" />
+
+        <!-- ========================================================== -->
+        <!-- ATTACHMENT                                                 -->
+        <!-- ========================================================== -->
+
+        <LinearLayout
+            android:id="@+id/layoutMailboxAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/textViewMailboxAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxPreview">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_attachment"
+                app:tint="?attr/colorOnSurfaceVariant" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewMailboxAttachmentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

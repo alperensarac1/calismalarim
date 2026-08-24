@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Menü item id'leri home_nav_graph içerisindeki Fragment id'leriyle
+        aynı olmalıdır.
+    -->
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/menu_dashboard" />
+
+    <item
+        android:id="@+id/projectsFragment"
+        android:icon="@drawable/ic_projects"
+        android:title="@string/menu_projects" />
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/menu_tasks" />
+
+    <item
+        android:id="@+id/mailboxFragment"
+        android:icon="@drawable/ic_mailbox"
+        android:title="@string/menu_mailbox" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/menu_profile" />
+
+</menu>

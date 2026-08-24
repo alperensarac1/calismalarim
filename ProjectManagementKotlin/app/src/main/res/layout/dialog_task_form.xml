@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ============================================================= -->
+        <!-- TITLE                                                         -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewTaskFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textStyle="bold" />
+
+        <!-- ============================================================= -->
+        <!-- TASK TITLE                                                    -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormTitle"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:hint="@string/task_form_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskFormTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:maxLines="2" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- DESCRIPTION                                                   -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormDescription"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskFormDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="8"
+                android:minLines="3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- ASSIGNEE                                                      -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormAssignedUser"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_assigned_user"
+            app:helperText="@string/task_form_assigned_user_helper">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTaskFormAssignedUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- STATUS                                                        -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormStatus"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_status">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTaskFormStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- PRIORITY                                                      -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormPriority"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_priority">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTaskFormPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- DUE DATE                                                      -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormDueDate"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_due_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskFormDueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- ESTIMATED HOURS                                               -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTaskFormEstimatedHours"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/task_form_estimated_hours">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskFormEstimatedHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ============================================================= -->
+        <!-- GENERAL ERROR                                                 -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewTaskFormError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?attr/colorError"
+            android:visibility="gone" />
+
+        <!-- ============================================================= -->
+        <!-- PROGRESS                                                      -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressIndicatorTaskForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

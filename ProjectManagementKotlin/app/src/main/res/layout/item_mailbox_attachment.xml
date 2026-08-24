@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- ============================================================= -->
+        <!-- ICON                                                          -->
+        <!-- ============================================================= -->
+
+        <ImageView
+            android:id="@+id/imageViewMailboxAttachment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_attachment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorPrimary" />
+
+        <!-- ============================================================= -->
+        <!-- FILE NAME                                                     -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxAttachmentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/buttonMailboxAttachmentDownload"
+            app:layout_constraintStart_toEndOf="@id/imageViewMailboxAttachment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ============================================================= -->
+        <!-- MIME TYPE                                                     -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxAttachmentType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toStartOf="@id/buttonMailboxAttachmentDownload"
+            app:layout_constraintStart_toEndOf="@id/imageViewMailboxAttachment"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxAttachmentName" />
+
+        <!-- ============================================================= -->
+        <!-- FILE SIZE                                                     -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxAttachmentSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toEndOf="@id/imageViewMailboxAttachment"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxAttachmentType" />
+
+        <!-- ============================================================= -->
+        <!-- UNAVAILABLE                                                   -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewMailboxAttachmentUnavailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/mailbox_attachment_unavailable"
+            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+            android:textColor="?attr/colorError"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/textViewMailboxAttachmentSize"
+            app:layout_constraintStart_toEndOf="@id/textViewMailboxAttachmentSize" />
+
+        <!-- ============================================================= -->
+        <!-- DOWNLOAD BUTTON                                               -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMailboxAttachmentDownload"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mailbox_download"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ============================================================= -->
+        <!-- DOWNLOAD PROGRESS                                             -->
+        <!-- ============================================================= -->
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressIndicatorAttachmentDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailboxAttachmentSize" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewAttachmentDownloadProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressIndicatorAttachmentDownload" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

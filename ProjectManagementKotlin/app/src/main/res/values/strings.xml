@@ -1,0 +1,1275 @@
+<resources>
+
+    <string name="app_name">Project Management Mobile</string>
+
+    <!-- Genel -->
+    <string name="content_description_loading">Yükleniyor</string>
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_logout">Çıkış Yap</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Açılış</string>
+    <string name="splash_checking_session">Oturum kontrol ediliyor…</string>
+
+    <!-- Login -->
+    <string name="login_title">Giriş Yap</string>
+    <string name="login_description">Proje yönetim hesabınızla devam edin.</string>
+    <string name="login_email">E-posta adresi</string>
+    <string name="login_password">Şifre</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="login_loading">Giriş yapılıyor…</string>
+
+    <!-- Geliştirme test hesabı -->
+    <string name="login_default_email">admin@projectmanagement.local</string>
+    <string name="login_default_password">12345678Aa</string>
+
+    <!-- Alt menü -->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_projects">Projeler</string>
+    <string name="menu_tasks">Görevler</string>
+    <string name="menu_mailbox">Mailbox</string>
+    <string name="menu_profile">Profil</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_placeholder">
+        Proje ve görev özetleri bu ekranda gösterilecektir.
+    </string>
+
+    <!-- Projeler -->
+    <string name="projects_title">Projeler</string>
+    <string name="projects_placeholder">
+        Sayfalı proje listesi bu ekranda gösterilecektir.
+    </string>
+
+    <!-- Görevler -->
+    <string name="tasks_title">Görevler</string>
+    <string name="tasks_placeholder">
+        Sayfalı görev listesi ve filtreler bu ekranda gösterilecektir.
+    </string>
+
+    <!-- Mailbox -->
+    <string name="mailbox_placeholder">
+        Gelen kutusu, gönderilen mesajlar ve yeni mesaj işlemleri burada gösterilecektir.
+    </string>
+
+    <!-- Profil -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_email_label">E-posta</string>
+    <string name="profile_role_label">Sistem rolü</string>
+    <string name="profile_department_label">Departman</string>
+    <string name="profile_status_label">Hesap durumu</string>
+    <string name="profile_department_not_defined">Departman belirtilmemiş</string>
+    <string name="profile_status_active">Aktif</string>
+    <string name="profile_status_passive">Pasif</string>
+
+    <!-- Logout -->
+    <string name="logout_dialog_title">Çıkış yapılsın mı?</string>
+    <string name="logout_dialog_message">
+        Bu cihazdaki oturumunuz kapatılacak.
+    </string>
+    <string name="logout_loading">Çıkış yapılıyor…</string>
+    <string name="logout_success_message">
+        Oturumunuz başarıyla kapatıldı.
+    </string>
+
+    <!-- Oturum -->
+    <string name="session_expired_message">
+        Oturum süreniz doldu. Lütfen tekrar giriş yapın.
+    </string>
+    <!-- Dashboard -->
+    <string name="dashboard_total_projects">Toplam proje</string>
+    <string name="dashboard_active_projects">Aktif proje</string>
+    <string name="dashboard_total_tasks">Toplam görev</string>
+    <string name="dashboard_overdue_tasks">Gecikmiş görev</string>
+    <string name="dashboard_my_tasks">Bana atanan</string>
+    <string name="dashboard_completed_tasks">Tamamlanan görev</string>
+    <string name="dashboard_completion_percentage">Görev tamamlanma oranı</string>
+    <string name="dashboard_time_usage_percentage">Zaman kullanım oranı</string>
+    <string name="dashboard_recent_tasks">Son görevler</string>
+    <string name="dashboard_recent_tasks_empty">Gösterilecek son görev bulunmuyor.</string>
+    <string name="dashboard_generated_at_format">Son güncelleme: %1$s</string>
+    <string name="dashboard_percentage_format">%%%1$.1f</string>
+    <string name="dashboard_task_unassigned">Atanan kullanıcı yok</string>
+    <string name="dashboard_task_no_due_date">Son tarih belirtilmemiş</string>
+    <string name="dashboard_task_due_date_format">Son tarih: %1$s</string>
+    <string name="dashboard_task_overdue">Gecikmiş</string>
+    <string name="dashboard_task_detail_later">Görev detay ekranı sonraki aşamada bağlanacaktır.</string>
+    <!-- Projects -->
+    <string name="projects_search">Projelerde ara</string>
+    <string name="projects_status">Durum</string>
+    <string name="projects_archive_filter">Arşiv</string>
+
+    <string name="projects_status_all">Tüm durumlar</string>
+
+    <string name="projects_archived_active_only">Aktif projeler</string>
+    <string name="projects_archived_only">Arşivlenenler</string>
+    <string name="projects_archived_all">Tümü</string>
+
+    <string name="projects_empty">
+    Filtrelere uygun proje bulunamadı.
+</string>
+
+    <string name="projects_load_error">
+    Projeler yüklenirken bir hata oluştu.
+</string>
+
+    <string name="projects_no_description">
+    Açıklama bulunmuyor.
+</string>
+
+    <string name="projects_owner_format">
+    Proje sahibi: %1$s
+</string>
+
+    <string name="projects_counts_format">
+    %1$d üye • %2$d görev
+</string>
+
+    <string name="projects_start_date_format">
+    Başlangıç: %1$s
+</string>
+
+    <string name="projects_end_date_format">
+    Bitiş: %1$s
+</string>
+
+    <string name="projects_no_end_date">
+    Bitiş tarihi belirtilmemiş
+</string>
+
+    <string name="projects_archived">
+    Arşivlendi
+</string>
+
+    <string name="projects_detail_later">
+    %1$s proje detay ekranı sonraki aşamada açılacaktır.
+</string>
+    <!-- Genel -->
+    <string name="action_back">Geri</string>
+
+    <!-- Project Detail -->
+    <string name="project_detail_title">Proje Detayı</string>
+
+    <string name="project_detail_owner_format">
+    Proje sahibi: %1$s
+</string>
+
+    <string name="project_detail_dates_format">
+    Başlangıç: %1$s\nBitiş: %2$s
+</string>
+
+    <string name="project_detail_no_end_date">
+    Belirtilmemiş
+</string>
+
+    <string name="project_detail_counts_format">
+    %1$d üye • %2$d görev
+</string>
+
+    <string name="project_detail_members_title">
+    Proje Üyeleri
+</string>
+
+    <string name="project_detail_members_empty">
+    Bu projede henüz üye bulunmuyor.
+</string>
+
+    <string name="project_detail_member_role_format">
+    Proje rolü: %1$s
+</string>
+
+    <string name="project_detail_system_role_format">
+    Sistem rolü: %1$s
+</string>
+
+    <string name="project_detail_joined_at_format">
+    Katılım: %1$s
+</string>
+
+    <string name="project_detail_project_owner">
+    Proje Sahibi
+</string>
+
+    <string name="project_detail_inactive_member">
+    Pasif Kullanıcı
+</string>
+    <!-- Project Member Management -->
+
+    <string name="project_member_remove">
+    Projeden Çıkar
+</string>
+
+    <string name="project_member_remove_dialog_title">
+    Üye projeden çıkarılsın mı?
+</string>
+
+    <string name="project_member_remove_dialog_message">
+    %1$s proje ekibinden çıkarılacak. Devam etmek istiyor musunuz?
+</string>
+    <!-- Project Member Role Management -->
+
+    <string name="action_save">
+    Kaydet
+</string>
+
+    <string name="project_member_change_role">
+    Rolü Değiştir
+</string>
+
+    <string name="project_member_change_role_dialog_title">
+    %1$s kullanıcısının rolünü değiştir
+</string>
+
+    <string name="project_member_role_member">
+    Üye
+</string>
+
+    <string name="project_member_role_contributor">
+    Katkıda Bulunan
+</string>
+
+    <string name="project_member_role_viewer">
+    Görüntüleyici
+</string>
+
+    <string name="project_member_role_not_changed">
+    Kullanıcının rolünde değişiklik yapılmadı.
+</string>
+    <!-- Add Project Member -->
+
+    <string name="add_member_title">
+    Projeye Üye Ekle
+</string>
+
+    <string name="add_member_button">
+    Üye Ekle
+</string>
+
+    <string name="add_member_search_user">
+    Kullanıcı ara
+</string>
+
+    <string name="add_member_project_role">
+    Proje rolü
+</string>
+
+    <string name="add_member_users_empty">
+    Uygun kullanıcı bulunamadı.
+</string>
+
+    <string name="add_member_users_error">
+    Kullanıcılar yüklenirken bir hata oluştu.
+</string>
+
+    <string name="add_member_selected_user_format">
+    Seçilen kullanıcı: %1$s
+</string>
+
+    <string name="add_member_system_role_format">
+    Sistem rolü: %1$s
+</string>
+
+    <string name="add_member_department_empty">
+    Departman belirtilmemiş
+</string>
+
+    <string name="add_member_success">
+    Proje üyeleri güncellendi.
+</string>
+    <!-- Tasks -->
+
+    <string name="tasks_search">
+    Görevlerde ara
+</string>
+
+    <string name="tasks_filter_status">
+    Durum
+</string>
+
+    <string name="tasks_filter_priority">
+    Öncelik
+</string>
+
+    <string name="tasks_filter_overdue">
+    Gecikme
+</string>
+
+    <string name="tasks_filter_all_statuses">
+    Tüm durumlar
+</string>
+
+    <string name="tasks_status_todo">
+    Yapılacak
+</string>
+
+    <string name="tasks_status_in_progress">
+    Devam Ediyor
+</string>
+
+    <string name="tasks_status_in_review">
+    İncelemede
+</string>
+
+    <string name="tasks_status_done">
+    Tamamlandı
+</string>
+
+    <string name="tasks_filter_all_priorities">
+    Tüm öncelikler
+</string>
+
+    <string name="tasks_priority_low">
+    Düşük
+</string>
+
+    <string name="tasks_priority_medium">
+    Orta
+</string>
+
+    <string name="tasks_priority_high">
+    Yüksek
+</string>
+
+    <string name="tasks_priority_critical">
+    Kritik
+</string>
+
+    <string name="tasks_filter_overdue_all">
+    Tüm görevler
+</string>
+
+    <string name="tasks_filter_overdue_only">
+    Yalnızca gecikenler
+</string>
+
+    <string name="tasks_filter_not_overdue">
+    Gecikmeyenler
+</string>
+
+    <string name="tasks_empty">
+    Filtrelere uygun görev bulunamadı.
+</string>
+
+    <string name="tasks_load_error">
+    Görevler yüklenirken bir hata oluştu.
+</string>
+
+    <string name="tasks_no_description">
+    Açıklama bulunmuyor.
+</string>
+
+    <string name="tasks_assigned_user_format">
+    Atanan: %1$s
+</string>
+
+    <string name="tasks_unassigned">
+    Atanmamış
+</string>
+
+    <string name="tasks_due_date_format">
+    Son tarih: %1$s
+</string>
+
+    <string name="tasks_no_due_date">
+    Son tarih belirtilmemiş
+</string>
+
+    <string name="tasks_hours_format">
+    Tahmini: %1$.1f saat • Gerçek: %2$.1f saat
+</string>
+
+    <string name="tasks_comment_count_format">
+    %1$d yorum
+</string>
+
+    <string name="tasks_overdue">
+    Gecikmiş
+</string>
+
+    <string name="tasks_detail_later">
+    %1$s görev detay ekranında açılacaktır.
+</string>
+    <!-- ============================================================= -->
+    <!-- TASK DETAIL                                                   -->
+    <!-- ============================================================= -->
+
+    <string name="task_detail_screen_title">
+    Görev Detayı
+</string>
+
+    <string name="task_detail_project_format">
+    Proje: %1$s
+</string>
+
+    <string name="task_detail_status_label">
+    Durum
+</string>
+
+    <string name="task_detail_priority_label">
+    Öncelik
+</string>
+
+    <string name="task_detail_people_title">
+    Kullanıcılar
+</string>
+
+    <string name="task_detail_assigned_format">
+    Atanan kullanıcı: %1$s
+</string>
+
+    <string name="task_detail_created_by_format">
+    Oluşturan: %1$s
+</string>
+
+    <string name="task_detail_time_title">
+    Zaman Bilgileri
+</string>
+
+    <string name="task_detail_due_date_format">
+    Son tarih: %1$s
+</string>
+
+    <string name="task_detail_estimated_hours_format">
+    Tahmini süre: %1$.1f saat
+</string>
+
+    <string name="task_detail_estimated_hours_empty">
+    Tahmini süre belirtilmemiş
+</string>
+
+    <string name="task_detail_actual_hours_format">
+    Gerçekleşen süre: %1$.1f saat
+</string>
+
+    <string name="task_detail_completed_at_format">
+    Tamamlanma tarihi: %1$s
+</string>
+
+    <string name="task_detail_not_completed">
+    Görev henüz tamamlanmadı
+</string>
+
+    <string name="task_detail_other_title">
+    Diğer Bilgiler
+</string>
+
+    <string name="task_detail_comment_count_format">
+    Yorum sayısı: %1$d
+</string>
+
+    <string name="task_detail_created_at_format">
+    Oluşturulma: %1$s
+</string>
+
+    <string name="task_detail_updated_at_format">
+    Son güncelleme: %1$s
+</string>
+
+    <string name="task_detail_never_updated">
+    Görev henüz güncellenmedi
+</string>
+
+    <string name="task_detail_not_specified">
+    Belirtilmemiş
+</string>
+    <!-- Comments -->
+
+    <string name="comments_title">
+    Yorumlar
+</string>
+
+    <string name="comments_title_count">
+    Yorumlar (%1$d)
+</string>
+
+    <string name="comments_empty">
+    Bu görev için henüz yorum bulunmuyor.
+</string>
+
+    <string name="comment_input_hint">
+    Yorum yaz...
+</string>
+
+    <string name="comment_send">
+    Yorum Gönder
+</string>
+
+    <string name="comment_delete">
+    Sil
+</string>
+
+    <string name="comment_delete_dialog_title">
+    Yorum silinsin mi?
+</string>
+
+    <string name="comment_delete_dialog_message">
+    Bu yorum kalıcı olarak silinecek. Devam etmek istiyor musunuz?
+</string>
+
+    <string name="comment_edited">
+    Düzenlendi
+</string>
+
+    <string name="comment_edit_available">
+    Düzenlenebilir
+</string>
+    <!-- Comment Update -->
+
+    <string name="comment_edit">
+    Düzenle
+</string>
+
+    <string name="comment_edit_dialog_title">
+    Yorumu Düzenle
+</string>
+
+    <string name="comment_edit_not_allowed">
+    Bu yorumu düzenleme yetkiniz bulunmuyor.
+</string>
+
+    <string name="comment_content_required">
+    Yorum içeriği boş bırakılamaz.
+</string>
+
+    <string name="comment_content_not_changed">
+    Yorum içeriğinde değişiklik yapılmadı.
+</string>
+    <!-- Time Logs -->
+
+    <string name="time_logs_title">
+    Zaman Kayıtları
+</string>
+
+    <string name="time_logs_empty">
+    Bu görev için henüz zaman kaydı bulunmuyor.
+</string>
+
+    <string name="time_log_add">
+    Zaman Kaydı Ekle
+</string>
+
+    <string name="time_log_add_title">
+    Zaman Kaydı Ekle
+</string>
+
+    <string name="time_log_edit_title">
+    Zaman Kaydını Düzenle
+</string>
+
+    <string name="time_log_hours">
+    Çalışma Süresi (Saat)
+</string>
+
+    <string name="time_log_description">
+    Açıklama
+</string>
+
+    <string name="time_log_work_date">
+    Çalışma Tarihi (gg.aa.yyyy)
+</string>
+
+    <string name="time_log_invalid_hours">
+    Geçerli bir çalışma süresi girin.
+</string>
+
+    <string name="time_log_invalid_date">
+    Tarihi gg.aa.yyyy biçiminde girin.
+</string>
+
+    <string name="time_log_hours_format">
+    %1$.2f saat
+</string>
+
+    <string name="time_log_no_description">
+    Açıklama belirtilmemiş.
+</string>
+
+    <string name="time_log_work_date_format">
+    Çalışma tarihi: %1$s
+</string>
+
+    <string name="time_log_delete_title">
+    Zaman kaydı silinsin mi?
+</string>
+
+    <string name="time_log_delete_message">
+    Bu zaman kaydı kalıcı olarak silinecek. Devam etmek istiyor musunuz?
+</string>
+
+    <string name="time_log_summary_estimated">
+    Tahmini süre: %1$.2f saat
+</string>
+
+    <string name="time_log_summary_actual">
+    Gerçekleşen süre: %1$.2f saat
+</string>
+
+    <string name="time_log_summary_difference">
+    Fark: %1$.2f saat
+</string>
+
+    <string name="time_log_summary_difference_empty">
+    Fark hesaplanamıyor
+</string>
+
+    <string name="time_log_summary_count">
+    Zaman kaydı: %1$d
+</string>
+
+    <string name="time_log_summary_contributors">
+    Katılımcı: %1$d
+</string>
+
+    <string name="time_log_summary_last_work">
+    Son çalışma: %1$s
+</string>
+
+    <string name="time_log_summary_no_work">
+    Henüz çalışma kaydı yok
+</string>
+
+    <string name="action_edit">
+    Düzenle
+</string>
+
+    <string name="action_delete">
+    Sil
+</string>
+    <!-- ============================================================= -->
+    <!-- TASK HISTORY                                                  -->
+    <!-- ============================================================= -->
+
+    <string name="task_history_title">
+    Görev Geçmişi
+</string>
+
+    <string name="task_history_description">
+    Görev üzerinde yapılan değişikliklerin geçmişi
+</string>
+
+    <string name="task_history_empty">
+    Bu görev için henüz geçmiş kaydı bulunmuyor.
+</string>
+
+    <string name="task_history_no_description">
+    Değişiklik hakkında açıklama bulunmuyor.
+</string>
+
+    <string name="task_history_old_new_format">
+    %1$s → %2$s
+</string>
+
+    <string name="task_history_new_value_format">
+    Yeni değer: %1$s
+</string>
+
+    <string name="task_history_old_value_format">
+    Önceki değer: %1$s
+</string>
+    <!-- ============================================================= -->
+    <!-- TASK ACTIONS                                                  -->
+    <!-- ============================================================= -->
+
+    <string name="task_action_change_status">
+    Durumu Değiştir
+</string>
+
+    <string name="task_action_change_assignment">
+    Atamayı Değiştir
+</string>
+
+    <string name="task_action_status_dialog_title">
+    Görev Durumunu Değiştir
+</string>
+
+    <string name="task_action_assignment_dialog_title">
+    Görev Atamasını Değiştir
+</string>
+
+    <string name="task_action_status_not_changed">
+    Görev durumunda değişiklik yapılmadı.
+</string>
+
+    <string name="task_action_assignment_not_changed">
+    Görev atamasında değişiklik yapılmadı.
+</string>
+
+    <string name="task_action_unassigned">
+    Atamayı kaldır
+</string>
+
+    <string name="task_action_member_format">
+    %1$s • %2$s
+</string>
+    <!-- ============================================================= -->
+    <!-- TASK CRUD                                                     -->
+    <!-- ============================================================= -->
+
+    <string name="task_form_create_title">
+    Yeni Görev
+</string>
+
+    <string name="task_form_edit_title">
+    Görevi Düzenle
+</string>
+
+    <string name="task_form_title">
+    Görev Başlığı
+</string>
+
+    <string name="task_form_description">
+    Açıklama
+</string>
+
+    <string name="task_form_assigned_user">
+    Atanan Kullanıcı
+</string>
+
+    <string name="task_form_status">
+    Durum
+</string>
+
+    <string name="task_form_priority">
+    Öncelik
+</string>
+
+    <string name="task_form_due_date">
+    Son Tarih (gg.aa.yyyy)
+</string>
+
+    <string name="task_form_estimated_hours">
+    Tahmini Süre (Saat)
+</string>
+
+    <string name="task_form_title_required">
+    Görev başlığı zorunludur.
+</string>
+
+    <string name="task_form_invalid_hours">
+    Geçerli bir tahmini süre girin.
+</string>
+
+    <string name="task_form_invalid_date">
+    Tarihi gg.aa.yyyy biçiminde girin.
+</string>
+
+    <string name="task_action_edit_task">
+    Görevi Düzenle
+</string>
+
+    <string name="task_action_delete_task">
+    Görevi Sil
+</string>
+
+    <string name="task_delete_dialog_title">
+    Görev silinsin mi?
+</string>
+
+    <string name="task_delete_dialog_message">
+    “%1$s” görevi kalıcı olarak silinecek. Devam etmek istiyor musunuz?
+</string>
+
+    <string name="task_create_for_project">
+    Yeni Görev Oluştur
+</string>
+
+    <string name="task_created_success">
+    Görev başarıyla oluşturuldu.
+</string>
+    <!-- ============================================================= -->
+    <!-- MAILBOX                                                       -->
+    <!-- ============================================================= -->
+
+    <string name="mailbox_title">
+    Mesajlar
+</string>
+
+    <string name="mailbox_inbox">
+    Gelen Kutusu
+</string>
+
+    <string name="mailbox_sent">
+    Gönderilenler
+</string>
+
+    <string name="mailbox_new_message">
+    Yeni Mesaj
+</string>
+
+    <string name="mailbox_search_hint">
+    Mesajlarda ara
+</string>
+
+    <string name="mailbox_read_filter">
+    Okunma Durumu
+</string>
+
+    <string name="mailbox_attachment_filter">
+    Dosya Eki
+</string>
+
+    <string name="mailbox_read_all">
+    Tümü
+</string>
+
+    <string name="mailbox_read_only">
+    Okunanlar
+</string>
+
+    <string name="mailbox_unread_only">
+    Okunmayanlar
+</string>
+
+    <string name="mailbox_attachment_all">
+    Tümü
+</string>
+
+    <string name="mailbox_attachment_only">
+    Eki Olanlar
+</string>
+
+    <string name="mailbox_without_attachment">
+    Eki Olmayanlar
+</string>
+
+    <string name="mailbox_empty">
+    Mesaj bulunamadı
+</string>
+
+    <string name="mailbox_empty_description">
+    Seçili filtrelere uygun mesaj bulunmuyor.
+</string>
+
+    <string name="mailbox_inbox_empty">
+    Gelen kutunuz boş
+</string>
+
+    <string name="mailbox_sent_empty">
+    Gönderilmiş mesaj bulunmuyor
+</string>
+
+    <string name="mailbox_load_error">
+    Mesajlar yüklenirken bir hata oluştu.
+</string>
+
+    <string name="mailbox_unknown_user">
+    Bilinmeyen kullanıcı
+</string>
+
+    <string name="mailbox_multiple_recipients_format">
+    %1$s +%2$d kişi
+</string>
+
+    <string name="mailbox_no_subject">
+    Konu yok
+</string>
+
+    <string name="mailbox_attachment_count_format">
+    %1$d dosya
+</string>
+
+    <!-- Mailbox Detail -->
+
+    <string name="mailbox_message_detail">
+    Mesaj
+</string>
+
+    <string name="mailbox_from_format">
+    Gönderen: %1$s
+</string>
+
+    <string name="mailbox_to_format">
+    Alıcılar: %1$s
+</string>
+
+    <string name="mailbox_attachments">
+    Dosya Ekleri
+</string>
+
+    <string name="mailbox_download">
+    İndir
+</string>
+
+    <string name="mailbox_attachment_unavailable">
+    Kullanılamıyor
+</string>
+
+    <string name="mailbox_download_next_step">
+    %1$s dosya indirme işlemini sonraki aşamada bağlayacağız.
+</string>
+
+    <string name="mailbox_mark_read">
+    Okundu Olarak İşaretle
+</string>
+
+    <string name="mailbox_mark_unread">
+    Okunmadı Olarak İşaretle
+</string>
+
+    <string name="mailbox_delete">
+    Mesajı Kaldır
+</string>
+
+    <string name="mailbox_delete_title">
+    Mesaj kaldırılsın mı?
+</string>
+
+    <string name="mailbox_delete_message">
+    Mesaj kutunuzdan kaldırılacak. Devam etmek istiyor musunuz?
+</string>
+    <string name="mailbox_attachment_downloaded">
+    %1$s başarıyla kaydedildi.
+</string>
+    <!-- MAILBOX COMPOSE -->
+
+    <string name="mailbox_recipient_search">
+    Alıcı ara
+</string>
+
+    <string name="mailbox_selected_recipients">
+    Seçilen Alıcılar
+</string>
+
+    <string name="mailbox_recipient_count_format">
+    %1$d / %2$d alıcı
+</string>
+
+    <string name="mailbox_subject">
+    Konu
+</string>
+
+    <string name="mailbox_body">
+    Mesaj
+</string>
+
+    <string name="mailbox_character_count_format">
+    %1$d / %2$d
+</string>
+
+    <string name="mailbox_attachment_rules">
+    En fazla 10 dosya ve toplam 200 MB. PDF, Word, ZIP, PNG, JPG ve JPEG desteklenir.
+</string>
+
+    <string name="mailbox_add_attachment">
+    Dosya Ekle
+</string>
+
+    <string name="mailbox_attachment_summary_format">
+    %1$d / %2$d dosya • %3$s
+</string>
+
+    <string name="mailbox_send_message">
+    Mesajı Gönder
+</string>
+
+    <string name="mailbox_upload_progress_format">
+    Yükleniyor: %1$d%%
+</string>
+
+    <string name="action_remove">
+    Kaldır
+</string>
+    <!-- ================================================================ -->
+    <!-- THEME                                                            -->
+    <!-- ================================================================ -->
+
+    <string name="theme_dialog_title">Görünüm</string>
+
+    <string name="theme_light">Aydınlık</string>
+
+    <string name="theme_dark">Karanlık</string>
+
+    <string name="theme_setting_title">Tema</string>
+
+    <string name="theme_setting_description">Uygulamanın görünümünü değiştir</string>
+
+    <!-- ================================================================ -->
+    <!-- CREATE PROJECT                                                   -->
+    <!-- ================================================================ -->
+
+    <string name="projects_create">Yeni Proje</string>
+
+    <string name="create_project_title">Yeni Proje</string>
+
+    <string name="create_project_description">
+    Proje bilgilerini doldurarak yeni bir proje oluşturabilirsiniz.
+</string>
+
+    <string name="create_project_name">
+    Proje Adı
+</string>
+
+    <string name="create_project_project_description">
+    Açıklama
+</string>
+
+    <string name="create_project_start_date">
+    Başlangıç Tarihi
+</string>
+
+    <string name="create_project_end_date">
+    Bitiş Tarihi
+</string>
+
+    <string name="create_project_status">
+    Proje Durumu
+</string>
+
+    <string name="create_project_owner_id">
+    Proje Sahibi ID
+</string>
+
+    <string name="create_project_owner_id_helper">
+    Opsiyonel. Boş bırakırsanız OwnerId gönderilmez.
+</string>
+
+    <string name="create_project_submit">
+    Projeyi Oluştur
+</string>
+    <!-- ================================================================ -->
+    <!-- USER MANAGEMENT                                                  -->
+    <!-- ================================================================ -->
+
+    <string name="user_management_title">Kullanıcı Yönetimi</string>
+
+    <string name="user_management_description">
+    Yeni kullanıcı oluşturun ve sistem kullanıcılarını yönetin.
+</string>
+
+    <string name="create_user_title">Yeni Kullanıcı</string>
+
+    <string name="create_user_description">
+    Sisteme yeni bir kullanıcı hesabı oluşturun.
+</string>
+
+    <string name="create_user_first_name">Ad</string>
+
+    <string name="create_user_last_name">Soyad</string>
+
+    <string name="create_user_email">E-posta</string>
+
+    <string name="create_user_password">Şifre</string>
+
+    <string name="create_user_password_helper">
+    En az 8 karakter, bir büyük harf, bir küçük harf ve bir rakam içermelidir.
+</string>
+
+    <string name="create_user_role">Rol</string>
+
+    <string name="create_user_department">Departman</string>
+
+    <string name="create_user_active">Kullanıcı aktif</string>
+
+    <string name="create_user_submit">Kullanıcı Oluştur</string>
+
+    <!-- ================================================================ -->
+    <!-- USERS                                                            -->
+    <!-- ================================================================ -->
+
+    <string name="users_title">Kullanıcılar</string>
+
+    <string name="users_add">Yeni Kullanıcı</string>
+
+    <string name="users_search">
+    Kullanıcı ara
+</string>
+
+    <string name="users_role_filter">
+    Rol
+</string>
+
+    <string name="users_status_filter">
+    Durum
+</string>
+
+    <string name="users_role_all">
+    Tüm Roller
+</string>
+
+    <string name="users_status_all">
+    Tümü
+</string>
+
+    <string name="users_status_active">
+    Aktif
+</string>
+
+    <string name="users_status_passive">
+    Pasif
+</string>
+
+    <string name="users_empty">
+    Gösterilecek kullanıcı bulunamadı.
+</string>
+
+    <string name="users_load_error">
+    Kullanıcılar yüklenemedi.
+</string>
+
+    <string name="user_status_active">
+    Aktif
+</string>
+
+    <string name="user_status_passive">
+    Pasif
+</string>
+
+    <string name="user_department_not_defined">
+    Departman belirtilmemiş
+</string>
+    <!-- ================================================================ -->
+    <!-- USER DETAIL                                                       -->
+    <!-- ================================================================ -->
+
+    <string name="user_detail_title">Kullanıcı Detayı</string>
+
+    <string name="user_detail_active">
+    Kullanıcı hesabı aktif
+</string>
+
+    <string name="user_detail_save">
+    Değişiklikleri Kaydet
+</string>
+
+    <string name="user_detail_reset_password">
+    Şifreyi Sıfırla
+</string>
+
+    <string name="user_detail_new_password">
+    Yeni Şifre
+</string>
+
+    <string name="user_detail_reset_password_confirm">
+    Şifreyi Değiştir
+</string>
+
+    <string name="user_detail_delete">
+    Kullanıcıyı Sil
+</string>
+
+    <string name="user_detail_status_confirmation_title">
+    Kullanıcı Durumu
+</string>
+
+    <string name="user_detail_activate_confirmation">
+    Kullanıcı hesabını aktif hâle getirmek istiyor musunuz?
+</string>
+
+    <string name="user_detail_deactivate_confirmation">
+    Kullanıcı hesabını pasif hâle getirmek istiyor musunuz?
+</string>
+
+    <string name="user_detail_delete_confirmation_title">
+    Kullanıcıyı Sil
+</string>
+
+    <string name="user_detail_delete_confirmation_message">
+    %1$s adlı kullanıcıyı silmek istediğinizden emin misiniz?
+</string>
+    <!-- ================================================================ -->
+    <!-- USER DETAIL - UNSAVED CHANGES                                    -->
+    <!-- ================================================================ -->
+
+    <string name="user_detail_unsaved_changes_title">
+    Kaydedilmemiş Değişiklikler
+</string>
+
+    <string name="user_detail_unsaved_changes_message">
+    Yaptığınız değişiklikler henüz kaydedilmedi. Çıkmak istediğinizden emin misiniz?
+</string>
+
+    <string name="user_detail_unsaved_changes_stay">
+    Vazgeç
+</string>
+
+    <string name="user_detail_unsaved_changes_leave">
+    Çık
+</string>
+    <!-- ================================================================ -->
+    <!-- PROJECT MANAGEMENT                                               -->
+    <!-- ================================================================ -->
+
+    <string name="project_management_title">
+    Proje Yönetimi
+</string>
+
+    <string name="project_management_description">
+    Proje bilgilerini, arşiv durumunu ve proje yaşam döngüsünü yönetin.
+</string>
+
+    <string name="project_edit">
+    Projeyi Düzenle
+</string>
+
+    <string name="project_archive">
+    Projeyi Arşivle
+</string>
+
+    <string name="project_unarchive">
+    Arşivden Çıkar
+</string>
+
+    <string name="project_delete">
+    Projeyi Sil
+</string>
+
+    <string name="project_archive_confirmation_title">
+    Projeyi Arşivle
+</string>
+
+    <string name="project_archive_confirmation_message">
+    %1$s projesini arşivlemek istediğinizden emin misiniz?
+</string>
+
+    <string name="project_unarchive_confirmation_title">
+    Arşivden Çıkar
+</string>
+
+    <string name="project_unarchive_confirmation_message">
+    %1$s projesini tekrar aktif proje listesine almak istediğinizden emin misiniz?
+</string>
+
+    <string name="project_delete_confirmation_title">
+    Projeyi Sil
+</string>
+
+    <string name="project_delete_confirmation_message">
+    %1$s projesini kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.
+</string>
+    <!-- ================================================================ -->
+    <!-- EDIT PROJECT                                                     -->
+    <!-- ================================================================ -->
+
+    <string name="edit_project_title">
+    Projeyi Düzenle
+</string>
+
+    <string name="edit_project_save">
+    Değişiklikleri Kaydet
+</string>
+
+    <string name="edit_project_owner_helper">
+    Proje sahibi yalnızca aktif bir Admin veya ProjectManager olabilir.
+</string>
+
+    <string name="edit_project_owner_manager_helper">
+    Proje sahibini yalnızca Admin değiştirebilir.
+</string>
+
+    <string name="edit_project_unsaved_title">
+    Kaydedilmemiş Değişiklikler
+</string>
+
+    <string name="edit_project_unsaved_message">
+    Yaptığınız proje değişiklikleri henüz kaydedilmedi. Çıkmak istediğinizden emin misiniz?
+</string>
+
+    <string name="edit_project_unsaved_leave">
+    Kaydetmeden Çık
+</string>
+    <string name="task_form_assigned_user_helper">
+    Yalnızca aktif Member ve Contributor kullanıcılarına görev atanabilir.
+</string>
+</resources>

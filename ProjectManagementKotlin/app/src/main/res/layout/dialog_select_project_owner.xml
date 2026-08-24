@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- ========================================================= -->
+    <!-- TITLE                                                     -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proje Sahibi Seç"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Projeyi yönetecek kullanıcıyı arayıp listeden seçin."
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="?attr/colorOnSurfaceVariant" />
+
+    <!-- ========================================================= -->
+    <!-- SEARCH                                                    -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Kullanıcı ara">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextProjectOwnerSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ========================================================= -->
+    <!-- SELECTED USER                                             -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewSelectedProjectOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- ========================================================= -->
+    <!-- PROGRESS                                                  -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressProjectOwnerUsers"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:indicatorSize="32dp"
+        app:trackThickness="3dp" />
+
+    <!-- ========================================================= -->
+    <!-- ERROR                                                     -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewProjectOwnerError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="?attr/colorError"
+        android:visibility="gone" />
+
+    <!-- ========================================================= -->
+    <!-- EMPTY                                                     -->
+    <!-- ========================================================= -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewProjectOwnerEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Kullanıcı bulunamadı."
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:visibility="gone" />
+
+    <!-- ========================================================= -->
+    <!-- USERS                                                     -->
+    <!-- ========================================================= -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProjectOwnerUsers"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- ========================================================= -->
+    <!-- BUTTONS                                                   -->
+    <!-- ========================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancelProjectOwner"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSelectProjectOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:enabled="false"
+            android:text="Seç" />
+
+    </LinearLayout>
+
+</LinearLayout>

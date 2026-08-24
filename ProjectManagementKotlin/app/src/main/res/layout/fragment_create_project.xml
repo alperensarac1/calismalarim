@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- ========================================================= -->
+        <!-- TITLE                                                     -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_project_title"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textColor="?attr/colorOnSurface"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/create_project_description"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <!-- ========================================================= -->
+        <!-- NAME                                                      -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectName"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/create_project_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:maxLength="200"
+                android:maxLines="2" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ========================================================= -->
+        <!-- DESCRIPTION                                               -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectDescription"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/create_project_project_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProjectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="5000"
+                android:maxLines="8"
+                android:minLines="4" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ========================================================= -->
+        <!-- START DATE                                                -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectStartDate"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/create_project_start_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProjectStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ========================================================= -->
+        <!-- END DATE                                                  -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectEndDate"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/create_project_end_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProjectEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ========================================================= -->
+        <!-- STATUS                                                    -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectCreateStatus"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/create_project_status">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteProjectCreateStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ========================================================= -->
+        <!-- PROJECT OWNER                                             -->
+        <!-- ========================================================= -->
+
+        <!--
+            Artık kullanıcı ID'sini manuel yazmıyoruz.
+
+            Kullanıcı bu alana tıkladığında searchable owner selection
+            dialog'u açılır.
+
+            Ekranda:
+                Ahmet Yılmaz
+                ahmet@firma.com
+
+            görünür.
+
+            Backend'e ise yalnız:
+                ownerId = User.id
+
+            gönderilir.
+        -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutProjectOwner"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Proje Sahibi"
+            app:helperText="Boş bırakırsanız proje sahibi siz olursunuz.">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteProjectOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--
+            Seçilen owner'ı temizlemek için gösterilir.
+
+            Böylece kullanıcı:
+                kullanıcı seç -> vazgeç -> kendimi owner yap
+
+            akışını gerçekleştirebilir.
+        -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonClearProjectOwner"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:text="Proje sahibini temizle"
+            android:visibility="gone" />
+
+        <!-- ========================================================= -->
+        <!-- GENERAL ERROR                                             -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewCreateProjectError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?attr/colorError"
+            android:visibility="gone" />
+
+        <!-- ========================================================= -->
+        <!-- CREATE BUTTON                                             -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCreateProjectSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/create_project_submit" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicatorCreateProject"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/content_description_loading"
+            android:visibility="gone"
+            app:indicatorSize="32dp"
+            app:trackThickness="3dp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

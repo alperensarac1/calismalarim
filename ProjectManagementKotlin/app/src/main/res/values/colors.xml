@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Ana marka renkleri -->
+    <color name="primary">#3559C7</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#DDE1FF</color>
+    <color name="on_primary_container">#001159</color>
+
+    <!-- İkincil renkler -->
+    <color name="secondary">#5B5D72</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#E0E1F9</color>
+    <color name="on_secondary_container">#181A2C</color>
+
+    <!-- Açık tema yüzey renkleri -->
+    <color name="background">#FCF8FF</color>
+    <color name="on_background">#1B1B1F</color>
+    <color name="surface">#FCF8FF</color>
+    <color name="on_surface">#1B1B1F</color>
+    <color name="surface_variant">#E3E1EC</color>
+    <color name="on_surface_variant">#46464F</color>
+
+    <!-- Hata renkleri -->
+    <color name="error">#BA1A1A</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Koyu tema -->
+    <color name="primary_dark">#B8C3FF</color>
+    <color name="on_primary_dark">#00248C</color>
+    <color name="background_dark">#131318</color>
+    <color name="on_background_dark">#E4E1E9</color>
+    <color name="surface_dark">#131318</color>
+    <color name="on_surface_dark">#E4E1E9</color>
+    <color name="surface_variant_dark">#46464F</color>
+    <color name="on_surface_variant_dark">#C7C5D0</color>
+    <color name="user_status_active">#2E7D32</color>
+    <color name="user_status_passive">#BA1A1A</color>
+
+</resources>

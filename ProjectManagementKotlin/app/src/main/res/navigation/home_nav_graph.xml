@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeNavGraph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- ============================================================= -->
+    <!-- DASHBOARD                                                     -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.dashboard.DashboardFragment"
+        android:label="@string/dashboard_title" />
+
+    <!-- ============================================================= -->
+    <!-- PROJECTS                                                      -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.projects.ProjectsFragment"
+        android:label="@string/projects_title">
+
+        <action
+            android:id="@+id/action_projectsFragment_to_projectDetailFragment"
+            app:destination="@id/projectDetailFragment" />
+
+        <action
+            android:id="@+id/action_projectsFragment_to_createProjectFragment"
+            app:destination="@id/createProjectFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/mailboxDetailFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.mailbox.detail.MailboxDetailFragment"
+        android:label="Mesaj">
+
+        <argument
+            android:name="messageId"
+            app:argType="integer" />
+
+        <argument
+            android:name="sourceFolder"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_mailboxDetailFragment_to_mailboxComposeFragment"
+            app:destination="@id/mailboxComposeFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.projects.detail.ProjectDetailFragment"
+        android:label="@string/project_detail_title">
+
+        <argument
+            android:name="projectId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_projectDetailFragment_to_editProjectFragment"
+            app:destination="@id/editProjectFragment" />
+
+    </fragment>
+    <!-- ============================================================= -->
+    <!-- EDIT PROJECT                                                  -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/editProjectFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.projects.edit.EditProjectFragment"
+        android:label="@string/edit_project_title">
+
+        <argument
+            android:name="projectId"
+            app:argType="integer" />
+
+    </fragment>
+
+    <!-- ============================================================= -->
+    <!-- CREATE PROJECT                                                -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/createProjectFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.projects.create.CreateProjectFragment"
+        android:label="@string/create_project_title" />
+
+    <!-- ============================================================= -->
+    <!-- TASKS                                                         -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.tasks.TasksFragment"
+        android:label="@string/tasks_title">
+
+        <action
+            android:id="@+id/action_tasksFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.tasks.detail.TaskDetailFragment"
+        android:label="@string/task_detail_screen_title">
+
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+
+    </fragment>
+
+    <!-- ============================================================= -->
+    <!-- MAILBOX                                                       -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/mailboxFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.mailbox.list.MailboxFragment"
+        android:label="Mesajlar">
+
+        <action
+            android:id="@+id/action_mailboxFragment_to_mailboxDetailFragment"
+            app:destination="@id/mailboxDetailFragment" />
+
+        <action
+            android:id="@+id/action_mailboxFragment_to_mailboxComposeFragment"
+            app:destination="@id/mailboxComposeFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mailboxComposeFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.mailbox.compose.MailboxComposeFragment"
+        android:label="Yeni Mesaj">
+
+        <!--
+            Normal yeni mesaj ekranında bunlar null/-1 kalır.
+
+            Mesaj detayındaki "Cevapla" üzerinden gelindiğinde ise
+            gönderen bilgileri buraya aktarılır.
+        -->
+
+        <argument
+            android:name="replySenderId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+
+        <argument
+            android:name="replySenderEmail"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="replySubject"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <!-- ============================================================= -->
+    <!-- PROFILE                                                       -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.profile.ProfileFragment"
+        android:label="@string/profile_title">
+
+        <action
+            android:id="@+id/action_profileFragment_to_usersFragment"
+            app:destination="@id/usersFragment" />
+
+    </fragment>
+    <!-- ============================================================= -->
+    <!-- USER MANAGEMENT                                             -->
+    <!-- ============================================================= -->
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.users.UsersFragment"
+        android:label="@string/users_title">
+
+        <action
+            android:id="@+id/action_usersFragment_to_createUserFragment"
+            app:destination="@id/createUserFragment" />
+
+
+        <action
+            android:id="@+id/action_usersFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.users.detail.UserDetailFragment"
+        android:label="@string/user_detail_title">
+
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/createUserFragment"
+        android:name="com.alperensarac.projectmanagementkotlin.feature.users.create.CreateUserFragment"
+        android:label="@string/create_user_title" />
+</navigation>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- ============================================================= -->
+    <!-- TOOLBAR                                                       -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarUsers"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="?attr/colorOnSurface"
+        app:title="@string/users_title"
+        app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:titleTextColor="?attr/colorOnSurface" />
+
+    <!-- ============================================================= -->
+    <!-- CREATE                                                        -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/users_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarUsers" />
+
+    <!-- ============================================================= -->
+    <!-- SEARCH                                                        -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUserSearch"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="@string/users_search"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toStartOf="@id/buttonAddUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarUsers">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUserSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ============================================================= -->
+    <!-- ROLE                                                          -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUserRole"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:hint="@string/users_role_filter"
+        app:layout_constraintEnd_toStartOf="@id/textInputLayoutUserActive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutUserSearch">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteUserRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ============================================================= -->
+    <!-- ACTIVE                                                        -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUserActive"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/users_status_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textInputLayoutUserRole"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutUserSearch">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteUserActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ============================================================= -->
+    <!-- LIST                                                          -->
+    <!-- ============================================================= -->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshUsers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutUserRole">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="6dp"
+            android:paddingBottom="20dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- ============================================================= -->
+    <!-- INITIAL LOADING                                               -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressIndicatorUsers"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/content_description_loading"
+        android:visibility="gone"
+        app:indicatorSize="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/swipeRefreshUsers"
+        app:layout_constraintEnd_toEndOf="@id/swipeRefreshUsers"
+        app:layout_constraintStart_toStartOf="@id/swipeRefreshUsers"
+        app:layout_constraintTop_toTopOf="@id/swipeRefreshUsers"
+        app:trackThickness="4dp" />
+
+    <!-- ============================================================= -->
+    <!-- EMPTY                                                         -->
+    <!-- ============================================================= -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewUsersEmpty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/users_empty"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/swipeRefreshUsers"
+        app:layout_constraintEnd_toEndOf="@id/swipeRefreshUsers"
+        app:layout_constraintStart_toStartOf="@id/swipeRefreshUsers"
+        app:layout_constraintTop_toTopOf="@id/swipeRefreshUsers" />
+
+    <!-- ============================================================= -->
+    <!-- ERROR                                                         -->
+    <!-- ============================================================= -->
+
+    <LinearLayout
+        android:id="@+id/layoutUsersError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/swipeRefreshUsers"
+        app:layout_constraintEnd_toEndOf="@id/swipeRefreshUsers"
+        app:layout_constraintStart_toStartOf="@id/swipeRefreshUsers"
+        app:layout_constraintTop_toTopOf="@id/swipeRefreshUsers">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUsersError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="?attr/colorError" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRetryUsers"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_retry" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

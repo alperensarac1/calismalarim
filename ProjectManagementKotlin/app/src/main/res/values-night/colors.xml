@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--
+        =========================================================
+        DARK THEME - NIGHT COLORS
+        =========================================================
+        Bu dosya res/values-night/colors.xml altında bulunmalı.
+
+        Android koyu tema aktif olduğunda burada bulunan aynı isimli
+        renkler, values/colors.xml içindeki renklerin yerine kullanılır.
+    -->
+
+    <!-- Ana marka renkleri -->
+    <color name="primary">#B8C3FF</color>
+    <color name="on_primary">#00248C</color>
+
+    <color name="primary_container">#193DA5</color>
+    <color name="on_primary_container">#DDE1FF</color>
+
+
+    <!-- İkincil renkler -->
+    <color name="secondary">#C4C5DD</color>
+    <color name="on_secondary">#2D2F42</color>
+
+    <color name="secondary_container">#444559</color>
+    <color name="on_secondary_container">#E0E1F9</color>
+
+
+    <!--
+        Koyu tema arka planı
+    -->
+    <color name="background">#131318</color>
+    <color name="on_background">#E4E1E9</color>
+
+
+    <!--
+        Card, dialog, toolbar gibi yüzeyler
+    -->
+    <color name="surface">#131318</color>
+    <color name="on_surface">#E4E1E9</color>
+
+
+    <!--
+        TextInputLayout, kart ayrımları, ikincil yüzeyler vb.
+    -->
+    <color name="surface_variant">#46464F</color>
+    <color name="on_surface_variant">#C7C5D0</color>
+
+
+    <!-- Hata renkleri -->
+    <color name="error">#FFB4AB</color>
+    <color name="on_error">#690005</color>
+
+
+    <!--
+        Kullanıcı durum renkleri
+
+        Active için koyu temada biraz daha açık yeşil kullanıyoruz.
+        Böylece koyu arka plan üzerinde daha rahat görünür.
+    -->
+    <color name="user_status_active">#81C784</color>
+
+    <!--
+        Passive / hata durumu için koyu temada açık kırmızı
+    -->
+    <color name="user_status_passive">#FFB4AB</color>
+
+
+    <color name="primary_dark">#B8C3FF</color>
+    <color name="on_primary_dark">#00248C</color>
+
+    <color name="background_dark">#131318</color>
+    <color name="on_background_dark">#E4E1E9</color>
+
+    <color name="surface_dark">#131318</color>
+    <color name="on_surface_dark">#E4E1E9</color>
+
+    <color name="surface_variant_dark">#46464F</color>
+    <color name="on_surface_variant_dark">#C7C5D0</color>
+
+</resources>

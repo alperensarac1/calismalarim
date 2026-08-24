@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ========================================================= -->
+        <!-- AVATAR                                                    -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_profile_avatar"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ========================================================= -->
+        <!-- NAME                                                      -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserFullName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textColor="?attr/colorOnSurface"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textViewUserStatus"
+            app:layout_constraintStart_toEndOf="@id/textViewUserAvatar"
+            app:layout_constraintTop_toTopOf="@id/textViewUserAvatar" />
+
+        <!-- ========================================================= -->
+        <!-- STATUS                                                    -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewUserFullName" />
+
+        <!-- ========================================================= -->
+        <!-- EMAIL                                                     -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewUserAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserFullName" />
+
+        <!-- ========================================================= -->
+        <!-- ROLE                                                      -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewUserAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserEmail" />
+
+        <!-- ========================================================= -->
+        <!-- DEPARTMENT                                                -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewUserDepartment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewUserAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserRole" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
